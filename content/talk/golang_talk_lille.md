@@ -21,5 +21,6 @@ caption = "My caption :smile:"
 
 +++
 
-Embed your slides or video here using [shortcodes](https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/).
-Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.
+This talk (in French) was part of a second meetup introducing Golang use cases
+to Lille tech community. The slides (in French) can be found
+[here](https://go-talks.appspot.com/github.com/mbesancon/golang-talk/talk.slide#1).
