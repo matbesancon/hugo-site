@@ -1,6 +1,6 @@
 +++
 date = 2017-09-05
-draft = true
+draft = false
 tags = ["jekyll", "blog", "hugo", "writing", "medium"]
 title = "Moving my content creation to a home-made Hugo site"
 summary = """
@@ -12,9 +12,10 @@ math = false
 image = "posts/hiking.jpg"
 +++
 
-Last weeks have been pretty intense as I started a joined PhD project between
-INRIA Lille and Ecole Polytechnique Montreal. I had been preparing for this
-fresh start for several months and also wanted to evolve in my content creation.
+Last weeks have been pretty intense. I officially left Equisense and  started
+a joined PhD project between INRIA Lille and Ecole Polytechnique Montreal.
+I had been preparing for this fresh start for several months and also wanted
+to evolve in my content creation process.
 
 ## A journey from plain markdown to Hugo
 
