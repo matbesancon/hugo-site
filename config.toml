@@ -25,7 +25,7 @@ defaultContentLanguageInSubdir = false
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "mathieu.besancon@gmail.com"
+  email = "mathieu(dot)besancon(at)gmail(dot)com"
   # address = "Building 1 Room 1, Stanford University, California, 90210, USA"
   # office_hours = "Monday 10:00 to 13:00 or email for appointment"
   # phone = "888 888 88 88"
@@ -34,6 +34,9 @@ defaultContentLanguageInSubdir = false
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
+
+  PygmentsCodeFences = false
+  PygmentsStyle = "manni"
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"

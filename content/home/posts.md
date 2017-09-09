@@ -20,3 +20,4 @@ count = 5
 
 +++
 
+View [all posts](/posts).
