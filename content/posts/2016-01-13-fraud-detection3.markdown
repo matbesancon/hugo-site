@@ -1,6 +1,6 @@
 +++
 date = 2016-01-13
-draft = true
+draft = false
 tags = ["data-science", "python", "classification"]
 title = "A Pythonic data science project: Part III"
 summary = """
