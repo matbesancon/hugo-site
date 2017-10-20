@@ -2,9 +2,10 @@
 date = 2017-10-19
 draft = true
 tags = ["golang", "phd", "productivity"]
-title = "Building a simple CLI Pomodoro in Golang"
+title = "Building a Pomodoro command line tool in Go - part I: motivation  "
 summary = """
-Motivations and iterations for a simple personal tool.
+Switching from data scientist to graduate student is not
+only a variation in tasks, but also in success criteria and workflow
 """
 math = false
 
