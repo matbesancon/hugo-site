@@ -131,3 +131,22 @@ the node *x*):
   - If $s\[y\] \leq 0$, *y* owes the group some money. We can then redirect the
 sum *x* owes *y* to the nodes following *y* until we find users whom the
 group owes.
+
+# Expenses as an optimization problem
+
+Solving our expenses problem can be phrased as such: we want to minimize the
+number of transactions with the constraint that each user in debt pays no more
+than what he owes and that each user owed is paid at least what they are owed.
+Given that the sum of owing and owed is zero, every debt should be paid.
+
+This could sound very much like the [min-cost flow problem](http://www.columbia.edu/~cs2035/courses/ieor6614.S16/mcf.pdf)
+except for one fact: our cost term for one pair of users $u, v$ is not
+$c(u,v) ⋅ f(u,v)$ with c a constant for any arc $(u,v)$ and $f(u,v)$ the flow
+of cash from *u* to *v*. Our cost is constant with the flow for any value
+greater than one: the cost of the transaction is directly linked to the fact
+that we really perform the transaction. This makes the problem non-linear and
+harder to solve.
+
+What can be done is ignoring the number of transactions at first, and then
+seeing if the solution is optimal, then refining it by removing some
+transactions and compensate them by increasing the amount on another transaction. 
