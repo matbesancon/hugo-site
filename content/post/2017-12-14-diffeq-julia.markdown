@@ -9,7 +9,7 @@ Playing around with the differential equation solver turned simulation engine
 math = true
 
 [header]
-image = "posts/"
+image = "posts/DiffEq/Lorenz.svg"
 +++
 
 [DifferentialEquations.jl](https://github.com/JuliaDiffEq/DifferentialEquations.jl)
@@ -262,5 +262,5 @@ for feedback or questions ;)
 
 -----
 <font size="0.7">
- <!-- [1] -->
+ [1] Cover image: Lorenz attractor on [Wikimedia](https://commons.wikimedia.org/wiki/File:Lorenz_attractor2.svg)
 </font>
