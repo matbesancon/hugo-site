@@ -1,6 +1,6 @@
 +++
 date = 2017-12-14
-draft = true
+draft = false
 tags = ["julia", "modeling", "numerical-techniques", "applied-math"]
 title = "Getting started with DifferentialEquations.jl"
 summary = """
