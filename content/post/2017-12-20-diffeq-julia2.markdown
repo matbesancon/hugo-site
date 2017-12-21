@@ -12,7 +12,7 @@ math = true
 image = "posts/DiffEq/Lorenz.svg"
 +++
 
-In the last article, we explored different modeling options for a
+In the [last article](/post/2017-12-14-diffeq-julia), we explored different modeling options for a
 three-component systems which could represent the dynamics of a chemical
 reaction or a disease propagation in a population. Building on top of this
 model, we will formulate a desirable outcome and find a decision which
