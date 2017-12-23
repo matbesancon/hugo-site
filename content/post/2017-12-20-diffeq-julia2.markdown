@@ -307,7 +307,7 @@ Optim.optimize(compute_finalb, 0.1, 0.9)
 This yields the following information:
 ```
 Results of Optimization Algorithm
- * Algorithm: Brent\'s Method
+ * Algorithm: Brent's Method
  * Search Interval: [0.100000, 0.900000]
  * Minimizer: 8.355891e-01
  * Minimum: -2.403824e+01
