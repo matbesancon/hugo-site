@@ -285,6 +285,41 @@ to share regarding this post, hit me on [Twitter](https://twitter.com/MathieuBes
 Thanks for reading!
 
 -----
+
+## Edits and improvements
+
+Of course, BlackBoxOptim.jl was not the most appropriate algorithm as
+predicted. [Patrick](https://twitter.com/pkofod) and [Chris](https://twitter.com/ChrisRackauckas)
+gave me some hints in [this thread](https://twitter.com/MathieuBesancon/status/943662063074906112)
+and I gave [Optim.jl](https://github.com/JuliaNLSolvers/Optim.jl) a try.  
+
+This package has a range of algorithms to choose from depending on the
+structure of the function and the knowledge of its gradient and Hessian.
+The goal is continuous optimization, (as opposed to BlackBoxOptim.jl which supports
+more exotic search spaces).  
+
+Finding the optimum $t_{inject}$ of the first problem is pretty simple:
+{{< highlight julia >}}
+import Optim
+Optim.optimize(compute_finalb, 0.1, 0.9)
+{{< /highlight >}}
+
+This yields the following information:
+```
+Results of Optimization Algorithm
+ * Algorithm: Brent\'s Method
+ * Search Interval: [0.100000, 0.900000]
+ * Minimizer: 8.355891e-01
+ * Minimum: -2.403824e+01
+ * Iterations: 13
+ * Convergence: max(|x - x_upper|, |x - x_lower|) <= 2*(1.5e-08*|x|+2.2e-16): true
+ * Objective Function Calls: 14
+```
+
+14 calls to the objective function, pretty neat compared to the hundreds of
+BlackBoxOptim. We also confirm the optimum of `0.8355891`.
+
+-----
 <font size="0.7">
  [1] Cover image: Lorenz attractor on [Wikimedia](https://commons.wikimedia.org/wiki/File:Lorenz_attractor2.svg), again.
 </font>
