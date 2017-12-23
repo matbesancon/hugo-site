@@ -56,9 +56,9 @@ diffeq = function(t, u, du)
     du[2] = α * u[1] * u[2] - β * u[2]
     du[3] = β * u[2]
 end
-u₀ = [49.0;1.0;0.0]
+u0 = [49.0;1.0;0.0]
 tspan = (0.0, 1.0)
-prob = DiffEq.ODEProblem(diffeq, u₀, tspan)
+prob = DiffEq.ODEProblem(diffeq, u0, tspan)
 
 const A_inj = 30
 inject_new = function(t0)
@@ -82,7 +82,7 @@ The `ContinuousCallback` construct is the central element here, it takes as
 information:
 
 * When to trigger the event, implemented as the `condition` function. It triggers
-when this function reaches 0, which is here the case when $t = t₀$.
+when this function reaches 0, which is here the case when $t = t\_0$.
 * What to do with the state at that moment. The state is encapsulated within
 the *integrator* variable. In our case, we add 30 units to the concentration in *A*.
 
@@ -182,10 +182,10 @@ after which the rate of change of the concentration in A is increased by a
 constant amount, until the total amount of A injected (directly and over time)
 is equal to the planned quantity.  
 
-We need a new variable in the state of the system, $u\_4(t)$, which stands
+We need a new variable in the state of the system, $u_4(t)$, which stands
 for the input flow of A being active or not.
 
-* $u(t) = 0$ if $t < t\_{inject}$
+* $u(t) = 0$ if $t < t_{inject}$
 * $u(t) = 0$ if the total flow of A which has been injected is equal to the planned quantity
 * $u(t) = \dot{A}\ $ otherwise, with $\dot{A}\ $ the rate at which A is being poured.
 
@@ -208,9 +208,9 @@ diffeq_extended = function(t, u, du)
     du[4] = 0.0
 end
 
-u₀ = [49.0;1.0;0.0;0.0]
+u0 = [49.0;1.0;0.0;0.0]
 tspan = (0.0, 1.0)
-prob = DiffEq.ODEProblem(diffeq_extended, u₀, tspan)
+prob = DiffEq.ODEProblem(diffeq_extended, u0, tspan)
 {{< /highlight >}}
 
 We wrap the solution building process into a function taking the starting time
@@ -239,7 +239,7 @@ Plots.plot(inject_progressive(0.6,0.6))
 
 We can notice `callback_start` being identical to the model we previously built,
 while `condition_end` corresponds to the time when the total injected
-quantity reaches `inj_quantity`. The first events activates $u₄$ and sets it
+quantity reaches `inj_quantity`. The first events activates $u_4$ and sets it
 to the nominal flow, while the second callback resets it to 0.
 
 ![Constant rate](/img/posts/DiffEq/const_rate.png)
@@ -255,7 +255,7 @@ BlackBoxOptim.bboptimize(objective, SearchRange=[(0.1,0.9),(0.0,1.0)], NumDimens
 {{< /highlight >}}
 
 The optimal solution corresponds to a complete direct injection
-($\delta \approx 1$) with $t\_{inject}\^{opt}$ identical to the previous model.
+($\delta \approx 1$) with $t_{inject}^{opt}$ identical to the previous model.
 This means pouring the A component in a continuous fashion does not allow to
 produce more $B$ at the end of the minute.
 
