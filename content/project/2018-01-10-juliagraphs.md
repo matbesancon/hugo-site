@@ -12,7 +12,7 @@ summary = "A graph modeling and analysis ecosystem for Julia"
 image_preview = "projects/juliagraphs.png"
 
 # Tags: can be used for filtering projects.
-tags = ["open-source", "graphs", "julialang"]
+tags = ["open-source", "graphs", "julia"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = "https://juliagraphs.github.io/"
