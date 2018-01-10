@@ -31,9 +31,13 @@ view = 1
   tag = ".open-source"
 
 [[filter]]
+  name = "Academic"
+  tag = ".academic"
+
+[[filter]]
   name = "Other"
   tag = ".demo"
 
 +++
 
-No projects to see for the moment, hope to show some soon.
+Different projects, open-source and (hope soon) academic.

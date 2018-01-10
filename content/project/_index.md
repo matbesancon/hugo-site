@@ -10,5 +10,3 @@ image = ""
 caption = ""
 
 +++
-
-No projects to see for the moment, hope to show some soon.
