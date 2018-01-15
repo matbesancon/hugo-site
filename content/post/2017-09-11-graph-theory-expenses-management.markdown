@@ -1,6 +1,6 @@
 +++
 date = 2018-01-15
-draft = true
+draft = false
 tags = ["graph", "julia"]
 title = "Solving the group expenses headache with graphs"
 summary = """
