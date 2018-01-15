@@ -292,7 +292,7 @@ name conflicted.
 If you have questions or remarks on LightGraphs, LightGraphsFlows, the article
 or anything related, don't hesitate to [ping me](http://twitter.com/MathieuBesancon/)!
 
-============
+----------
 
 The cover image was created using
 [GraphPlot.jl](https://github.com/JuliaGraphs/GraphPlot.jl).   
