@@ -27,7 +27,7 @@ the end.
 
 In this post, we'll model the expense balancing problem from a graph
 perspective and see how to come up with a solution using Julia and the
-JuliaGraph ecosystem.
+JuliaGraphs ecosystem.
 
 {{% alert note %}}
 We will use the awesome GraphCoin as a currency in this post, noted GPHC to
