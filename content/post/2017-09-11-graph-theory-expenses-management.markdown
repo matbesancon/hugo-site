@@ -21,7 +21,8 @@ of splitting them fairly.
 > *Les bons comptes font les bons amis.*
 > French wisdom
 
-The [Tricount](https://tricount.com/) application became famous precisely by
+Applications like [Tricount](https://tricount.com/) or
+[Splitwise](https://www.splitwise.com/) became famous precisely by
 solving this problem for you: just enter the expenses one by one, with who
 owes whom and you'll get the simplest transactions to balance the amounts at
 the end.
