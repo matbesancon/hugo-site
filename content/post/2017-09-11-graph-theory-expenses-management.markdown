@@ -290,7 +290,10 @@ GraphCoin symbol to GPHC because I found another one with which my initial
 name conflicted.  
 
 If you have questions or remarks on LightGraphs, LightGraphsFlows, the article
-or anything related, don't hesitate to [ping me](http://twitter.com/MathieuBesancon/)!
+or anything related, don't hesitate to [ping me](http://twitter.com/MathieuBesancon/)!  
+
+Edits:  
+Special thanks to [Seth Bromberger](http://www.bromberger.com/) for the review.
 
 ----------
 
