@@ -9,10 +9,8 @@ Graph theory and Julia to solve the boring aspect of having friends
 math = true
 
 [header]
-image = ""
+image = "posts/expense/graphviz.png"
 +++
-
-{{% toc %}}
 
 With the end-of-year celebrations, we all had some expenses to manage,
 some of them shared with friends, and we all have this eternal problem
@@ -35,6 +33,8 @@ JuliaGraph ecosystem.
 We will use the awesome GraphCoin as a currency in this post, noted GPHC to
 be sure no one feels hurt.
 {{% /alert %}}
+
+{{% toc %}}
 
 ## The expenses model
 
@@ -288,6 +288,9 @@ Final word: I started the idea of this article long before the crypto-madness
 nerdy or both, sorry about following the (late) hype. I even changed
 GraphCoin symbol to GPHC because I found another one with which my initial
 name conflicted.  
+
+The cover image was created using
+[GraphPlot.jl](https://github.com/JuliaGraphs/GraphPlot.jl).  
 
 If you have questions or remarks on LightGraphs, LightGraphsFlows, the article
 or anything related, don't hesitate to [ping me](http://twitter.com/MathieuBesancon/)!
