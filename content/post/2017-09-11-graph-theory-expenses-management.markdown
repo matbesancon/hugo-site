@@ -289,8 +289,13 @@ nerdy or both, sorry about following the (late) hype. I even changed
 GraphCoin symbol to GPHC because I found another one with which my initial
 name conflicted.  
 
-The cover image was created using
-[GraphPlot.jl](https://github.com/JuliaGraphs/GraphPlot.jl).  
-
 If you have questions or remarks on LightGraphs, LightGraphsFlows, the article
 or anything related, don't hesitate to [ping me](http://twitter.com/MathieuBesancon/)!
+
+============
+
+The cover image was created using
+[GraphPlot.jl](https://github.com/JuliaGraphs/GraphPlot.jl).   
+
+[1] James Fairbanks Seth Bromberger and other contributors. Juliagraphs/LightGraphs.jl:
+Lightgraphs, 2017, https://doi.org/10.5281/zenodo.889971. DOI: 10.5281/zenodo.889971
