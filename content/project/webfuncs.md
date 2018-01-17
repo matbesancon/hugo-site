@@ -11,7 +11,7 @@ summary = "Serve Julia functions with HTTP"
 # Optional image to display on homepage (relative to `static/img/` folder).
 
 # Tags: can be used for filtering projects.
-tags = ["open-source", "julia"]
+tags = ["open-source", "julia-package"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = "https://github.com/mbesancon/WebFuncs.jl"
