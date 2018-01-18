@@ -116,10 +116,9 @@ We can define a directed flow network with users split in two sets of vertices,
 depending on whether they owe or are owed money. We call these two sets $V\_1$
 and $V\_2$ respectively.
 
-* There is a directed edge from any node from $V\_1$ to $V\_2$.
+* There is an edge from any node of $V\_1$ to any node of $V\_2$.
 * We define a *source* noted $s$ connected to all vertices in $V\_1$, the edge
 from $s$ to any node of $V\_1$ has a capacity equal to what they owe.
-* There is an edge from any node of $V\_1$ to any node of $V\_2$.
 * We define a *sink* noted $t$ to which all vertices in $V\_2$ connect, with
 infinite capacity and a demand (the minimal flow that has to pass through) equal
 to what they are owed.
