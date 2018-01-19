@@ -274,7 +274,7 @@ Some further mentions of type-stability can be found in the
 [official doc](https://docs.julialang.org/en/latest/manual/performance-tips)
 * The second attempts uses non-diagonal noise, the ":additive" hint I passed
 to the solve function does not hold. Furthermore, the appropriate algorithm in
-that case is [EM](https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm)
+that case is the [Euler-Maruyama method](https://en.wikipedia.org/wiki/Euler%E2%80%93Maruyama_method)
 .
 
 Many thanks to him for these tips, having such devoted and friendly developers
