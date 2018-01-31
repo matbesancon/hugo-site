@@ -25,7 +25,7 @@ we will also use [BlackBoxOptim.jl](https://github.com/robertfeldt/BlackBoxOptim
 import DifferentialEquations
 const DiffEq = DifferentialEquations
 import Plots
-import BlackBoxOptim
+import Optim
 {{< /highlight >}}
 
 ## The model
@@ -51,7 +51,7 @@ depending on conditions on the time, state, etc...
 # defining the problem
 const α = 0.8
 const β = 3.0
-diffeq = function(t, u, du)
+diffeq = function(du, u, p, t)
     du[1] = - α * u[1] * u[2]
     du[2] = α * u[1] * u[2] - β * u[2]
     du[3] = β * u[2]
@@ -62,7 +62,7 @@ prob = DiffEq.ODEProblem(diffeq, u0, tspan)
 
 const A_inj = 30
 inject_new = function(t0)
-    condition(t, u, integrator) = t0 - t
+    condition(u, t, integrator) = t0 - t
     affect! = function(integrator)
         integrator.u[1] = integrator.u[1] + A_inj
     end
@@ -109,7 +109,7 @@ Injecting $A$ too soon lets too much time for the created $B$ to turn into $R$,
 but injecting it too late does not let enough time for $B$ to be produced from
 the injected $A$. The optimum seems to be around ≈ 0.82,
 
-## Finding the optimum using BlackBoxOptim.jl
+## Finding the optimum using Optim.jl
 
 The package requires an objective function which takes a vector as input.
 In our case, the decision is modeled as a single variable (the injection time),
@@ -118,52 +118,29 @@ calling the solver will just explode with cryptic errors.
 
 {{< highlight julia >}}
 compute_finalb = tinj -> -1 * inject_new(tinj[1]).u[end][2]
-# trust the default algorithm
-BlackBoxOptim.bboptimize(compute_finalb, SearchRange=(0.1,0.9), NumDimensions=1)
-# use probabilistic descent
-BlackBoxOptim.bboptimize(compute_finalb, SearchRange=(0.1,0.9), NumDimensions=1, Method=:probabilistic_descent)
+Optim.optimize(compute_finalb, 0.1, 0.9)
 {{< /highlight >}}
+
+We get a detailed result of the optimization including the method and iterations:
+```
+* Algorithm: Brent's Method
+* Search Interval: [0.100000, 0.900000]
+* Minimizer: 8.355578e-01
+* Minimum: -2.403937e+01
+* Iterations: 13
+* Convergence: max(|x - x_upper|, |x - x_lower|) <= 2*(1.5e-08*|x|+2.2e-16): true
+* Objective Function Calls: 14
+```
 
 The function `inject_new` we defined above returns the complete solution
 of the simulation, we get the state matrix `u`, from which we extract the
 final state `u[end]`, and then the second component, the concentration in
-B: `u[end][2]`. The black box optimizer minimizes the objective, while we want
+B: `u[end][2]`. The optimization algorithm minimizes the objective, while we want
 to maximize the final concentration of B, hence the -1 multiplier used for  
 `compute_finalb`.  
 
-The `bboptimize` function can also be passed a `Method` argument specifying
-the optimization algorithm. In this case, the function is smooth, so we can
-suppose gradient estimation methods would work pretty well. We also let the
-default algorithm (differential evolution) be used. After some lines logging
-the progress on the search, we obtain the following for both methods:
-```
-Best candidate found: [0.835558]
-Fitness: -24.039369448
-```
-
-More importantly, we can refer to the number of evaluations of the objective
-function as a measure of the algorithm performance, combined with the time taken.
-
-For the probabilistic descent:
-```
-Optimization stopped after 10001 steps and 10.565439939498901 seconds
-Steps per second = 946.5767689058794
-Function evals per second = 1784.6866867802482
-Improvements/step = 0.0
-Total function evaluations = 18856
-```
-
-For the differential evolution:
-```
-Optimization stopped after 10001 steps and 5.897292137145996 seconds
-Steps per second = 1695.863078751937
-Function evals per second = 1712.8200138459472
-Improvements/step = 0.1078
-Total function evaluations = 10101
-```
-
-We found the best injection time (0.835558), and the corresponding final
-concentration (24.04).
+> We can use the Optim.jl package because our function is twice differentiable,
+the best improvement direction is easy to compute.
 
 ## Extending the model
 
@@ -201,7 +178,7 @@ two events:
 const inj_quantity = 30.0;
 const inj_rate = 40.0;
 
-diffeq_extended = function(t, u, du)
+diffeq_extended = function(du, u, p, t)
     du[1] = - α * u[1] * u[2] + u[4]
     du[2] = α * u[1] * u[2] - β * u[2]
     du[3] = β * u[2]
@@ -218,7 +195,7 @@ and the fraction being directly injected as parameters:
 
 {{< highlight julia >}}
 inject_progressive = function(t0, direct_frac)
-    condition_start(t, u, integrator) = t0 - t
+    condition_start(u, t, integrator) = t0 - t
     affect_start! = function(integrator)
         integrator.u[1] = integrator.u[1] + inj_quantity * direct_frac
         integrator.u[4] = inj_rate
@@ -226,7 +203,7 @@ inject_progressive = function(t0, direct_frac)
     callback_start = DiffEq.ContinuousCallback(
         condition_start, affect_start!, save_positions=(true, true)
     )
-    condition_end(t, u, integrator) = (t - t0) * inj_rate - inj_quantity * (1 - direct_frac)
+    condition_end(u, t, integrator) = (t - t0) * inj_rate - inj_quantity * (1 - direct_frac)
     affect_end! = function(integrator)
         integrator.u[4] = 0.0
     end
@@ -244,9 +221,10 @@ to the nominal flow, while the second callback resets it to 0.
 
 ![Constant rate](/img/posts/DiffEq/const_rate.png)
 
-BlackBoxOptim.jl can be re-used to determine the optimal decision:
+Optim.jl can be re-used to determine the optimal decision:
 
 {{< highlight julia >}}
+import BlackBoxOptim
 objective = function(x)
     sol = inject_progressive(x[1], x[2])
     -sol.u[end][2]
@@ -288,6 +266,13 @@ Thanks for reading!
 
 ## Edits and improvements
 
+2018-01-31:  
+I updated this post to adapt to the new DifferentialEquations.jl
+interface. I also used Optim.jl for the first case without calling BlackBoxOptim.
+
+-------------
+
+2017-12-20:  
 Of course, BlackBoxOptim.jl was not the most appropriate algorithm as
 predicted. [Patrick](https://twitter.com/pkofod) and [Chris](https://twitter.com/ChrisRackauckas)
 gave me some hints in [this thread](https://twitter.com/MathieuBesancon/status/943662063074906112)
@@ -317,7 +302,8 @@ Results of Optimization Algorithm
 ```
 
 14 calls to the objective function, pretty neat compared to the hundreds of
-BlackBoxOptim. We also confirm the optimum of `0.8355891`.
+BlackBoxOptim. We also confirm the optimum of `0.8355891`. Not yet sure we could
+use Optim.jl for the second case (boxed multivariate optimization without explicit gradient).
 
 -----
 <font size="0.7">

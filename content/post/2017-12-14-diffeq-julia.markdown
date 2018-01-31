@@ -27,9 +27,9 @@ const DiffEq = DifferentialEquations
 import Plots
 {{< /highlight >}}
 
-I tend to prefer explicit imports in my Julia code, it helps see which function
-comes from which part. As `DifferentialEquations` is longuish to write, we use
-an alias in the rest of the code.
+I tend to prefer explicit imports in Julia code, it helps to see from which
+part each function and type comes. As `DifferentialEquations` is longuish to
+write, we use an alias in the rest of the code.
 
 ## The model
 
@@ -81,11 +81,11 @@ $$
 $$
 And the initial conditions $u(0) = u₀$.
 
-In Julia, this becomes:
+In Julia with DifferentialEquations, this becomes:
 {{< highlight julia >}}
 α = 0.8
 β = 3.0
-diffeq = function(t, u, du)
+diffeq = function(du, u, p, t)
     du[1] = - α * u[1] * u[2]
     du[2] = α * u[1] * u[2] - β * u[2]
     du[3] = β * u[2]
@@ -96,7 +96,8 @@ tspan = (0.0, 1.0)
 
 `diffeq` models the dynamic behavior, `u₀` the starting conditions
 and `tspan` the time range over which we observe the system
-evolution.  
+evolution. Note that the `diffeq` function also take a `p` argument for parameters,
+in which we could have stored $\alpha$ and $\beta$.
 
 We know that our equation is smooth, so we'll let
 `DifferentialEquations.jl` figure out the solver. The general API
@@ -107,11 +108,13 @@ information on how to solve it, yielding a solution.
 
 {{< highlight julia >}}
 prob = DiffEq.ODEProblem(diffeq, u₀, tspan)
-sol = DiffEq.solve(prob);
+sol = DiffEq.solve(prob)
 {{< /highlight >}}
 
 One very nice property of solutions produced by the package is that they
-contain a direct way to produce plots.
+contain a direct way to produce plots. This is fairly common in Julia to
+implement methods from other packages, here the `ODESolution` type implements
+Plots.plot:
 
 {{< highlight julia >}}
 Plots.plot(sol)
@@ -160,7 +163,7 @@ In our case, we could consider two points of randomness at the two interactions
 {{< highlight julia >}}
 σ1 = 0.07
 σ2 = 0.4
-noise_func = function(t, u, du)
+noise_func = function(du, u, p, t)
     du[1] = σ1 * u[1] * u[2]
     du[3] = σ2 * u[2]
     du[2] = - du[1]  - du[3]
@@ -191,7 +194,7 @@ the sum of variations for the three variables cancel out to keep a constant
 total population.
 
 {{< highlight julia >}}
-noise_func_cons = function(t, u, du)
+noise_func_cons = function(du, u, p, t)
     du[1, 1] = σ1 * u[1] * u[2]
     du[1, 2] = 0.0
     du[2, 1] = - σ1 * u[1] * u[2]
@@ -262,6 +265,10 @@ for feedback or questions ;)
 
 -----
 Edits:
+
+I updated this post to fit the new DifferentialEquations.jl 4.0 syntax. Some
+changes are breaking the previous API, it can be worth it to check it out
+[in detail](http://juliadiffeq.org/2018/01/24/Parameters.html).
 
 [Chris](https://twitter.com/ChrisRackauckas), the creator and main developer
 of DifferentialEquations.jl, gave me valuable tips on two
