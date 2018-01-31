@@ -224,13 +224,39 @@ to the nominal flow, while the second callback resets it to 0.
 Optim.jl can be re-used to determine the optimal decision:
 
 {{< highlight julia >}}
-import BlackBoxOptim
 objective = function(x)
     sol = inject_progressive(x[1], x[2])
     -sol.u[end][2]
 end
-BlackBoxOptim.bboptimize(objective, SearchRange=[(0.1,0.9),(0.0,1.0)], NumDimensions=2)
+# wrapped objective function and starting point
+x0 = 0.5*ones(2)
+wrapped_obj = Optim.OnceDifferentiable(objective, x0)
+# call optimize with box algorithm
+Optim.optimize(wrapped_obj, x0, [0.1,0.0], [1.0,1.0], Optim.Fminbox())
 {{< /highlight >}}
+
+The result details are:
+```
+* Algorithm: Fminbox with Conjugate Gradient
+* Starting Point: [0.5,0.5]
+* Minimizer: [0.8355419400368459,0.9999654432422779]
+* Minimum: -2.404040e+01
+* Iterations: 4
+* Convergence: true
+  * |x - x'| ≤ 1.0e-32: false
+    |x - x'| = 3.43e-04
+  * |f(x) - f(x')| ≤ 1.0e-32 |f(x)|: true
+    |f(x) - f(x')| = -6.85e-11 |f(x)|
+  * |g(x)| ≤ 1.0e-08: false
+    |g(x)| = 9.05e-08
+  * Stopped by an increasing objective: true
+  * Reached Maximum Number of Iterations: false
+* Objective Calls: 125
+* Gradient Calls: 79
+```
+
+We wrap our function in a `Optim.OnceDifferentiable` to provide Optim with the
+information is differentiable, even though we don't provide a gradient.  
 
 The optimal solution corresponds to a complete direct injection
 ($\delta \approx 1$) with $t_{inject}^{opt}$ identical to the previous model.
@@ -268,7 +294,11 @@ Thanks for reading!
 
 2018-01-31:  
 I updated this post to adapt to the new DifferentialEquations.jl
-interface. I also used Optim.jl for the first case without calling BlackBoxOptim.
+interface. I also used Optim.jl for the two cases without BlackBoxOptim.jl,
+which is very nice but not neccesary for differentiable functions.  
+  
+Special thanks to [Patrick](https://github.com/pkofod) for his quick response
+and help with `Optim.jl`.
 
 -------------
 
