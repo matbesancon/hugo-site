@@ -11,7 +11,7 @@ selected = false
 math = false
 
 url_pdf = ""
-url_slides = ""
+url_slides = "https://go-talks.appspot.com/github.com/mbesancon/golang-talk/talk.slide#1"
 url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
@@ -21,6 +21,6 @@ caption = "My caption :smile:"
 
 +++
 
-This talk (in French) was part of a second meetup introducing Golang use cases
+This talk was part of a second meetup introducing Golang use cases
 to Lille tech community. The slides (in French) can be found
 [here](https://go-talks.appspot.com/github.com/mbesancon/golang-talk/talk.slide#1).
