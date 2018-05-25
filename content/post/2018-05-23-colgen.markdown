@@ -4,7 +4,7 @@ draft = false
 tags = ["julia", "modeling", "optimization", "integer-optimization","jump"]
 title = "Tackling the cutting stock problem: part 1, problem exploration"
 summary = """
-Decomposing a cutting stock problem using Julia and JuMP
+Solving a cutting stock problem step by step using Julia and JuMP
 """
 math = true
 
@@ -19,10 +19,8 @@ blog posts. This first part introduces the problem and develops a naive solution
 We're going to see why it's complex to solve and why this formulation does not
 scale.
 
-Among major reformulations, decomposition techniques leverage special
-structures to build an easy-to-solve sub-problem and a "master problem" converging
-to the exact solution to the initial problem. That's what we're going to see in
-a second post.
+In a second post, we will see a reformulation of the problem which makes it
+easier to solve and scales to bigger instances.
 
 ## Integer optimization reminder
 
@@ -62,29 +60,60 @@ $Y$ are binary variables, $X$ are integer. Now the less trivial constraints:
 * **Demand satisfaction constraint**: the sum over all $i$ big rolls of the cut $j$
 has to satisfy the demand for that cut:
 $$\sum_{i} X\_{ij} \geq D_j $$
-* **Roll size constraint**: if a roll is used, we cannot fit more width onto it
-than its total width:
+
+For the two-cut example with the demand of $7 \times 12cm$ and $9 \times 29cm$,
+let's suppose we have 10 big rolls $i \in \{1...10\}$, the demand for the first
+12cm cut is 7 cuts, the number of cuts of this size produced is:
+$$ \sum_i X\_{i1} =  X\_{1,1} + X\_{2,1} + ... + X\_{10,1}$$
+
+This total must at least match the demand, so:
+$$ X\_{1,1} + X\_{2,1} + ... + X\_{10,1} \geq 7 $$
+
+* **Roll size constraint**: if a roll $i$ is used, we cannot fit more width
+onto it than its total width:
 $$\sum_{j} X\_{ij} \cdot W_j \leq L \cdot Y_i $$
+
+For the two-cut example with the demand of $7 \times 12cm$ and $9 \times 29cm$,
+let's suppose we have one roll $i$:
+
+* If $Y_i = 0$, the roll size constraint becomes:
+
+$$ \sum_{j} X\_{ij} \cdot W_j = 12 \cdot X\_{i1} + 29 \cdot X\_{i2} \leq 0 $$
+
+The only feasible solution for this roll $i$ is ($X\_{i1} = 0,X\_{i2} = 0$).
+
+* If $Y_i = 1$, the roll size constraint becomes:
+$$ 12 \cdot X\_{i1} + 29 \cdot X\_{i2} \leq 100 $$
+
+Which means we can fit as many cuts as the roll size allows for.
 
 ## A first naive implementation
 
 Let's first import the necessary packages: we're using JuMP as a modeling
 tool, which is an optimization-specific language embedded in Julia
 (compare it to AMPL, GAMS, Pyomo, PuLP).
-As I consider it a language, I'll do a full import into my namespace with `using`.
-We also use `Cbc`, an open-source solver for integer problems from the Coin-OR
-suite.
+As I consider it an embedded language, I'll do a full import into my namespace
+with `using` (unlike what I usually do with packages). We also use `Cbc`,
+an open-source solver for integer problems from the Coin-OR suite.
 
 {{< highlight julia >}}
 using JuMP
 using Cbc: CbcSolver
 {{< /highlight >}}
 
+We can define our optimization problem within a function taking the parameters
+of the cutting stock problem, namely a `maxwidth` of the big rolls, scalar
+assuming all of them have the same width, a `widths` vector, one element for
+each cut size $j$ and a `demand` vector, again, one for each cut size.
+
 {{< highlight julia >}}
 function cutting_stock_model(maxwidth, widths, demand, N = sum(demand))
+    # Define the JuMP model
     m = Model(solver = CbcSolver())
+    # define the two groups of variables over their respective indices
     Y = @variable(m, Y[1:N],Bin)
     X = @variable(m, X[i=1:N,j=1:length(widths)],Int)
+    # define both constraints and objective
     demand_satisfac = @constraint(m, [j=1:length(widths)],
         sum(X[i,j] for i in 1:N) >= demand[j]
     )
@@ -92,7 +121,8 @@ function cutting_stock_model(maxwidth, widths, demand, N = sum(demand))
         sum(X[i,j] * widths[j] for j in 1:length(widths)) <= Y[i] * maxwidth
     )
     @objective(m, Min, sum(Y[i] for i in 1:N))
-    return (m, X, Y)
+    # return the model formulation to solve later
+    return m
 end
 {{< /highlight >}}
 
@@ -100,6 +130,30 @@ Here $N$ has to be an upper bound on the number of big rolls to use, otherwise
 the problem will be infeasible (not enough big rolls to find a solution
 satisfying the demand). An initial naive value for this could be the total
 demand, after all one small cut per roll can be considered a worst-case solution.
+
+Note that we don't call `solve` on the model yet, the function simply builds the
+model, this will help us see how it evolves with various entry parameters.
+In Julia REPL, or by using the `@show` macro, we can have more details on the
+model. Using `println(m)` instead of `@show` will build a mathematical
+formulation of the model in a LateX-like style, which can be valuable to
+ensure your implementation matches the initial formulation.
+
+{{< highlight julia >}}
+julia> println(cutting_stock_model(100, [12,10], [3,4]))
+Min Y[1] + Y[2] + Y[3] + Y[4] + Y[5] + Y[6] + Y[7]
+Subject to
+ X[1,1] + X[2,1] + X[3,1] + X[4,1] + X[5,1] + X[6,1] + X[7,1] ≥ 3
+ X[1,2] + X[2,2] + X[3,2] + X[4,2] + X[5,2] + X[6,2] + X[7,2] ≥ 4
+ 12 X[1,1] + 10 X[1,2] - 100 Y[1] ≤ 0
+ 12 X[2,1] + 10 X[2,2] - 100 Y[2] ≤ 0
+ 12 X[3,1] + 10 X[3,2] - 100 Y[3] ≤ 0
+ 12 X[4,1] + 10 X[4,2] - 100 Y[4] ≤ 0
+ 12 X[5,1] + 10 X[5,2] - 100 Y[5] ≤ 0
+ 12 X[6,1] + 10 X[6,2] - 100 Y[6] ≤ 0
+ 12 X[7,1] + 10 X[7,2] - 100 Y[7] ≤ 0
+ Y[i] ∈ {0,1} ∀ i ∈ {1,2,…,6,7}
+ X[i,j], integer, ∀ i ∈ {1,2,…,6,7}, j ∈ {1,2}
+{{< /highlight >}}
 
 Let's see what the model looks like for different instances:
 {{< highlight julia >}}
@@ -129,9 +183,13 @@ Y[i] ∈ {0,1} ∀ i ∈ {1,2,…,499,500})
 {{< /highlight >}}
 
 We see the number of variables and constraints explode as we add more possible
-cut sizes, the model also becomes more and more difficult to solve. Without
-going into details on the solving process, two things make the problem difficult
-to solve:
+cut sizes. More precisely:
+
+* Number of variables: $ size(X) + size(Y) = Nrolls \cdot Ncuts + Nrolls $
+* Number of constraints: $ size(DemandConstr) + size(WidthConstr) = Ncuts + Nrolls$
+
+Without going into details on the solving process, two things make the problem
+difficult to solve:
 
 1. Symmetry: if we place cuts on a roll $Y_1$ and leave another $Y_2$ unused,
 the resulting solution is concretely the same as using $Y_2$ and leaving $Y_1$
@@ -249,6 +307,12 @@ broad target audience.
 Hope you enjoyed it, if that's the case, I'll see you on the next article,
 we'll implement a *column generation* algorithm from scratch to solve it.
 If you have any question/remarks, feel free to [get in touch](http://twitter.com/MathieuBesancon/).
+
+## Thanks
+
+Special thanks to [Soham](https://github.com/SohamTamba) and Aristide
+for their feedback, these helped me a great deal simplify the structure and add
+details and explanations where needed.
 
 --------
 Image source: https://www.flickr.com/photos/30478819@N08/38272827564
