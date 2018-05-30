@@ -196,7 +196,7 @@ newcol, newobj = subproblem(reduced_costs, widths, maxwidth)
 We can now build a column generation function putting all elements together and
 performing the main iteration:
 
-{{< highlight language>}}
+{{< highlight julia>}}
 function column_generation(maxwidth, widths, rollcost, demand, prices; maxcols = 5000)
     (m, θ, demand_satisfaction, patterns) = init_master(maxwidth, widths, rollcost, demand, prices)
     ncols = nwidths
