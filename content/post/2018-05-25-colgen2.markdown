@@ -14,7 +14,8 @@ image = "posts/cutting_stock/sushi_cuts.jpg"
 
 --------
 
-In the previous post, we explored a well-known integer optimization situation
+In the [previous post]({{< relref "2018-05-23-colgen.markdown" >}}), 
+we explored a well-known integer optimization situation
 in manufacturing, the cutting stock problem. After some details on the
 decisions, constraints and objectives, we implemented a naive model in JuMP.
 
@@ -27,7 +28,7 @@ decomposition and an associated solution method (column generation).
 
 ## Re-stating the cutting stock problem
 
-In the last post, we used two decisions: $Y_i$ stating if the big roll $i$ is
+Remember we used two decisions: $Y_i$ stating if the big roll $i$ is
 used and $X\_{ij}$ expressing the number of cuts $j$ made in the roll $i$.
 To minimize the number of rolls, it makes sense to put as many small cuts
 as possible on a big roll. We could therefore identify *saturating patterns*,
@@ -64,8 +65,8 @@ cost of the big rolls minus the revenue from excess cuts).
 
 ## New formulation
 
-As in the previous post, we're going to formulate the decisions and constraints
-for the new version of the problem.
+Again, we are going to formulate first possible decisions and
+then constraints on these decisions for the new version of the problem.
 
 ### Decisions
 
@@ -103,7 +104,7 @@ producing compared to its production cost, it is added.
 ## Implementation
 
 As before, we will formulate the master and sub-problem using Julia with JuMP.
-Just like the previous post, we use the Clp and Cbc open-source solvers.
+Again, we use the Clp and Cbc open-source solvers.
 We read the problem data (prices, sizes, demand) from a JSON file.
 ```
 using JuMP
@@ -342,7 +343,11 @@ thing is to do in such case is "warm-starting" the solver: give it a good
 initial solution to start from. Since we built both the master and subproblem
 as stateless functions, the model is being re-built from scratch each time.
 The advantage is that any solver can be used, since some of them don't support
-warm starts.
+warm starts.  
+
+
+Thanks to Aristide for his very sharp ideas and views on this article which
+contributed to its improvement!
 
 
 --------
