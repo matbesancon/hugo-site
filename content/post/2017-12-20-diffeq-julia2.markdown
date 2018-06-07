@@ -256,7 +256,8 @@ The result details are:
 ```
 
 We wrap our function in a `Optim.OnceDifferentiable` to provide Optim with the
-information is differentiable, even though we don't provide a gradient.  
+information that the function is differentiable, even though we don't provide a
+gradient, it can be computed by automatic differentiation or finite differences.  
 
 The optimal solution corresponds to a complete direct injection
 ($\delta \approx 1$) with $t_{inject}^{opt}$ identical to the previous model.
