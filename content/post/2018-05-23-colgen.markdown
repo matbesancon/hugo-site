@@ -306,7 +306,7 @@ broad target audience.
 
 Hope you enjoyed it, if that's the case, I'll see you on the next article,
 we'll implement a *column generation* algorithm from scratch to solve it.
-If you have any question/remarks, feel free to [get in touch](http://twitter.com/MathieuBesancon/).
+If you have any question/remarks, feel free to [get in touch](http://twitter.com/matbesancon/).
 
 ## Thanks
 

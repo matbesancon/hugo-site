@@ -11,7 +11,7 @@ selected = false
 math = false
 
 url_pdf = ""
-url_slides = "https://mbesancon.github.io/julia_packages"
+url_slides = "https://matbesancon.github.io/julia_packages"
 url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
@@ -23,4 +23,4 @@ caption = "My caption :smile:"
 
 A quick introduction to the why and how of package development in Julia for
 scientific computing, with two applications of custom arrays. One of them,
-MatFuncs.jl was live-coded and available [here](https://github.com/mbesancon/MatFuncs.jl).
+MatFuncs.jl was live-coded and available [here](https://github.com/matbesancon/MatFuncs.jl).

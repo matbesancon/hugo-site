@@ -286,7 +286,7 @@ objective function, using parametrized functions for instance, which could
 make it transparent to optimization solvers.  
 
 If somebody has info on that last point or feedback, additional info you'd like
-to share regarding this post, hit me on [Twitter](https://twitter.com/MathieuBesancon).
+to share regarding this post, hit me on [Twitter](https://twitter.com/matbesancon).
 Thanks for reading!
 
 -----
@@ -306,7 +306,7 @@ and help with `Optim.jl`.
 2017-12-20:  
 Of course, BlackBoxOptim.jl was not the most appropriate algorithm as
 predicted. [Patrick](https://twitter.com/pkofod) and [Chris](https://twitter.com/ChrisRackauckas)
-gave me some hints in [this thread](https://twitter.com/MathieuBesancon/status/943662063074906112)
+gave me some hints in [this thread](https://twitter.com/matbesancon/status/943662063074906112)
 and I gave [Optim.jl](https://github.com/JuliaNLSolvers/Optim.jl) a try.  
 
 This package has a range of algorithms to choose from depending on the

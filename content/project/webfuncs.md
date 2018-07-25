@@ -14,7 +14,7 @@ summary = "Serve Julia functions with HTTP"
 tags = ["open-source", "julia-package"]
 
 # Optional external URL for project (replaces project detail page).
-# external_link = "https://github.com/mbesancon/WebFuncs.jl"
+# external_link = "https://github.com/matbesancon/WebFuncs.jl"
 
 # Does the project detail page use math formatting?
 math = false
@@ -23,7 +23,7 @@ math = false
 
 +++
 
-[WebFuncs.jl](https://github.com/mbesancon/WebFuncs.jl) is a Julia project testing the language out of its natural
+[WebFuncs.jl](https://github.com/matbesancon/WebFuncs.jl) is a Julia project testing the language out of its natural
 scope. Having built quite a bit with Go and Python, I wanted to see if
 the Julia ecosystem had tools for HTTP handling.
 

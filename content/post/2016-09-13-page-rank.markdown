@@ -189,7 +189,7 @@ I found the [SNAP](https://snap.stanford.edu) project
 from Stanford on which the
 [Enron emails data](https://snap.stanford.edu/data/email-Enron.html)
 are presented and to be downloaded. If you look at the
-[Github repo](https://github.com/mbesancon/PageRank) for this project, I simply
+[Github repo](https://github.com/matbesancon/PageRank) for this project, I simply
 removed the header from the txt file to make the parsing tasks easier.
 
 ### Results

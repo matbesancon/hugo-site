@@ -1,4 +1,4 @@
-baseurl = "https://mbesancon.github.io/"
+baseurl = "https://matbesancon.github.io/"
 title = "μβ"
 copyright = "&copy; 2017 Mathieu Besançon"
 theme = "academic"
@@ -134,7 +134,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/MathieuBesancon"
+    link = "//twitter.com/matbesancon"
 
   # [[params.social]]
   #   icon = "google-scholar"
@@ -144,7 +144,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/mbesancon"
+    link = "//github.com/matbesancon"
 
   [[params.social]]
     icon = "linkedin"

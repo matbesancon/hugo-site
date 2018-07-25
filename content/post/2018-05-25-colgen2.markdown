@@ -332,8 +332,8 @@ there, but we just compute them whenever needed.
 
 Hope you enjoyed reading this second post on the cutting stock problem. A
 Jupyter notebook summing up all code snippets can be found at
-[this repository](https://github.com/mbesancon/column_generation_jump).
-Feel free to [ping me](http://twitter.com/MathieuBesancon/) for feedback!
+[this repository](https://github.com/matbesancon/column_generation_jump).
+Feel free to [ping me](http://twitter.com/matbesancon) for feedback!
 
 ### Note on performance
 

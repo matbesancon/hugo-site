@@ -260,7 +260,7 @@ it in my PhD or side-hacks, especially combined to the
 used to build simulations and JuMP to optimize a cost function on top of the
 created model.  
 
-Thanks for reading, hit me on [Twitter](https://twitter.com/MathieuBesancon)
+Thanks for reading, get on touch on [Twitter](https://twitter.com/matbesancon)
 for feedback or questions ;)
 
 -----
@@ -273,7 +273,7 @@ changes are breaking the previous API, it can be worth it to check it out
 [Chris](https://twitter.com/ChrisRackauckas), the creator and main developer
 of DifferentialEquations.jl, gave me valuable tips on two
 points which have been edited in the article. You can find the thread
-[here](https://twitter.com/MathieuBesancon/status/941825252744507392).  
+[here](https://twitter.com/matbesancon/status/941825252744507392).  
 
 * Import aliases should use `const PackageAlias = PackageName` for type
 stability. This allows the compiler to generate efficient code.
@@ -281,8 +281,7 @@ Some further mentions of type-stability can be found in the
 [official doc](https://docs.julialang.org/en/latest/manual/performance-tips)
 * The second attempts uses non-diagonal noise, the ":additive" hint I passed
 to the solve function does not hold. Furthermore, the appropriate algorithm in
-that case is the [Euler-Maruyama method](https://en.wikipedia.org/wiki/Euler%E2%80%93Maruyama_method)
-.
+that case is the [Euler-Maruyama method](https://en.wikipedia.org/wiki/Euler%E2%80%93Maruyama_method).
 
 Many thanks to him for these tips, having such devoted and friendly developers
 is also what makes an open-source project successful.
