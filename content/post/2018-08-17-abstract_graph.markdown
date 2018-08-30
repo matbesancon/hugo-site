@@ -34,6 +34,7 @@ my clumsy live explanations on a laptop not handling dual-screen well
 
 The LightGraphs library is built to contain as few elements as possible to get
 anyone going with graphs. This includes:
+
 * The interface a graph type has to comply with to be used
 * Essential algorithms implemented by any graph respecting that interface
 * A simple, battery-included implementation based on adjacency lists
