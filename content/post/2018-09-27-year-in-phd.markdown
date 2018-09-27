@@ -15,15 +15,14 @@ image = ""
 --------
 
 So, it's been a bit more than a year since I took a flight to Montréal to
-start a PhD on mathematical optimization & game theory for demand response
-on smart grids.
+start a PhD on mathematical optimization & game theory for smart grids.
 
 After the rush of summer conferences, and my return to France
-for a part of my PhD at INRIA Lille, it's a good time to take a step back
-and think of what's been going on and what's coming. I'll also answer
-some common questions I have in a more thoughtful way than I can in a
-bar conversation. Maybe this can also help other PhD students seeing
-we are not in the same boat, but they all still look pretty much the same.
+for a part of my PhD at INRIA Lille, it is a good time to take a step back
+and think of what has been going on and what is coming next. I'll also answer
+some common questions I had in a more thoughtful way than I can in a
+bar conversation/family dinner. Maybe this can also help other PhD students seeing
+we are not in the same boat, but they all still look alike.
 
 ## So, when are you going to finish?
 
@@ -76,8 +75,8 @@ syndrome or procrastination.
 Yes, I'm living quite well thanks, I can even afford fancying
 my noodles, but let's dig deeper on the matter of €/$/£.  
   
-**Disclaimer**: my PhD is in applied maths & computer science, I know
-all majors are not financially comfortable.
+**Disclaimer**: my PhD is between applied maths & computer science, I know
+all majors are not that financially comfortable.
 
 ![](/img/posts/phd-year/noodles.png)[2]  
 
@@ -99,7 +98,7 @@ from my research institute, but one should keep in mind this is only on paper,
 the danger is to get the wrong mindset: **think of yourself as a single person
 carrying a project, not an employee**.  
 
-People often argue that they have a research director, which is their boss.
+People often argue that they have a research director, who is de facto their boss.
 I don't think this is the case, directors choose project proposals and people
 to carry them out (the order of this choice varies). They choose to invest
 time, effort and money from their structure into this person+project pair,
