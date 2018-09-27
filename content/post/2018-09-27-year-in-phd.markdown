@@ -24,6 +24,9 @@ some common questions I had in a more thoughtful way than I can in a
 bar conversation/family dinner. Maybe this can also help other PhD students seeing
 we are not in the same boat, but they all still look alike.
 
+**TL;DR**: a PhD is not studies in the sense you think, and it's not a job either,
+these mental models will not help much.
+
 ## So, when are you going to finish?
 
 I don't know, when are you going to finish your job? It doesn't look
