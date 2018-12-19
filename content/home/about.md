@@ -31,11 +31,11 @@ weight = 1
 
 # Biography
 
-I'm a PhD student in a double program between
+I'm a PhD candidate in a double program (*cotutelle*) between
 [Ecole Polytechnique of Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and the
 [INOCS team](https://team.inria.fr/inocs) at INRIA Lille, in mathematical
-optimization for energy systems (smart grids). I especially focus on
+optimization for smart grids. I especially focus on
 bilevel optimization problems and pricing for demand response.
 Other fields of interest include non-linear optimization & applications
 in engineering, integer optimization & decompositions and machine learning.
