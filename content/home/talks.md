@@ -5,7 +5,7 @@ date = "2016-04-20T00:00:00"
 draft = false
 
 title = "Recent & Upcoming Talks"
-subtitle = ""
+subtitle = "The talks I gave in academic conferences are listed in the corresponding Project item"
 widget = "talks"
 
 # Order that this section will appear in.

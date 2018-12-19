@@ -40,4 +40,4 @@ view = 1
 
 +++
 
-Different projects, open-source and (hope soon) academic.
+Different projects, open-source and academic.
