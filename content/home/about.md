@@ -12,11 +12,13 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
+    "Bilevel Optimization",
     "Energy systems",
+    "Game Theory",
+    "Mathematical Optimization",
+    "Smart Grids",
     "Data Science",
-    "Optimization",
-    "Machine Learning",
-    "Smart Grids"
+    "Machine Learning"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -32,9 +34,12 @@ weight = 1
 I'm a PhD student in a double program between
 [Ecole Polytechnique of Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and the
-[INOCS team](https://team.inria.fr/inocs) at INRIA Lille, in applied
-mathematics for energy systems (smart grids). Other fields of
-interest include data science, machine learning, signal processing.
+[INOCS team](https://team.inria.fr/inocs) at INRIA Lille, in mathematical
+optimization for energy systems (smart grids). I especially focus on
+bilevel optimization problems and pricing for demand response.
+Other fields of interest include non-linear optimization & applications
+in engineering, integer optimization & decompositions and machine learning.
 Before that I worked in various industries, from an IoT startup to steel
-manufacturing and studied at the [UTC](https://www.utc.fr) and (a bit) at
+manufacturing. I did my joint Bachelor-Master in Process Engineering at
+the [UTC](https://www.utc.fr) with a semester at
 the [TUBS](https://www.tu-braunschweig.de/?lang=en).
