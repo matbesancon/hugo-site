@@ -61,8 +61,8 @@ is the vector composed of one triplet:
 
 In Julia, the expense information can be translated to a structure:
 {{< highlight julia >}}
-User = Int
-GraphCoin = Float16
+const User = Int
+const GraphCoin = Float16
 struct Expense
     payer::User
     amount::GraphCoin
@@ -133,7 +133,7 @@ is owed in net from a user to another:
 
 {{< highlight julia >}}
 """
-    Builds the matrix of net owed GraphCoins
+Builds the matrix of net owed GraphCoins
 """
 function compute_net_owing(expenses::Vector{Expense}, nusers::Int)
     owing_matrix = zeros(GraphCoin, nusers, nusers)
@@ -156,7 +156,7 @@ function compute_net_owing(expenses::Vector{Expense}, nusers::Int)
             end
         end
     end
-    return net_owing::Matrix{GraphCoin}
+    return net_owing
 end
 {{< /highlight >}}
 
