@@ -12,7 +12,7 @@ summary = "Formulating the TLOU price-setting as a bilevel optimization problem"
 image_preview = ""
 
 # Tags: can be used for filtering projects.
-tags = ["academic", "optimization", "energy"]
+tags = ["academia", "optimization", "energy"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = ""
