@@ -1,7 +1,7 @@
 +++
 date = 2018-12-27
 draft = false
-tags = ["engineering"]
+tags = ["engineering", "julia"]
 title = "Winter warm-up: toy models for heat exchangers"
 summary = """
 
@@ -51,13 +51,13 @@ In any layer $[x, x + \delta x]$, the heat exchange is equal to:
 $$\delta \dot{Q} = h \cdot (u_2(x) - u_1(x)) \cdot \delta x$$
 with $h$ a coefficient depending on the wall heat exchange properties.
 
-Moreover, the variation in internal energy of the cold fluid is equal to
+Moreover, the variation in internal energy of the hot flow is equal to
 $\delta \dot{Q}$ and is also expressed as:
 
 $$ c_2 \cdot \dot{m}_2 \cdot (u_2(x+\delta x) - u_2(x)) $$
 $c_2$ is the calorific capacity of the hot flow and  $\dot{m}_2$ its
 mass flow rate. The you can check that the given expression is a power.
-The same expressions apply to the cold fluid.
+The same expressions apply to the cold flow.
 Let us first assume the following:
 
 $$c_2 \cdot \dot{m}_2 = c_1 \cdot \dot{m}_1$$
@@ -65,6 +65,7 @@ $$c_2 \cdot \dot{m}_2 = c_1 \cdot \dot{m}_1$$
 {{< highlight julia>}}
 import DifferentialEquations
 const DiffEq = DifferentialEquations
+using Plots
 
 function parallel_exchanger(du,u,p,x)
     h = p[1] # heat exchange coefficient
@@ -165,7 +166,7 @@ between cell $k$ and $k+1$ for the cold flow is equal to the loss of
 internal energy of the hot flow from cell $k+1$ to cell $k$. These differences
 come from heat exchanged, expressed as:
 
-$$\dot{Q}_k = h \cdot dx \cdot (u\_{2,k+1} - u\_{1,k}) $$
+$$\dot{Q}_k = h \cdot \Delta x \cdot (u\_{2,k+1} - u\_{1,k}) $$
 $$\dot{Q}_k = \dot{m}_1 \cdot c_1 \cdot (u\_{1,k+1} - u\_{1,k}) $$
 $$\dot{Q}_k = \dot{m}_2 \cdot c_2 \cdot (u\_{2,k+1} - u\_{2,k}) $$
 
@@ -174,8 +175,8 @@ a loss for the hot flow. Again we use the simplifying assumption of
 equality of the quantities:
 $$ \dot{m}_i \cdot c_i $$
 
-Our model only depends on the number of discretization steps $n$ and transfer
-coefficient $h$.
+Our model only depends on the number of discretization steps $n$
+and transfer coefficient $h$.
 {{< highlight julia>}}
 function discrete_crossing(n, h; itermax = 50000)
     u1 = Matrix{Float64}(undef, itermax, n)
@@ -193,6 +194,20 @@ function discrete_crossing(n, h; itermax = 50000)
     end
     (u1,u2)
 end
+{{< /highlight >}}
+
+{{< highlight julia>}}
+const (a1, a2) = discrete_crossing(500, 0.1)
+const x0 = range(0.0, length = 500, stop = L)
+
+p = plot(x0, a1[end,:], label = "u1 final", legend = :topleft)
+plot!(p, x0, a2[end,:], label = "u2 final")
+for iter in (100, 500, 100)
+    global p
+    plot!(p, x0, a1[iter,:], label = "u1 $(iter)")
+    plot!(p, x0, a2[iter,:], label = "u2 $(iter)")
+end
+xlabel!("x (m)")
 {{< /highlight >}}
 
 We can observe the convergence of the solution at different iterations:
@@ -248,6 +263,7 @@ for ratio in (0.1,0.5)
     plot!(p, x0, r1[end,:], label = "u1 ratio $(ratio)")
     plot!(p, x0, r2[end,:], label = "u2 ratio $(ratio)")
 end
+xlabel!("x (m)")
 {{< /highlight >}}
 
 <img src="/img/posts/heatex/ratio_variation.svg">
@@ -280,6 +296,10 @@ The German equivalent *Verfahrenstechnik* has been used for decades and
 *Génie des Procédés* is now considered a norm in most French-speaking
 universities and [consortia](https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Fran%C3%A7aise_de_G%C3%A9nie_des_Proc%C3%A9d%C3%A9s).
 
+
+--------
+
+Edit: thanks BYP for the sharp-as-ever proofreading
 
 --------
 
