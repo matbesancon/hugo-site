@@ -202,7 +202,7 @@ const x0 = range(0.0, length = 500, stop = L)
 
 p = plot(x0, a1[end,:], label = "u1 final", legend = :topleft)
 plot!(p, x0, a2[end,:], label = "u2 final")
-for iter in (100, 500, 100)
+for iter in (100, 500)
     global p
     plot!(p, x0, a1[iter,:], label = "u1 $(iter)")
     plot!(p, x0, a2[iter,:], label = "u2 $(iter)")
