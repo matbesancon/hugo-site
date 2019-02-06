@@ -23,9 +23,9 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Master of Science in Process Engineering"
-  institution = "University of Technology of Compiègne"
-  year = 2016
+  course = "Joint Bachelor & Master of Science in Process Engineering"
+  institution = "University of Technology of Compiègne (UTC), France"
+  year = "2011-2016"
 
 +++
 
@@ -34,12 +34,14 @@ weight = 1
 I'm a PhD candidate in a double program (*cotutelle*) between
 [Ecole Polytechnique of Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and the
-[INOCS team](https://team.inria.fr/inocs) at INRIA Lille, in mathematical
+[INRIA Lille](https://team.inria.fr/inocs), in the INOCS team, in mathematical
 optimization for smart grids. I especially focus on
 bilevel optimization problems and pricing for demand response.
 Other fields of interest include non-linear optimization & applications
-in engineering, integer optimization & decompositions and machine learning.
+in engineering, integer optimization & decompositions, game theory and statistical learning.
 Before that I worked in various industries, from an IoT startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) with a semester at
-the [TUBS](https://www.tu-braunschweig.de/?lang=en).
+the [TUBS](https://www.tu-braunschweig.de/?lang=en).  
+
+My academic CV is available upon request.
