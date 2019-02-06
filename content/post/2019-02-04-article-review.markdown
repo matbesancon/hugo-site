@@ -19,7 +19,7 @@ by editors for reviewing articles others have written. It may seem like a
 daunting task, evaluating the work someone else put several months to
 prepare, code, write, correct and submit.
 
-**Disclaimer**: to preserve the anonymity of the peer reviews I made and am
+**Disclaimer**: to preserve the anonymity of the reviews I made and am
 making, all examples I give below are made up.
 
 The main phases of my reviewing process are:
@@ -32,17 +32,19 @@ The main phases of my reviewing process are:
 
 ## What is this about? Can I review it?
 
-After getting the manuscript, I my screening phase consists in
-reading only these elements:
+After receiving the invitation and getting the manuscript, my screening phase
+consists in reading only these three elements:
+
 - Title
 - Abstract
 - Keywords
 
-At that point, I roughly know if it is relevant for both the
-journal and me that I review it. If I feel way out of scope, I'll reach out
-to the editor. I will also quickly check the authors to make sure I do not have
-a conflict of interests with any of them, without looking them up on the internet
-of course, the goal is to avoid bias if I know them at a personal level.
+At that point, I roughly know if it is relevant for both the journal and me
+that I review it. If I feel way out of scope, I'll reach out to the editor.
+I will also quickly check the name of the authors to make sure I do not have
+a conflict of interests with any of them, without looking them up on the
+internet of course, the goal is to avoid bias if I know them at a personal level.
+
 **Note**: Since this only took a quick screening, it can be done in a day or two,
 letting the reviewer know too late that you will not review increases
 the time to publication which is bad for the author, the journal and scientific
@@ -71,7 +73,7 @@ I might be familiar with the application (power systems) and game-theoretical
 considerations in such domain, but without being an expert in SDP and even less
 bundle methods. This is not a reason to refuse the role of reviewer.
 
-However, not being profficient on a component can introduce a bias in the
+However, not being proficient on a component can introduce a bias in the
 review by putting the reviewer on the defensive:
 
 > "why do the authors need all this fuss with this thing I've never heard of,
@@ -104,7 +106,7 @@ introduced properly. Two considerations play a role for the quality of
 the paper for its ease of understanding:
 
 1. How long is the queue at any point in the paper? Does it introduce too much cognitive load?
-2. How long is the distance between the appearence of an element in the queue? (the interrogation moment) and its removal (the aha moment)
+2. How long is the distance between the appearance of an element in the queue? (the interrogation moment) and its removal (the aha moment)
 
 The second point is easy to solve, just recommend introducing the concept
 before the place in the text where the interrogation appeared.
@@ -115,24 +117,24 @@ reducing the overall cognitive load at any moment for the reader.
 ## Thematic read & writing the recommendations
 
 After the first reading round, I usually have some ideas about what are the key
-axes of the review, I can start writing up the review by all the small details
+axes of the review, I can start writing it up with all the small details
 (typos, clumsy or vague phrasing, etc), all that is not on the structure nor on
 the content. A good rule of thumb is that those minor corrections are limited
-to few words in one sentence.
+to few words in just one sentence.
 After that, I write down different main axes, as for instance:
 "this step of the methodology section is not detailed enough" and quote
 either precise points in the text where the problem arises from and/or
 recommendations for fixing it: "this or that would make the article to be reproducible".
 The deeper a problem is, the more discussion it brings, the goal is not to let
-the authors stuck with a blind comment, see the following examples:
+the authors stuck with a blind comment, see the following examples nobody likes reading:
 
 > "Some steps in Section III seem incorrect"
 
-How much does it cost to the reviewer to point out where exactly?
+How much does it cost to the reviewer to point out where and why exactly?
 
 > "The authors did not manage to highlight a significant part of the literature"
 
-On which topic? What is not covered? Do you mean the authors did not cite your article?  
+On which topic? What is not covered? Do you mean the authors did not cite **your** article?
 
 Only after these last points am I 100% certain of the final recommendation I
 will give for the manuscript, the usual options are:
@@ -143,15 +145,15 @@ will give for the manuscript, the usual options are:
 
 After forming this opinion, if I am not too late on the deadline, I will
 let myself some time off the review (a few days), and then come back to what
-I wrote to be sure every comment can be understood and used by the authors for
-their work on the paper. Also, I want to be sure not to have written anything
+I wrote to be sure every comment can be understood and used by the authors to
+improve the paper. Also, I want to be sure not to have written anything
 too rash. Nobody wants to be [that](https://twitter.com/thirdreviewer)
 [reviewer](https://twitter.com/YourPaperSucks).
 
 ## Conclusion
 
 Even though peer review is considered a pillar of modern research, it has its
-history, quality and flaws, and is fundamentally made by human beings and
+history, qualities and flaws, and is fundamentally made by human beings and
 does not systematically reflect a universal truth; that should be kept in mind
 at all time. Also, the scientific communities should keep challenging it by
 making it evolve and experimenting [new ways](https://elifesciences.org/articles/36545)
@@ -159,7 +161,7 @@ of [carrying it out](http://www.theoj.org/), addressing some key
 [flaws](http://www.immpressmagazine.com/peer-review-is-broken/). Note that I do
 not say the solutions presented in these articles are the ground truth,
 all I am stating is that it is worth opening the discussion, which academia
-is not doing much at the moment.
+is not doing much at the moment.  
 
 Maybe you have other tips for reviewing papers, how do you improve your process?
 Which points were too domain-dependent / idealistic? (I did warn it was a naive view)
@@ -167,7 +169,7 @@ Reach out any way you prefer, [Twitter](https://twitter.com/matbesancon),
 [email](/#contact).
 
 --------
-
+[1]
 Source for the cover image:
 *Journal des Savants* or *Journal Des Sçavans* in old French, considered the earliest scientific journal.
 https://jamesgray2.me/2016/09/06/le-journal-des-savants-1681-1699/

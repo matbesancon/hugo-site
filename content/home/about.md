@@ -18,7 +18,7 @@ weight = 1
     "Mathematical Optimization",
     "Smart Grids",
     "Data Science",
-    "Machine Learning"
+    "Statistical Learning"
   ]
 
 # List your qualifications (such as academic degrees).
