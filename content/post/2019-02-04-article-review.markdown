@@ -46,7 +46,7 @@ a conflict of interests with any of them, without looking them up on the
 internet of course, the goal is to avoid bias if I know them at a personal level.
 
 **Note**: Since this only took a quick screening, it can be done in a day or two,
-letting the reviewer know too late that you will not review increases
+letting the editor know too late that you will not review increases
 the time to publication which is bad for the author, the journal and scientific
 publication in general.
 
