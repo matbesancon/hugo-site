@@ -14,7 +14,7 @@ image = ""
 
 --------
 
-While I am reading books, lots of thoughts come and go, especially if the subject
+While reading books, lots of thoughts come and go, especially if the subject
 resonates and is connected to topics of interest. If the book is a
 novel or other fiction, I try to keep these thoughts away to remain in the
 universe and story. For non-fiction though, some of these thoughts constitute
@@ -26,11 +26,11 @@ and its institutions.
 
 ## Changing the narrative
 
-Main point and argument of the book is brilliant: re-trace the facts
+The main point and argument of the book is brilliant: re-trace the facts
 about the development of some technologies, companies, industries to challenge
-the established, implicit or explicit narrative. In that case, the
-narrative is the sacred effect of the market for building today's greatest
-achievements.
+the established, implicit or explicit narrative about the state's role.
+In that case, the narrative is the sacred effect of the market and individual
+entrepreneurs for building today's greatest achievements.
 
 ## The unexpected HR argument
 
