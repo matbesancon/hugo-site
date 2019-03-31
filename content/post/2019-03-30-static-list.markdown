@@ -88,7 +88,32 @@ One way there might be around this is macros or replacing sub-typing with
 another mechanism. For the macro-based approach,
 [ComputedFieldTypes.jl](https://github.com/vtjnash/ComputedFieldTypes.jl)
 does exactly that. More discussion on computed type parameters in
-[1] and [2].
+[1] and [2].  
+
+**Edit**: using integer type parameters can be achieved using *ComputedFieldTypes.jl* as such:
+
+{{< highlight julia>}}
+julia> using ComputedFieldTypes
+
+julia> abstract type StaticList{T,L} end
+
+julia> struct Nil{T} <: StaticList{T,0} end
+
+julia> @computed struct Cons{T,L} <: StaticList{T,L}
+           h::T
+           t::StaticList{T,L-1}
+           function Cons(v::T, t::StaticList{T,L0}) where {T,L0}
+               L = L0+1
+               new{T,L}(v,t)
+           end
+       end
+
+julia> Cons(3, Nil{Int}())
+Cons{Int64,1,0}(3, Nil{Int64}())
+
+julia> Cons(4, Cons(3, Nil{Int}()))
+Cons{Int64,2,1}(4, Cons{Int64,1,0}(3, Nil{Int64}()))
+{{< /highlight >}}
 
 # Recursive natural numbers
 
