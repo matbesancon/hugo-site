@@ -19,7 +19,7 @@ lists for which the size is known at compile-time. This is inspired by
 a [post](https://aerodatablog.wordpress.com/2019/03/03/a-typedlist-in-scala/#joe_barnes_talk)
 on a Scala equivalent but will take different roads to see more than a plain port.
 Of course, this implementation is not that handy nor efficient but
-is mostly meant to explore the possibilities of the type system,
+is mostly meant to push the limits of the type system,
 especially a trick of using recursive types as values
 (replacing a dependent type system).
 Some other references:
@@ -40,8 +40,9 @@ abstract type MyList{T} end
 
 Some types are however parametrized on other things, if we look at the
 definition of `AbstractArray` for example:
->   AbstractArray{T,N}
->  Supertype for N-dimensional arrays (or array-like types) with elements of type T.
+
+>		AbstractArray{T,N}
+>	Supertype for N-dimensional arrays (or array-like types) with elements of type T.
 
 The two type parameters are another type `T` and and integer `N` for the
 dimensionality (tensor rank). The only constraint for a value to be
@@ -50,6 +51,7 @@ with `isbitstype`.
 
 This looks great, we could define our StaticList
 directly using integers.
+
 {{< highlight julia>}}
 """
 A static list of type `T` and length `L`
@@ -114,6 +116,9 @@ Cons{Int64,1,0}(3, Nil{Int64}())
 julia> Cons(4, Cons(3, Nil{Int}()))
 Cons{Int64,2,1}(4, Cons{Int64,1,0}(3, Nil{Int64}()))
 {{< /highlight >}}
+
+This might be the neatest option for building the `StaticList`.
+
 
 # Recursive natural numbers
 
