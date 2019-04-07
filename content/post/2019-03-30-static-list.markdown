@@ -44,7 +44,7 @@ definition of `AbstractArray` for example:
 >		AbstractArray{T,N}
 >	Supertype for N-dimensional arrays (or array-like types) with elements of type T.
 
-The two type parameters are another type `T` and and integer `N` for the
+The two type parameters are another type `T` and integer `N` for the
 dimensionality (tensor rank). The only constraint for a value to be
 an acceptable type parameter is to be composed of plain bits, complying
 with `isbitstype`.  
