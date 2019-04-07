@@ -4,6 +4,7 @@ draft = false
 tags = ["julia", "optimization", "jump", "graph"]
 title = "Picking different names with integer optimization"
 summary = """
+Making social events easier as a graph problem.
 """
 math = true
 
