@@ -48,9 +48,10 @@ $ E = $ {$ (i,j) | i \in $ {$ 1..|V| $}$, j \in ${$ 1..i-1 $}}
 
 It's an integer problem with a quadratic number of variables and constraints.
 Some other formulations have been proposed, and there may be a specific structure
-to exploit given that we have a complete graph, but for the moment it will do.  
+to exploit given that we have a complete graph.
+For the moment though, this generic formulation will do.  
 
-## Implementing the model with Julia
+## A Julia implementation
 
 What we want is a function taking a collection of names and returning which
 are selected. The first thing to do is build this distance matrix.
@@ -132,12 +133,13 @@ $$\max\_{x,y} d $$
 subject to:
 $$ y\_{ij} \Rightarrow d \leq c\_{ij} \,\, \forall (i,j) \in E$$
 $$ 2y\_{ij} \leq x\_i + x\_j \forall (i,j) \in E $$
+$$ \sum\_{i \in V} x\_i = k $$
 
 Depending on the solver support, the indicator constraint can be modelled directly,
-with big M or SOS1 constraints.  
+with big M or SOS1 constraints. This remains harder than the initial model.  
 
 Special thanks to Yuan for bringing out the discussion which led to this
-post.
+post, and to BYP for the feedback.
 
 --------
 
