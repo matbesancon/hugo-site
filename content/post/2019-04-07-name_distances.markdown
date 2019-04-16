@@ -30,7 +30,7 @@ it will do the trick for now.
 This sounds like a problem representable as a complete graph.
 The names are the vertices, and the weight associated with each edge $(i,j)$
 is the distance between the names of the nodes. We want to take a subset
-of $k$ nodes, such that the sum of edge weights for the induced subgraph
+of $k$ nodes, such that the sum of edge weights for the induced sub-graph
 is maximum. This is therefore a particular case of maximum (edge) weight clique
 problem over a complete graph, which has been investigated in [1, 2] among others.
 
@@ -133,7 +133,7 @@ $$\max\_{x,y} d $$
 subject to:
 $$ y\_{ij} \Rightarrow d \leq c\_{ij} \,\, \forall (i,j) \in E$$
 $$ 2y\_{ij} \leq x\_i + x\_j \forall (i,j) \in E $$
-$$ \sum\_{i \in V} x\_i = k $$
+$$ \sum\_{(i,j) \in E} y\_{ij} = k\cdot (k-1) $$
 
 Depending on the solver support, the indicator constraint can be modelled directly,
 with big M or SOS1 constraints. This remains harder than the initial model.  

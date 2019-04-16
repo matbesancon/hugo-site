@@ -42,6 +42,8 @@ in engineering, integer optimization & decompositions, game theory and statistic
 Before that I worked in various industries, from an IoT startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) with a semester at
-the [TUBS](https://www.tu-braunschweig.de/?lang=en).  
+the [TUBS](https://www.tu-braunschweig.de/?lang=en).
+On a personal note, I read non-fictions, generally on economic policy, strategy
+and entrepreneurship, and enjoy games in various formats (tabletop, video, board, card).  
 
 My academic CV is available upon request.
