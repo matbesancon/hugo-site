@@ -32,13 +32,15 @@ weight = 1
 # Biography
 
 I'm a PhD candidate in a double program (*cotutelle*) between
-[Ecole Polytechnique of Montréal](https://www.polymtl.ca),
-at the [GERAD lab](https://www.gerad.ca/en/) and the
-[INRIA Lille](https://team.inria.fr/inocs), in the INOCS team, in mathematical
-optimization for smart grids. I especially focus on
-bilevel optimization problems and pricing for demand response.
-Other fields of interest include non-linear optimization & applications
-in engineering, integer optimization & decompositions, game theory and statistical learning.
+[École Polytechnique of Montréal](https://www.polymtl.ca),
+at the [GERAD lab](https://www.gerad.ca/en/) and
+Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
+& the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,
+in mathematical optimization for smart grids.
+I especially focus on bilevel optimization problems and
+pricing for demand response. Other fields of interest include
+non-linear optimization & applications in engineering,
+integer optimization & decompositions, game theory and statistical learning.
 Before that I worked in various industries, from an IoT startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) with a semester at
