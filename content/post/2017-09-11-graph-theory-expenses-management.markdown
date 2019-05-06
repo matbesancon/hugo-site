@@ -220,7 +220,7 @@ function build_graph(net_owing::Matrix{GraphCoin})
 end
 {{< /highlight >}}
 
-This function builds our graph structure and all informations we need attached.
+This function builds our graph structure and all data we need attached.
 
 ### Solving the flow problem
 

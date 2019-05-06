@@ -296,7 +296,7 @@ Thanks for reading!
 2018-01-31:  
 I updated this post to adapt to the new DifferentialEquations.jl
 interface. I also used Optim.jl for the two cases without BlackBoxOptim.jl,
-which is very nice but not neccesary for differentiable functions.  
+which is very nice but not necessary for differentiable functions.  
   
 Special thanks to [Patrick](https://github.com/pkofod) for his quick response
 and help with `Optim.jl`.

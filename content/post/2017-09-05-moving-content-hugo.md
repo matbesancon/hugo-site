@@ -13,7 +13,7 @@ image = "posts/hiking.jpg"
 +++
 
 Last weeks have been pretty intense. I officially left Equisense and  started
-a joined PhD project between INRIA Lille and Ecole Polytechnique Montreal.
+a joined PhD project between INRIA Lille and École Polytechnique Montreal.
 I had been preparing for this fresh start for several months and also wanted
 to evolve in my content creation process.
 
@@ -21,7 +21,7 @@ to evolve in my content creation process.
 
 I started writing articles to keep track of my learning paths on various topics,
 including numerical techniques, data analysis and programming. My first articles
-were either plain or Rmarkdown-generated Markdowns on a Github repository.
+were either hand-written or RMarkdown-generated Markdown files on a GitHub repository.
 
 As I was slowly moving from R to Python, Jupyter notebook became pretty handy
 to mix paragraphs, code snippets, results and charts. It also forced me to
@@ -29,7 +29,7 @@ quit declaring and modifying variables, an annoying habit got from always
 having a REPL and text editor bundled in most scientific computing IDEs
 (Matlab, Scilab, RStudio, Jupyter).
 
-Great, the articles were not centralized though but split into their Github
+Great, the articles were not centralized though but split into their GitHub
 repositories, you have to admit this is not the most user-friendly browsing
 experience. I found several blogs running on [Jekyll](https://jekyllrb.com)
 and I decided to give it a try. For someone who is not fond of struggles with
@@ -62,7 +62,7 @@ I really enjoy the writing experience on Medium, with some drawbacks.
 Medium's design is very opinionated, that's a part of what makes it a experience.
 However, leaving some choices on key topics is essential (at least to me) on the
 content-creation side.
-I believe this should be the case on any two-sided plateform:
+I believe this should be the case on any two-sided platform:
 **be opinionated on the user-side, leave flexibility on the creator side.**
 
 The perfect example is the bright screen. It ensures the Medium experience is
