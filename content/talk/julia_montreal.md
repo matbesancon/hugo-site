@@ -1,7 +1,7 @@
 +++
-date = 2018-03-08
-time_start = 2018-03-08
-time_end = 2018-03-08
+date = 2018-03-08T00:00:00
+time_start = 2018-03-08T00:00:00
+time_end = 2018-03-08T00:00:00
 title = "Intro to package development in Julia"
 abstract = ""
 abstract_short = ""

@@ -36,7 +36,7 @@ filter_default = 0
 
 [[filter]]
   name = "Academic"
-  tag = ".academic"
+  tag = ".academia"
 
 [[filter]]
   name = "Other"

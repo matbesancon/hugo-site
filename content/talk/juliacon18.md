@@ -1,5 +1,7 @@
 +++
-date = 2018-08-09
+date = 2018-08-09T00:00:00
+time_start = 2018-08-09T00:00:00
+time_end = 2018-08-09T00:00:00
 title = "Graph interfaces, bespoke graphs for every occasion"
 abstract = ""
 abstract_short = ""
