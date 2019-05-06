@@ -1,5 +1,7 @@
 +++
 date = 2017-07-06
+time_start = 2017-07-06
+time_end = 2017-07-06
 title = "Golang in a multi-project, multi-platform team"
 abstract = ""
 abstract_short = ""

@@ -1,5 +1,7 @@
 +++
 date = 2018-09-20
+start_time = 2018-09-20
+end_time = 2018-09-20
 title = "Julia, programming model, type system and use cases"
 abstract = ""
 abstract_short = ""

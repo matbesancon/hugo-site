@@ -1,5 +1,7 @@
 +++
 date = 2018-11-21
+start_time = 2018-11-21
+end_time = 2018-11-21
 title = "Introduction to Julia and its ecosystems for optimization and modeling"
 abstract = ""
 abstract_short = ""
