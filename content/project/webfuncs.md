@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2018-01-10"
+date = 2018-01-10
 
 # Project title.
 title = "WebFuncs"

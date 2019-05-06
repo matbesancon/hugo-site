@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2018-12-18"
+date = 2018-12-18
 
 # Project title.
 title = "A Bilevel Framework for Optimal Price-Setting of Time-and-Level-of-Use Tariffs"

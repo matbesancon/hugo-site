@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2018-12-18"
+date = 2018-12-18
 
 # Project title.
 title = "JuliaStats contributions"

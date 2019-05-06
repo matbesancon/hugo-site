@@ -1,5 +1,5 @@
 +++
-date = "2018-11-21T00:00:00"
+date = 2018-11-21
 title = "Introduction to Julia and its ecosystems for optimization and modeling"
 abstract = ""
 abstract_short = ""

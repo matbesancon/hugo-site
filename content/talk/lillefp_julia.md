@@ -1,5 +1,5 @@
 +++
-date = "2018-09-20T00:00:00"
+date = 2018-09-20
 title = "Julia, programming model, type system and use cases"
 abstract = ""
 abstract_short = ""

@@ -1,5 +1,5 @@
 +++
-date = "2018-08-09T00:00:00"
+date = 2018-08-09
 title = "Graph interfaces, bespoke graphs for every occasion"
 abstract = ""
 abstract_short = ""
