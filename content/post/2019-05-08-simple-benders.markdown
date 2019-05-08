@@ -4,6 +4,7 @@ draft = true
 tags = ["optimization", "jump", "integer-optimization", "julialang"]
 title = "A take on Benders decomposition in JuMP"
 summary = """
+Cracking Benders decomposition, one cut at a time.
 """
 math = true
 
