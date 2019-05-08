@@ -45,7 +45,7 @@ enableGitInfo = true
   role = "PhD student in applied mathematics for energy systems"
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Ecole Polytechnique de Montréal", url = "https://polymtl.ca" }, {name = "INRIA", url = "https://inria.fr"}, {name = "Centrale Lille", url = ""}, {name = "GERAD", url = "https://gerad.ca"} ]
+  organizations = [ { name = "Polytechnique Montréal", url = "https://polymtl.ca" }, {name = "INRIA", url = "https://inria.fr"}, {name = "Centrale Lille", url = ""}, {name = "GERAD", url = "https://gerad.ca"}, {name = "Cristal", url = "https://www.cristal.univ-lille.fr/?lang=en"} ]
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "mathieu(dot)besancon(at)gmail(dot)com"
@@ -206,12 +206,12 @@ enableGitInfo = true
 
   [[params.social]]
     icon = "twitter"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//twitter.com/matbesancon"
 
   [[params.social]]
     icon = "github"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//github.com/matbesancon"
 
   [[params.social]]
@@ -221,7 +221,7 @@ enableGitInfo = true
 
   [[params.social]]
     icon = "quora"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//quora.com/profile/Mathieu-Besançon"
 
   [[params.social]]
@@ -231,7 +231,7 @@ enableGitInfo = true
 
   [[params.social]]
     icon = "linkedin"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//linkedin.com/in/mbesancon"
 
 # Navigation Links
@@ -264,18 +264,19 @@ enableGitInfo = true
   weight = 4
 
 [[menu.main]]
+  name = "Experience"
+  url = "#experience"
+  weight = 5
+
+[[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 5
+  weight = 6
 
 # [[menu.main]]
 #   name = "Teaching"
 #   url = "#teaching"
 #   weight = 5
-[[menu.main]]
-  name = "Experiences"
-  url = "#experiences"
-  weight = 6
 
 [[menu.main]]
   name = "Contact"
