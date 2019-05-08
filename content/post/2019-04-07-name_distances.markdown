@@ -1,7 +1,7 @@
 +++
 date = 2019-04-07
 draft = false
-tags = ["julia", "optimization", "jump", "graph"]
+tags = ["julia", "optimization", "jump", "graph", "integer-optimization"]
 title = "Picking different names with integer optimization"
 summary = """
 Making social events easier as a graph problem.

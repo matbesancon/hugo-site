@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2018-09-04"
+date = 2018-09-04
 
 # Project title.
 title = "Mixed continuous-discrete distributions"

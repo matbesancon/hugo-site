@@ -1,7 +1,7 @@
 +++
 date = 2018-05-30
 draft = false
-tags = ["julia", "modeling", "optimization", "integer-optimization","jump"]
+tags = ["julia", "optimization", "integer-optimization","jump"]
 title = "The cutting stock problem: part 2, solving with column generation"
 summary = """
 A column generation algorithm for the cutting width problem using Julia and JuMP
@@ -14,7 +14,7 @@ image = "posts/cutting_stock/sushi_cuts.jpg"
 
 --------
 
-In the [previous post]({{< relref "2018-05-23-colgen.markdown" >}}), 
+In the [previous post]({{< relref "2018-05-23-colgen.markdown" >}}),
 we explored a well-known integer optimization situation
 in manufacturing, the cutting stock problem. After some details on the
 decisions, constraints and objectives, we implemented a naive model in JuMP.

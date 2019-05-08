@@ -23,13 +23,14 @@ math = false
 
 +++
 
-[WebFuncs.jl](https://github.com/matbesancon/WebFuncs.jl) is a Julia project testing the language out of its natural
-scope. Having built quite a bit with Go and Python, I wanted to see if
+[WebFuncs.jl](https://github.com/matbesancon/WebFuncs.jl) is a project
+testing the Julia language out of its natural scope.
+Having played quite a bit with Go and Python, I wanted to see if
 the Julia ecosystem had tools for HTTP handling.
 
 The inspiration of a simple-to-use function server came from the
 [fx project](https://github.com/metrue/fx). Define your function, the
 package throws it as a server for you.
 
-The package has been accepted on Julia package repository and can be fetched
+The package has been accepted on the Julia package repository and can be fetched
 using `Pkg.add("WebFuncs")`.

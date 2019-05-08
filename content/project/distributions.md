@@ -3,7 +3,7 @@
 date = 2018-12-18
 
 # Project title.
-title = "JuliaStats contributions"
+title = "JuliaStats/Distributions.jl"
 
 # Project summary to display on homepage.
 summary = "Toolkit for statistical modeling in Julia"
