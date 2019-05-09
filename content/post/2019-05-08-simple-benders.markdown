@@ -235,6 +235,27 @@ cuts of each type. Finally, one "hack" I'm using is to give an arbitrary lower
 bound on the $\eta$ value, making it (almost) sure to have a bounded initial
 problem and thus a defined initial solution $y$.  
 
+We will re-use the small example from the lecture notes above:
+
+{{< highlight julia>}}
+function test_data()
+    c = [2., 3.]
+    A = [1 2;2 -1]
+    D = zeros(2, 1) .+ [1, 3]
+    b = [3, 4]
+    return SimpleBenders.SubProblemData(b, D, A, c)
+end
+
+data = test_data()
+# objective function on y
+f(v) = 2v[1]
+# initialize the problem
+m = Model(with_optimizer(SCIP.Optimizer))
+@variable(m, y[j=1:1] >= 0)
+# solve and voilà
+(m, y, cuts, nopt_cons, nfeas_cons) = SimpleBenders.benders_optimize!(m, y, data, () -> Clp.Optimizer(LogLevel = 0), f)
+{{< /highlight >}}
+
 The full code is available on
 [Github](https://github.com/matbesancon/SimpleBenders.jl), run it, modify it
 and don't hesitate to submit pull requests and issues, I'm sure there are :)
