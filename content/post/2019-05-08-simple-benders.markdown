@@ -208,7 +208,7 @@ function benders_optimize!(m::Model, y::Vector{VariableRef}, sd::SubProblemData,
         (res, α) = optimize!(dsp, ŷ)
         if res == :OptimalityCut
             @info "Optimality cut found"
-            if η0 ≥ dot(α, (dsp.data.b - dsp.data.D * y)̂)
+            if η0 ≥ dot(α, (dsp.data.b - dsp.data.D * ŷ))
                 break
             else
                 nopt_cons += 1
