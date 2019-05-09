@@ -1,7 +1,7 @@
 +++
 date = 2019-04-29
 draft = false
-tags = ["optimization", "jump", "functional", "python"]
+tags = ["optimization", "jump", "functional", "python", "julia"]
 title = "Variables are not values: types and expressions in mathematical optimization"
 summary = """
 Some digging in representations for optimization modelling

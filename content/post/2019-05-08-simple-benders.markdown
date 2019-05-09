@@ -1,7 +1,7 @@
 +++
 date = 2019-05-08
-draft = true
-tags = ["optimization", "jump", "integer-optimization", "julialang"]
+draft = false
+tags = ["optimization", "jump", "integer-optimization", "julia"]
 title = "A take on Benders decomposition in JuMP"
 summary = """
 Cracking Benders decomposition, one cut at a time.
@@ -12,7 +12,7 @@ math = true
 image = ""
 +++
 
-Last friday was a great seminar of the Combinatorial Optimization group in
+Last Friday was a great seminar of the Combinatorial Optimization group in
 Paris, celebrating the 85th birthday of Jack Edmonds, one of the founding
 researchers of combinatorial optimization, with the notable Blossom matching algorithm.
 {{< tweet 1124375711194722304 >}}
@@ -27,13 +27,13 @@ knowledge of the subject and play a bit with a simple implementation.
 
 # High-level idea
 
-Problem decomposition are used on large-scale optimization problems with a
+Problem decompositions are used on large-scale optimization problems with a
 particular structure. The decomposition turns a compact, hard-to-solve
-formulation into an easier one but of great size. In the case of Benders
-decomposition, great size means a number of constraints growing exponentially
+formulation into an easier one but of great size. In the case of Benders,
+great size means a number of constraints growing exponentially
 with the size of the input problem. Adding all constraints upfront would be too
-costly. Furthermore, generally, a small fraction of these constraints will be
-active in a final solution, the pattern used is to generate them incrementally,
+costly. Furthermore, in general, only a small fraction of these constraints will be
+active in a final solution, the associated algorithm is to generate them incrementally,
 re-solve the problem with the new constraint until no relevant constraint can
 be found anymore.
 
@@ -77,22 +77,23 @@ remind you of the *optimal value function* used to describe lower-level problems
 We will call $SP$ the sub-problem defined in the function $\phi$.
 
 The essence of Benders is to start from an outer-approximation (overly optimistic)
-by considering the $\phi$ lower limit, and then add cuts which progressively
-constrain the problem. The initial outer-approximation is:
+by replacing $\phi$ with a variable $\eta$ which might be higher than the min value,
+and then add cuts which progressively constrain the problem.
+The initial outer-approximation is:
 
-$$ \min\_{y,z} f(y) + z $$
+$$ \min\_{y,\eta} f(y) + \eta $$
 s.t. $$ G(y) \in \mathcal{S}$$
      $$ y \in \mathcal{Y} $$
 
-Of course since $z$ is unconstrained, the problem will start unbounded.
+Of course since $\eta$ is unconstrained, the problem will start unbounded.
 What are valid cuts for this? Let us define the dual of the sub-problem $SP$,
 which we will name $DSP$:
 $$ \max\_{\alpha} (b - Dy)^T \alpha  $$
 s.t. $$ A^T \alpha \leq c $$
      $$ \alpha \geq 0 $$
 
-Given that $z \geq min SP$, by duality, $z \geq max DSP$.
-Furthermore, by strong duality of linear problems, if $z = \min \max\_{y} DSP$,
+Given that $\eta \geq min SP$, by duality, $\eta \geq max DSP$.
+Furthermore, by strong duality of linear problems, if $\eta = \min \max\_{y} DSP$,
 it is exactly equal to the minimum of $\phi(y)$ and yields the optimal solution.
 
 One thing to note about the feasible domain of $DSP$, it does not depend on
@@ -112,13 +113,16 @@ solvers. Since the master and sub-problem resolutions are completely independent
 they can be solved in separated software components, even with different solvers.
 To highlight this, we will use [SCIP](https://github.com/SCIP-Interfaces/SCIP.jl)
 to solve the master problem and COIN-OR's [Clp](https://github.com/juliaopt/Clp.jl)
-to solve the sub-problem.
+to solve the sub-problem.  
 
-{{% alert note %}}
-Not all solvers handle unboundedness in the same way, which can lead to tricky
-behavior. This should be standardized in JuMP in the future with middle layers
-as LinQuadOptInterface.jl, but the tests failed consistently with other solvers.
-{{% /alert %}}
+We can start by importing the required packages:
+
+{{< highlight julia>}}
+using JuMP
+import SCIP
+import Clp
+using LinearAlgebra: dot
+{{< /highlight >}}
 
 ## Defining and solving dual sub-problems
 
@@ -144,7 +148,7 @@ end
 
 function DualSubProblem(d::SubProblemData, m::Model)
     α = @variable(m, α[i = 1:size(d.A, 1)] >= 0)
-    @constraint(m, d.A' * α .<= d.c)
+    @constraint(m, dot(d.A, α) .<= d.c)
     return DualSubProblem(d, α, m)
 end
 {{< /highlight >}}
@@ -159,7 +163,7 @@ the solution status of the dual sub-problem:
 {{< highlight julia>}}
 function JuMP.optimize!(sp::DualSubProblem, yh)
     obj = sp.data.b .- sp.data.D * yh
-    @objective(sp.m, Max, obj' * sp.α)
+    @objective(sp.m, Max, dot(obj, sp.α))
     optimize!(sp.m)
     st = termination_status(sp.m)
     if st == MOI.OPTIMAL
@@ -185,10 +189,10 @@ The main part of the resolution holds here in three steps.
 - If no, add the corresponding cut to the master problem, return to 2.
 
 {{< highlight julia>}}
-function benders_optimize!(m::Model, y::Vector{VariableRef}, sd::SubProblemData, sp_optimizer, f::Union{Function,Type})
+function benders_optimize!(m::Model, y::Vector{VariableRef}, sd::SubProblemData, sp_optimizer, f::Union{Function,Type}; eta_bound::Real = -1000.0)
     subproblem = Model(with_optimizer(sp_optimizer))
     dsp = DualSubProblem(sd, subproblem)
-    @variable(m, η)
+    @variable(m, η >= eta_bound)
     @objective(m, Min, f(y) + η)
     optimize!(m)
     st = MOI.get(m, MOI.TerminationStatus())
@@ -226,9 +230,14 @@ This allows for a prior flexible definition of constraints of the type:
 $$y \in \mathcal{Y}$$
 $$G(y) \in \mathcal{S}$$
 
-Also, we return the $\alpha$ values returned and the number of cuts of each type.
-The full code is available on [Github](https://github.com/matbesancon/SimpleBenders.jl),
-run it, modify it and don't hesitate to submit pull requests and issues.
+Also, we return the $\alpha$ values found by the sub-problems and the number of
+cuts of each type. Finally, one "hack" I'm using is to give an arbitrary lower
+bound on the $\eta$ value, making it (almost) sure to have a bounded initial
+problem and thus a defined initial solution $y$.  
+
+The full code is available on
+[Github](https://github.com/matbesancon/SimpleBenders.jl), run it, modify it
+and don't hesitate to submit pull requests and issues, I'm sure there are :)
 
 Benders is a central pillar for various problems in optimization, research is
 still very active to bring it to non-linear convex or non-convex sub-problems

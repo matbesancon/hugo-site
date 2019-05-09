@@ -1,7 +1,7 @@
 +++
 date = 2016-05-21
 draft = false
-tags = ["data-science", "engineering", "data"]
+tags = ["data-science", "engineering"]
 title = "Bringing data science to engineers"
 summary = """
 Thoughts as an engineer-by-training evolving towards data skills in a
@@ -90,7 +90,7 @@ understanding and controlling what's going on under the hood.
 
 There is a common vision of the engineers in several cultures, they are the
 handy people, able to answer most of your questions, master all techniques from
-nuclear power generation to biotechnologies. They are all supposed to be Tony
+nuclear power generation to bio-technologies. They are all supposed to be Tony
 Stark (or Elon Musk in a more realistic way). So their secret fear is not about
 being afraid of getting their job "automated" but more about a situation where
 they cannot handle their system anymore because a part of the decisions taken
@@ -143,8 +143,6 @@ for opportunity identification but to extend their "internal model", which can
 only be beneficial.
 
 ### Key examples
-
-
 
 These examples are taken from diverse projects, challenges and data sets
 including some personal ones. Each case study is addressed to specific targets.
