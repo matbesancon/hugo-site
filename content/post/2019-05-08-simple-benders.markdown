@@ -25,7 +25,7 @@ knowledge of the subject and play a bit with a simple implementation.
 
 {{% toc %}}
 
-# High-level idea
+## High-level idea
 
 Problem decompositions are used on large-scale optimization problems with a
 particular structure. The decomposition turns a compact, hard-to-solve
@@ -46,7 +46,7 @@ information to an optimization problem, which entails two components:
 Sounds familiar? Benders can be seen as the "dual twin" of the Dantzig-Wolfe
 decomposition I had played with in a [previous post]({{< ref "/post/2018-05-25-colgen2.markdown" >}}).
 
-# Digging into the structure
+## Digging into the structure
 
 Now that we have a general idea of the problem at hand, let's see the specifics.
 Consider a problem such as:
@@ -105,7 +105,7 @@ the sub-problem is not feasible for a $y$ solution. Briefly, this is equivalent
 to the dual being unbounded, it thus defines an extreme ray which must be cut
 out. For more details, you can check [these lecture notes](http://www.iems.ucf.edu/qzheng/grpmbr/seminar/Yuping_Intro_to_BendersDecomp.pdf).
 
-# A JuMP implementation
+## A JuMP implementation
 
 We will define a simple implementation using [JuMP](http://www.juliaopt.org/JuMP.jl/stable/),
 a generic optimization modeling library on top of Julia, usable with various
@@ -124,7 +124,7 @@ import Clp
 using LinearAlgebra: dot
 {{< /highlight >}}
 
-## Defining and solving dual sub-problems
+### Defining and solving dual sub-problems
 
 Let us store static sub-problem data in a structure:
 
@@ -177,7 +177,7 @@ function JuMP.optimize!(sp::DualSubProblem, yh)
 end
 {{< /highlight >}}
 
-## Iterating on the master problem
+### Iterating on the master problem
 
 The main part of the resolution holds here in three steps.
 
