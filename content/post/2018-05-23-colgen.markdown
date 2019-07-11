@@ -308,6 +308,13 @@ Hope you enjoyed it, if that's the case, I'll see you on the next article,
 we'll implement a *column generation* algorithm from scratch to solve it.
 If you have any question/remarks, feel free to [get in touch](http://twitter.com/matbesancon/).
 
+## Code and citation
+
+Found this post useful for your work? The corresponding repository
+is available on [GitHub](https://github.com/matbesancon/column_generation_jump),
+consider citing it using the following DOI *10.5281/zenodo.3329389*,
+the BibTeX entry is available on [Zenodo](https://zenodo.org/badge/latestdoi/130896714).
+
 ## Thanks
 
 Special thanks to [Soham](https://github.com/SohamTamba) and Aristide

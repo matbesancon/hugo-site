@@ -328,12 +328,19 @@ problems and play around them. Most optimization specific modeling languages
 are built around declarative features and get messy very quickly when
 introducing some logic (like column generation iterations). Developers
 could relate this technique to lazy value computation: we know all values are
-there, but we just compute them whenever needed.
+there, but we just compute them whenever needed.  
 
 Hope you enjoyed reading this second post on the cutting stock problem. A
 Jupyter notebook summing up all code snippets can be found at
-[this repository](https://github.com/matbesancon/column_generation_jump).
-Feel free to [ping me](http://twitter.com/matbesancon) for feedback!
+[this repository](https://github.com/matbesancon/column_generation_jump),
+feel free to [ping me](http://twitter.com/matbesancon) for feedback.
+
+## Code and citation
+
+Found this post useful for your work? The corresponding repository
+is available on [GitHub](https://github.com/matbesancon/column_generation_jump),
+consider citing it using the following DOI *10.5281/zenodo.3329389*,
+the BibTeX entry is available on [Zenodo](https://zenodo.org/badge/latestdoi/130896714).
 
 ### Note on performance
 
