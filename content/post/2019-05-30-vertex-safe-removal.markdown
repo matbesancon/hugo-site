@@ -52,10 +52,9 @@ it can be used out of the box with all algorithms built on *LightGraphs.jl*.
 The main concrete type presented by *LightGraphs.jl* is `SimpleGraph` and its
 directed counterpart `SimpleDiGraph`, only storing edges as adjacency lists,
 meaning vertices are just the integers from 1 to the length of the list.
-This means that in a graph with 6 vertices, deleting vertex 4 will put vertex 5
-in its place, and 6 at the place of the 5th. Luckily, the interface should
-allow us to build a graph type on top of another graph, re-implementing only
-vertex removal.
+This means that in a graph with 6 vertices, deleting vertex 4 will re-label vertex 6
+as 4. Hopefully, the interface should allow us to build a graph type on top of another graph,
+re-implementing only vertex removal.
 
 ## A simple vertex-safe implementation
 
@@ -254,3 +253,9 @@ interface more explicit. By keeping the two functions, we avoid having to use
 I have corrected various functions following Pankaj's much needed
 [Pull Request](https://github.com/matbesancon/VertexSafeGraphs.jl/pull/2)
 on the corresponding repository, thank!
+
+## Edit 3
+
+Seth Bromberger spotted an error in my assumptions,
+We use swap-and-pop is used for vertex removal, so the last
+vertex will take the place of the removed one in the re-labelling.
