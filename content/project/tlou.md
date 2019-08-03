@@ -27,13 +27,6 @@ math = false
 The pre-print of the presented work can be found on [arXiv](https://arxiv.org/abs/1809.00512).
 The manuscript has also been submitted and should be published in the coming months.
 
-This project was presented at several conferences, including:
-
-* Optimization days, Montréal, May 2018
-* NSERC Energy Storage Technology Network (NEST-Net) annual meeting, Toronto, June 2018.
-It was under the network's project *Optimal Brokerage Models for the Grid Integration of Energy Storage*.
-* JuliaCon, London, August 2018 (poster)
-
 An open-source Julia package has been released
 [here](https://github.com/matbesancon/TLOU.jl) for other researchers to
 model Time-and-Level-of-Use tariffs.
