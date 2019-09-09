@@ -53,7 +53,7 @@ Consider a problem such as:
 $$ \min\_{x,y} f(y) + c^T x $$
 s.t. $$ G(y) \in \mathcal{S}$$
      $$ A x + D y \geq b $$
-     $$ x \in \mathbb{R}^{n_1}, y \in \mathcal{Y} $$
+     $$ x \in \mathbb{R}^{n_1}\_{+}, y \in \mathcal{Y} $$
 
 We will not consider the constraints specific to $y$ (the first row) nor the
 $y$-component of the objective. The key assumption of Benders is that if the $y$
