@@ -25,7 +25,7 @@ split from the experimental settings.
 Different methods and implementations manipulate different data
 structures to represent the same optimization problem.
 Reformulating optimization problems has often been the role and responsibility
-of the practitionner, transforming the application problem at hand to fit a
+of the practitioner, transforming the application problem at hand to fit a
 standard form that a given solver accepts as input for a solution method.
 Mapping a user-facing representation of an object into an internal
 representation is the role and description of compilers. For mathematical
@@ -39,7 +39,7 @@ The main direct user-facing language for this is [JuMP](https://github.com/Julia
 which has already been covered in multiple formats [^2][^3].
 The problem has been read from the user code but not reformulated yet.
 In compiler terms, MOI appears after the parsing phase: the user code has been
-reckognized and transformed into corresponding internal structures.
+recognized and transformed into corresponding internal structures.
 
 {{% toc %}}
 
@@ -255,7 +255,7 @@ added_constraint_types(::Type{MyBridge2})
 end
 {{< /highlight >}}
 
-What these method implementations delcare is the following structure:
+What these method implementations declare is the following structure:
 
 ```
 graph LR;
@@ -327,7 +327,7 @@ type shortest path is used.
 MathOptInterface.jl may be one of the greatest strength of the JuMP ecosystem:
 setting the abstractions right allows the developers to integrate more exotic
 constraint types in a consistent manner.
-Optimization practitionners do not limit themselves to linear and
+Optimization practitioners do not limit themselves to linear and
 mixed-integer problems, following improvements in performance and variety
 of solvers, see [^4] for the motivation and structure of MOI, and recent
 developments around it presented at JuliaCon 2019.
