@@ -35,6 +35,10 @@ highlight_style = "monokai"  # For supported styles, see https://cdnjs.com/libra
 #   If false, you can enable it locally on a per page basis.
 math = false
 
+# Enable diagram rendering? true/false
+#   If false, you can enable diagrams on a per page basis as needed.
+diagram = true
+
 # Privacy pack
 #   Show a cookie consent message to visitors
 #   Anonymize IP in Google Analytics (if enabled)
