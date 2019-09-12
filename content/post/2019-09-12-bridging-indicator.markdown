@@ -317,7 +317,7 @@ Without reasoning on specific constraints, it is hard to picture which
 reformulation is efficient.  
 
 The current bridging decision is based on a shortest-path heuristic.
-One bridge is considered a distance one, and a shortest path from all
+One bridge is considered a unit distance, and a shortest path from all
 user-facing constraints to all solver-compatible constraints is determined.
 More precisely, a [Bellman-Ford](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm)
 type shortest path is used.
@@ -329,8 +329,9 @@ setting the abstractions right allows the developers to integrate more exotic
 constraint types in a consistent manner.
 Optimization practitioners do not limit themselves to linear and
 mixed-integer problems, following improvements in performance and variety
-of solvers, see [^4] for the motivation and structure of MOI, and recent
-developments around it presented at JuliaCon 2019.
+of solvers, the recent JuMP session at JuliaCon 2019[^4] lays out the
+motivation and structure of MOI, and recent
+developments it enabled.
 The type-based `Function in Set` structure keeps the underlying
 machinery familiar to both optimization scientists formulating problems in a close
 fashion and Julia programmers leveraging multiple dispatch.  
