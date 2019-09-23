@@ -18,20 +18,21 @@ image = ""
 The progress of mathematical optimization as a domain has been tightly
 coupled with the development and improvement of computational methods and
 their implementations as computer programs. As observed in the recent
-MIPLIB compilation article [^1], the
-quantification of method performance in optimization cannot really be
-split from the experimental settings.
+MIPLIB compilation [^1], the quantification of method performance in
+optimization cannot really be split from the experimental settings.
 
 Different methods and implementations manipulate different data
 structures to represent the same optimization problem.
 Reformulating optimization problems has often been the role and responsibility
 of the practitioner, transforming the application problem at hand to fit a
 standard form that a given solver accepts as input for a solution method.
-Mapping a user-facing representation of an object into an internal
-representation is the role and description of compilers. For mathematical
-optimization specifically, **Algebraic Modelling Languages** (AML) are domain-specific
-languages (and often an associated compiler and runtime) turning a user-specified
-code into data structures passed to solvers.  
+Interested readers may find work on formal representation of optimization
+problems as data structures by Liberti et al[^5][^6].
+Mapping a user-facing representation of an object into a semantically
+equivalent internal representation is the role of compilers.
+For mathematical optimization specifically, **Algebraic Modelling Languages**
+(AML) are domain-specific languages (and often an associated compiler and runtime)
+turning a user-specified code into data structures passed to solvers.  
 
 We will focus in this post on [MathOptInterface.jl](https://github.com/JuliaOpt/MathOptInterface.jl)
 (**MOI**) which acts as a second layer of the compilation phase of an AML.
@@ -370,5 +371,9 @@ The MOI system thus helps present and future researchers to avoid the pitfalls o
 [^3]: JuMP tutorial at JuliaCon2018: https://www.youtube.com/watch?v=7tzFRIiseJI
 
 [^4]: MathOptInterface, JuMP extensions and MOI-based solvers at JuliaCon2019: https://www.youtube.com/watch?v=cTmqmPcroFo
+
+[^5]: Liberti, Leo. "Reformulations in mathematical programming: Definitions and systematics." RAIRO-Operations Research 43.1 (2009): 55-85. [Preprint](http://www.numdam.org/article/RO_2009__43_1_55_0.pdf)
+
+[^6]: Liberti, Leo and Cafieri, Sonia and Tarissan, Fabien, Reformulations in Mathematical Programming: A Computational Approach, [DOI](https://doi.org/10.1007/978-3-642-01085-9_7), [Preprint](https://www.lix.polytechnique.fr/~liberti/arschapter.pdf)
 
 The diagrams were designed using [MermaidJS](https://mermaidjs.github.io) & [draw.io](https://draw.io).
