@@ -19,11 +19,12 @@ The progress of mathematical optimization as a domain has been tightly
 coupled with the development and improvement of computational methods and
 their implementations as computer programs. As observed in the recent
 MIPLIB compilation [^1], the quantification of method performance in
-optimization cannot really be split from the experimental settings.
+optimization cannot really be split from the experimental settings, solver
+performance is far from a theoretical science.
 
 Different methods and implementations manipulate different data
 structures to represent the same optimization problem.
-Reformulating optimization problems has often been the role and responsibility
+Reformulating optimization models has often been the role and responsibility
 of the practitioner, transforming the application problem at hand to fit a
 standard form that a given solver accepts as input for a solution method.
 Interested readers may find work on formal representation of optimization
@@ -32,17 +33,23 @@ Mapping a user-facing representation of an object into a semantically
 equivalent internal representation is the role of compilers.
 For mathematical optimization specifically, **Algebraic Modelling Languages**
 (AML) are domain-specific languages (and often an associated compiler and runtime)
-turning a user-specified code into data structures passed to solvers.  
+turning a user-specified code into data structures passed to solvers. Examples
+of such languages are JuMP, Pyomo, GAMS or AMPL; the first two being embedded in
+a host language (Julia and Python respectively), while the two last are
+stand-alone with their own compiler and runtime.
 
 We will focus in this post on [MathOptInterface.jl](https://github.com/JuliaOpt/MathOptInterface.jl)
 (**MOI**) which acts as a second layer of the compilation phase of an AML.
 The main direct user-facing language for this is [JuMP](https://github.com/JuliaOpt/JuMP.jl),
-which has already been covered in multiple formats [^2][^3].
-The problem has been read from the user code but not reformulated yet.
-In compiler terms, MOI appears after the parsing phase: the user code has been
-recognized and transformed into corresponding internal structures.
+which has already been covered in other resources[^2][^3].
+When passed to MOI, the problem has been read from the user code but not
+reformulated yet. In compiler terms, MOI appears after the parsing phase:
+the user code has been recognized and transformed into corresponding internal
+structures.
 
 {{% toc %}}
+
+# Re-formulating problems using multiple dispatch
 
 Multiple dispatch is the specialization of code depending on the arity and type
 of arguments. When multiple definitions (methods) exist for a function, the types
@@ -69,8 +76,6 @@ end
 
 f(x::X) = 3 * x.value
 {{< /highlight >}}
-
-# Re-formulating problems using multiple dispatch
 
 In this section, we will consider the reformulation of problems
 using multiple dispatch. In a generic form, an optimization problem can be
@@ -144,7 +149,7 @@ function add_constraint!(m::Model, f::ScalarAffineFunction, s::EqualTo)
 end
 {{< /highlight >}}
 
-The dispatching rules of that program are determined statically
+The dispatching rules of that program can be determined statically
 and define the sequence of method calls:
 
 ```
@@ -182,7 +187,7 @@ two possibilities occur:
 1. Which path should be used is encoded in types.
 2. The method called from a given node depends on runtime parameters.
 
-The first option could sound more efficient, but as the number of nodes, arcs
+The first option could appear more efficient, but as the number of nodes, arcs
 and solvers grow, compilation is rendered impossible, as one would have to
 recompute complete programs based on the addition of solvers or reformulations.
 The second option requires tools other than dispatch, since this mechanism
@@ -229,7 +234,7 @@ end
 
 """
 MyBridge1 supports `F1 in S1`
-""" 
+"""
 function MOI.supports_constraint(::Type{MyBridge1}, ::Type{F1}, ::Type{S1})
     return true
 end
@@ -305,7 +310,7 @@ multiple edges between two given nodes.
 $P$ represents the initial problem, pointing to the constraints it contains.
 There is an edge from $C_i$ to $C_j$ for each bridge reformulating $C_i$
 using at least a $C_j$ constraint. A constraint $C_i$ points to $S$ if the solver
-natively supports the constraint.  
+natively supports the constraint.
 
 Some bridges require defining multiple new constraints. That is the case of $B_5$
 reformulating $C_6$ using $C_3$ and $C_4$. On the contrary, $C_3$ can be re-formulated
@@ -315,7 +320,7 @@ A potential large number of bridges could be introduced without being on any
 problem-solver path. For instance, there will likely be no semi-definite cone
 constraint when the problem at hand is linear, and $S$ a simplex-based solver.
 Without reasoning on specific constraints, it is hard to picture which
-reformulation is efficient.  
+reformulation is efficient.
 
 The current bridging decision is based on a shortest-path heuristic.
 One bridge is considered a unit distance, and a shortest path from all
@@ -335,7 +340,7 @@ motivation and structure of MOI, and recent
 developments it enabled.
 The type-based `Function in Set` structure keeps the underlying
 machinery familiar to both optimization scientists formulating problems in a close
-fashion and Julia programmers leveraging multiple dispatch.  
+fashion and Julia programmers leveraging multiple dispatch.
 
 Transforming optimization problems using the bridge system is transparent,
 leaving the option for advanced users to pick which paths are chosen
@@ -359,8 +364,8 @@ end-model is. This can lead to surprising behaviour when switching solvers
 or passing a different formulation of the same problem, without having access
 to what happens under the hood in a black-box proprietary solver.
 
-The MOI system thus helps present and future researchers to avoid the pitfalls of the
-*two-language problem* of optimization.
+The MOI system thus helps present and future researchers to avoid the pitfalls
+of the *two-language problem* of mathematical optimization.
 
 ## Further resources
 
