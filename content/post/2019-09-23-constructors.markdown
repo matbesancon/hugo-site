@@ -257,14 +257,13 @@ all constructors:
 {{< highlight julia>}}
 struct D{T <: Real} <: Distribution
 	param::T
-	D{T}(param) where {T} = new{T}(param)
 end
 
 function D(p::T; check_arg = true) where {T}
 	if check_arg
-		verify(param)
+		verify_parameter(p)
 	end
-	return D{T}(param)
+	return D{T}(p)
 end
 {{< /highlight >}}
 
@@ -273,19 +272,37 @@ The default is still to check the validity of parameters, but objects of type
 with multiple dispatch:
 
 {{< highlight julia>}}
+"""
+A flag structure to avoid checking arguments.
+"""
 struct NoArgCheck end
 
 struct D{T <: Real} <: Distribution
 	param::T
-	D{T}(param) where {T} = new{T}(param)
 end
 
+# standard constructor, validates the parameter
+function D(p::T) where {T <: Real}
+	verify_parameter(p)
+	return D{T}(p)
+end
+
+# faster constructor, no argument checking
 function D(p::T, ::NoArgCheck) where {T}
-	return D{T}(param)
+	return D{T}(p)
 end
 {{< /highlight >}}
 
 In either cases, users can now take the responsibility of checking parameters
-themselves. One general rule to highlight here for scientific programming work
+themselves. In recent Julia version, the compiler optimization of boolean
+constants will make the two roughly equivalent.
+One general rule to highlight here for scientific programming work
 is that the constructor is a fixed cost imposed on all users, treat additional
 checks and operations carefully.
+
+If you found this post useful (or not) or want to react in some way, feel free
+to reach out on [Twitter](https://twitter.com/matbesancon) and/or
+[Reddit](https://www.reddit.com/r/Julia/comments/d90m1e/lessons_learned_on_object_constructors/).  
+
+**Edit**: thanks Alec for spotting redundant code. Another [blog post](https://gbracha.blogspot.com/2007/06/constructors-considered-harmful.html)
+on the subject was posted on Reddit (thanks Paul for pointing it out).
