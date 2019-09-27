@@ -83,6 +83,9 @@ written as:
 
 $$\min_{x} f(x) \\\\ \text{s.t.}\\\\ \,\,\,F_i(x) \in S_i \,\,\, \forall i$$
 
+
+$$\begin{align} \min_{x} \,\,& f(x) \\\\ \text{s.t.}\\\\ & F_i(x) \in S_i & \forall i \end{align} $$
+
 ## The example of linear constraints
 
 We will build a reformulation system leveraging multiple dispatch.
