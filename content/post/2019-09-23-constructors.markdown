@@ -131,9 +131,13 @@ if you are curious.
 One thing to be careful about is that the term "product distribution" does not
 correspond with the eponymous Wikipedia entry. What we refer to here is the
 [product type](https://en.wikipedia.org/wiki/Product_type) in the sense of tuple
-construction and not the arithmetic product. One important property is that the
-entries of the product type are independent distributions, which helps a great
-deal deducing properties of the product distribution.
+construction and not the arithmetic product.
+**EDIT**: the correct corresponding Wikipedia entry is the one on
+[Product measure](https://en.wikipedia.org/wiki/Product_measure),
+thanks [Chad](https://twitter.com/ChadScherrer) for pointing it out.
+One important property is that the entries of the product type are
+independent distributions, which helps a great deal deducing properties
+of the product distribution.  
 
 An example product type could be the product of two univariate Gaussian
 distributions:
