@@ -10,7 +10,8 @@ math = true
 diagram = true
 
 [header]
-image = ""
+image = "posts/bridges/bridge2.jpg"
+caption = "Photo by [<u>Torsten Muller</u>](https://unsplash.com/@neptunian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [<u>Unsplash</u>](https://unsplash.com/s/photos/bridge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 +++
 
 --------
