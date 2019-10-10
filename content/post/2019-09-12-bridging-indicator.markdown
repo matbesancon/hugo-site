@@ -82,9 +82,6 @@ In this section, we will consider the reformulation of problems
 using multiple dispatch. In a generic form, an optimization problem can be
 written as:
 
-$$\min_{x} f(x) \\\\ \text{s.t.}\\\\ \,\,\,F_i(x) \in S_i \,\,\, \forall i$$
-
-
 $$\begin{align} \min_{x} \,\,& f(x) \\\\ \text{s.t.}\\\\ & F_i(x) \in S_i & \forall i \end{align} $$
 
 ## The example of linear constraints

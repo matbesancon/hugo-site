@@ -12,7 +12,7 @@ summary = "Toolkit for statistical modeling in Julia"
 image_preview = "projects/juliastats.png"
 
 # Tags: can be used for filtering projects.
-tags = ["open-source", "stats", "julia-package"]
+tags = ["open-source", "statistics", "julia-package"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = ""
