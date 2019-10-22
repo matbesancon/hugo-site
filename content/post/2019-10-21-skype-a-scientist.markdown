@@ -21,7 +21,9 @@ from the US (think 9-10 years old if like me, you have no idea what grades stand
 and their super-dedicated teacher.
 It was a fun time but the most surprising part was discovering the questions
 they had prepared. I thought it would be worth it to list them and record some
-answers.
+answers as I remember them.
+I grouped the questions in four arbitrary categories. The list also does not
+reflect the order in which the questions were asked.
 
 {{% toc %}}
 
@@ -40,13 +42,14 @@ started my PhD two years ago.
 ## What kind of place do you work in?
 
 I work in a "lab", but in my case this is an office
-(no white lab coat, no smoking tubes).
-with two other people. One of my offices is in a research institute called INRIA
-in Northern France, the other is in Montréal, Canada.
+(no white lab coat, no smoking tubes) with two other people.
+The office is located in a research institute, where other scientists and
+professors work on their research.
 
 ## What science experiments do you do?
 
-I write mathematical models to represent decisions, for example in power grids.
+I write mathematical models to make better decisions in complex environments, for
+example in power grids.
 With specific models, the computers are really good at finding the best decisions.
 
 ## How many days a week do you work?
@@ -56,11 +59,11 @@ sometimes I work a bit more, depending on the emergency of what I am doing.
 
 ## What research are you working on?
 
-I am working on models for better decisions in power grids.
+I am working on models for better decisions in what is called the *power grid*.
 The power grid is the network connecting everything to electricity sources.
 Whether you are in your class or your kitchen at home, when you turn on the light,
 electricity is flowing all the way from places where it is produced
-(like the water network). These days, we get more and more renewable sources
+(like the water network). These days, there are more and more renewable sources
 like solar panels and wind farms, but sometimes there is no sun or wind, so we
 have to anticipate better what is happening and make our consumption flexible.
 
@@ -82,7 +85,7 @@ Nope!
 
 ## What do you do in your lab? (if you work in a lab?)
 
-Once I obtain interesting models and answers from computers, I write articles
+Once I have developed models and obtained interesting answers from computers, I write articles
 for other scientists to read. Other than that, I discuss with other people to
 find ideas on the models we write or how to write better computer programs,
 I drink coffee and eat cookies even when I shouldn't.
@@ -92,14 +95,15 @@ I drink coffee and eat cookies even when I shouldn't.
 ## Do you make models of anything?
 
 I haven't found counter-examples yet so I'll go with yes, you can make
-models from anything. A model is a way we represent something in a way that is
+models of anything. A model is a way we represent something in a way that is
 easier to grasp, either for us humans, or for a computer.
 
 ## How did the language of math get created?
 
 I am not an expert in the history of science, but from what I remember of old
 mathematical papers I saw, the language of mathematics was created piece by piece,
-by iterations. First concepts would be created, like adding two numbers together
+by iterations.
+First, concepts would be created, like adding two numbers together
 into a bigger number. Then, some scientist, not necessarily the person who
 developed the concept, would find way to represent this abstract concept, for
 example with a cross symbol: $+$.  
@@ -116,8 +120,13 @@ See this timeline when different modern symbols were introduced:
 
 Because it's both:
 
-1. A new language to learn (how to say things)
+1. A new language to learn (how to say or write things)
 2. New concepts (new things we are able to say)
+
+Things get easier with practice once you can relate the concept to things you
+already know or visualize. That's also why you are learning multiplications
+with different models to see which one helps you relate the concept to what
+it applies to.
 
 ## How are there so many different strategies for math?
 
