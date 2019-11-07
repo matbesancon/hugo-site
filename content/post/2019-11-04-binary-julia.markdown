@@ -6,7 +6,7 @@ title = "Working with binary libraries for optimization in Julia"
 summary = """
 When going native is the only option, at least do it once and well.
 """
-math = true
+math = false
 diagram = false
 
 [header]
@@ -288,3 +288,12 @@ bits. But the key take-away of this is that once the pipeline is built, updating
 the binary version or Julia wrapper is the same workflow one is used to with
 standard Julia packages. Keep building pure Julia software for all its benefits,
 but these tools I presented make it as great as possible to work with binaries.
+
+## Edits
+
+Some design work is in progress on the Pkg side to be able to reason with
+artifacts, a post can be found
+[here](https://github.com/JuliaLang/www.julialang.org/blob/43f5244c36cc8ec6e1728c697cf5de652b41e8fd/blog/_posts/2019-08-01-artifacts.md).  
+
+Many thanks to [staticfloat](https://github.com/staticfloat/) and
+[giordano](https://github.com/giordano) for the feedback and additional information.
