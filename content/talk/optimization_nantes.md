@@ -14,7 +14,7 @@ math = false
 
 url_pdf = "https://doi.org/10.5281/zenodo.3249868"
 url_slides = "http://matbesancon.github.io/slides/JuliaNantes/Graphs"
-url_video = ""
+url_video = "https://uncloud.univ-nantes.fr/index.php/s/Pmq3sRFqQBwBpmW"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
