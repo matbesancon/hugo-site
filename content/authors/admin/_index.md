@@ -20,12 +20,12 @@ organizations:
   url: "https://polymtl.ca"
 - name: INRIA
   url: "https://inria.fr"
-- name: Centrale Lille
-  url: ""
 - name: GERAD
   url: "https://gerad.ca"
 - name: Cristal
   url: "https://www.cristal.univ-lille.fr/?lang=en"
+- name: Centrale Lille
+  url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include bilevel optimization, demand response and pricing.
@@ -33,11 +33,10 @@ bio: My research interests include bilevel optimization, demand response and pri
 # List (academic) interests or hobbies
 interests:
 - Bilevel Optimization
-- Energy systems
+- Convex Optimization
+- Energy Systems
 - Game Theory
 - Mathematical Optimization
-- Smart Grids
-- Data Science
 - Statistical Learning
 
 education:
@@ -75,6 +74,9 @@ social:
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-6284-3033
+- icon: youtube
+  icon_pack: fab
+  link: https://www.youtube.com/channel/UCVSd42nW_MqkbSXijgOvKwg
 - icon: linkedin
   icon_pack: fab
   link: https://linkedin.com/in/mbesancon
