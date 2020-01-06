@@ -201,7 +201,7 @@ removed_ok = LG.rem_vertex!(g, rand(1:nv))
 {{< /highlight >}}
 
 Yikes, what's happening here? Many parts of *LightGraphs.jl* use vertices computed
-from `vertices(g) `as indices for structures indexed by them. So if you remove
+from `vertices(g)` as indices for structures indexed by them. So if you remove
 vertex 4 in a 6-vertex graph, vertices will be `{1,2,3,5,6}`, and the rank
 algorithm will try to access the 6th rank, even though only 5 exist.
 
@@ -252,10 +252,10 @@ interface more explicit. By keeping the two functions, we avoid having to use
 
 I have corrected various functions following Pankaj's much needed
 [Pull Request](https://github.com/matbesancon/VertexSafeGraphs.jl/pull/2)
-on the corresponding repository, thank!
+on the corresponding repository, thanks!
 
 ## Edit 3
 
 Seth Bromberger spotted an error in my assumptions,
-We use swap-and-pop is used for vertex removal, so the last
+Swap-and-pop is used for vertex removal, so the last
 vertex will take the place of the removed one in the re-labelling.

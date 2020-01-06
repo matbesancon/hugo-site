@@ -85,7 +85,7 @@ In Julia with DifferentialEquations, this becomes:
 {{< highlight julia >}}
 α = 0.8
 β = 3.0
-diffeq = function(du, u, p, t)
+function diffeq(du, u, p, t)
     du[1] = - α * u[1] * u[2]
     du[2] = α * u[1] * u[2] - β * u[2]
     du[3] = β * u[2]
