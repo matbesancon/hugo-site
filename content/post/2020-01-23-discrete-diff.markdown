@@ -59,7 +59,7 @@ Automatic Differentiation is far from new, but has known a gain in attention
 in the last decade with its used in ML, increasing the usability of the available
 libraries. It consists in getting an augmented information out of a function.  
 
-If a function has a type signature `f: a -> b`, the goal is, without modyfing
+If a function has a type signature `f: a -> b`, the goal is, without modifying
 the function, to compute a derivative, which is also a function, which to every
 point in the domain, yields a linear map from domain to co-domain `df: a -> (a -o b)`,
 where `a -o b` denotes a linear map, regardless of underlying representation (matrix, function, ...).
@@ -191,7 +191,7 @@ For this problem, the tests could be on both the solution and objective value, a
 @test MOI.get(model, MOI.ObjectiveValue()) ≈ 0.3
 ```
 
-An equivalent JuMP version would look loke this:
+An equivalent JuMP version would look look this:
 ```julia
 @testset""
 matrix = [
@@ -221,7 +221,7 @@ JuMP uses `Float64` for all value types, which means we do not get the benefit o
 generic types, while `MathOptInterface` types are parameterized by the numeric type used.
 To be fair, maintaining type genericity on a project as large as JuMP
 is hard without making performance compromises. JuMP is not built of functions, but
-of a model object which contains a multable state of the problem being constructed,
+of a model object which contains a mutable state of the problem being constructed,
 and building an Algebraic Modelling Language without this incremental build of the
 model has not proved successful till now. One day, we may get a powerful declarative
 DSL for mathematical optimization, but it has not come yet.  
@@ -352,4 +352,4 @@ issues I posted. Don't hesitate to check out his [blog](https://opensourc.es/blo
 where the whole journey from 0 to a constraint solver is documented.  
 
 [^1]: [The simple essence of automatic differentiation](http://conal.net/papers/essence-of-ad/), Conal Elliott, Proceedings of the ACM on Programming Languages (ICFP), 2018
-[^2]: I believe a pure-Julia solver could be made as fast as a C/C++ solver, but developing solvers is an enormous amount of work and micro-optimizations, tests on industrial cases. The new [HiGHS](https://highs.dev) solver however shows that one can get pretty good results by developping a linear solver from scratch with all modern techniques already baked in.
+[^2]: I believe a pure-Julia solver could be made as fast as a C/C++ solver, but developing solvers is an enormous amount of work and micro-optimizations, tests on industrial cases. The new [HiGHS](https://highs.dev) solver however shows that one can get pretty good results by developing a linear solver from scratch with all modern techniques already baked in.
