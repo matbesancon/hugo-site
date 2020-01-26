@@ -105,6 +105,7 @@ problem, and the parameters we differentiate with respect to are the weights
 attached to each vertex $w_i$. We will denote it $f(w) = \max_x (\mathcal{P}_w)$.
 
 If a vertex $i$ is not chosen in a solution, there are two cases:
+
 - the vertex has the same weight as at least one other, say $j$, such that
 swapping $i$ and $j$ in the selected subset does not change the optimal value.
 of $\mathcal{P}$.
@@ -277,8 +278,9 @@ end
 
 To understand how this derivative computation can work with just few
 function calls (proportional to the size of the input), one must dig
-a bit deeper in [Dual Numbers](CITE). I will shamelessly refer to my
-slides at LambdaLille.
+a bit deeper in [Dual Numbers](https://en.wikipedia.org/wiki/Dual_number).
+I will shamelessly refer to [my slides](https://matbesancon.github.io/slides/ad4dev#/12)
+at the Lambda Lille meetup for an example implementation in Haskell.
 
 # Why not reverse-mode?
 
@@ -346,8 +348,8 @@ The biggest highlights here are that:
 
 Thanks a lot to [Wikunia](https://github.com/Wikunia/), first for developing ConstraintSolver.jl,
 without which none of this would have been possible, and for the open discussion on the multiple
-issues I posted. Don't hesitate to check out his [blog](https://opensourc.es/blog), where the whole
-journey from 0 to a constraint solver is documented. 
+issues I posted. Don't hesitate to check out his [blog](https://opensourc.es/blog/constraint-solver-1),
+where the whole journey from 0 to a constraint solver is documented.  
 
 [^1]: [The simple essence of automatic differentiation](http://conal.net/papers/essence-of-ad/), Conal Elliott, Proceedings of the ACM on Programming Languages (ICFP), 2018
 [^2]: I believe a pure-Julia solver could be made as fast as a C/C++ solver, but developing solvers is an enormous amount of work and micro-optimizations, tests on industrial cases. The new [HiGHS](https://highs.dev) solver however shows that one can get pretty good results by developping a linear solver from scratch with all modern techniques already baked in.
