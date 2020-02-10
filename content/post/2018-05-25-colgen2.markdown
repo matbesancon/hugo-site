@@ -14,6 +14,10 @@ image = "posts/cutting_stock/sushi_cuts.jpg"
 
 --------
 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3329389.svg)](https://doi.org/10.5281/zenodo.3329389)
+
+
 In the [previous post]({{< relref "2018-05-23-colgen.markdown" >}}),
 we explored a well-known integer optimization situation
 in manufacturing, the cutting stock problem. After some details on the
@@ -340,7 +344,7 @@ feel free to [ping me](http://twitter.com/matbesancon) for feedback.
 Found this post useful for your work? The corresponding repository
 is available on [GitHub](https://github.com/matbesancon/column_generation_jump),
 consider citing it using the following DOI *10.5281/zenodo.3329389*,
-the BibTeX entry is available on [Zenodo](https://zenodo.org/badge/latestdoi/130896714).
+the BibTeX entry is available on [Zenodo](https://doi.org/10.5281/zenodo.3329389).
 
 ### Note on performance
 

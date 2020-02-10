@@ -12,6 +12,8 @@ math = true
 image = "posts/cutting_stock/sushi_cuts.jpg"
 +++
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3329389.svg)](https://doi.org/10.5281/zenodo.3329389)
+
 Integer optimization often feels weird (at least to me). Simple reformulations
 of a (mixed) integer optimization problem (MIP) can make it way easier to solve.
 We're going to explore one well-known example of such integer problem in two
@@ -313,7 +315,7 @@ If you have any question/remarks, feel free to [get in touch](http://twitter.com
 Found this post useful for your work? The corresponding repository
 is available on [GitHub](https://github.com/matbesancon/column_generation_jump),
 consider citing it using the following DOI *10.5281/zenodo.3329389*,
-the BibTeX entry is available on [Zenodo](https://zenodo.org/badge/latestdoi/130896714).
+the BibTeX entry is available on [Zenodo](https://doi.org/10.5281/zenodo.3329389).
 
 ## Thanks
 
