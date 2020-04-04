@@ -15,21 +15,21 @@ image = ""
 One of the luxuries of a PhD in applied maths / computer science is the
 possibility to work from home. By possibility, I imply both the technical
 feasibility (my project does not require special equipment), and social
-acceptability (the labs I worked in were not enforcing presenteeism).
+acceptability (I never worked in labs enforcing presenteeism).
 
-Of course, working from home or from my corner coffee shop once every other week
-as a break is very different from these exceptional circumstances. I must also
-highlight I do not have to take care of children or sick family members, which
-comes as a priority, big congrats to those who manage it. This post should not
+Of course, working from home or from my usual corner coffee shop once every other week
+is very different from these exceptional circumstances.
+I should also highlight I do not have to take care of children or sick family members,
+which comes as a priority, big congrats to those who manage it. This post should not
 be seen as how things should be done, simply how I cope and as a list of ideas
-to pick up or ignore if you are in a similar situation. The context is also very
+to pick from if you are in a similar situation. The context is also very
 special for me as I just moved to the UK for an academic visit at the University
 of Edinburgh, I had just settled at a new city, flat and office when things
 started to escalate.
 
 {{< tweet 1231514372729688064 >}}
 
-I decided to stay in Edinburgh and not come back to France, because the trip
+I decided to stay in Edinburgh instead of coming back to France because the trip
 itself would be irresponsible, travelling through the UK, sleeping in London and
 then crossing the border with continental Europe, but also because I was settled
 in comfortably enough to spend the rough months of the epidemic here.
@@ -42,20 +42,20 @@ However, this meant adjusting in different ways.
 
 Being in Europe with many friends & contacts in North America, I used the
 circumstances to slightly shift my day, waking up between 8.30 and 9.15, and
-going to bed a bit later, sharing more hours of the day with them, this would
+going to bed a bit later, sharing more hours of the day with them. This would
 normally be more complicated with things to attend to where I am, but allow me
 to attend European late morning and afternoon remote events, North-American
 morning and early-afternoon events. I take a quick breakfast in the kitchen
-(no hot drink), make a batch of tea or coffee to keep at my desk. I use the morning
-to catch up on emails, work on research, writing code and prose (with breaks,
-see below). I do not go back to eat while not hungry, and not before 1.30PM.
+(no hot drink), make a batch of tea or coffee to keep while at my desk. I use
+the morning to catch up on emails, work on research, writing code and prose
+(with breaks, see below). I do not go back to eat while not hungry, and not before 1.30PM.
 The afternoon is a blend of research work and semi-work-related activities.
 I usually have figured out something to cook by the end of the day, depending on
 how much I estimate this will take I start late-afternoon or early evening.
 Depending on the mood and tasks, I work a bit after dinner, before closing all
 work tabs and windows (yes, all) to switch to leisure time, including films,
 calling people, etc. I keep at least one hour at the end of the day for reading,
-these days fiction (the Poppy War, the alienist and death in the east at the moment),
+these days fiction (the Poppy War, the Alienist and Death in the East at the moment),
 and only in paper versions, since I don't have a reader and I get enough screen
 time in the day.
 
@@ -68,7 +68,7 @@ media time in small blocks; [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Te
 is your friend there. With this setting, being distracted is okay, when you
 suddenly find yourself on non-work related things, just stop the work timer,
 take your break, and restart it when you are ready to restart.
-My breaks varying between 5 and 30 minutes, either texting friends, reading
+My breaks vary between 5 and 30 minutes, either texting friends, reading
 non-work news articles, scrolling or playing mines:
 {{< tweet 1243125633800114177 >}}
 
@@ -82,7 +82,7 @@ work activities and even if it does not serve you in the short term, consider it
 work, no need to drown in guilt. My semi-work activities include open-source software,
 reading papers and books in my domain but not directly relevant to my research,
 following MOOCs, even on some things I assume I already know to see a different
-perspective. You will have noticed lots of university seminars are maintained
+perspective. You may have noticed lots of university seminars are maintained
 in an online format. Since you do not need to run to the building on the other
 side of the campus, it can be a good opportunity to spend 45 minutes on other
 topics for your general scientific culture.
@@ -109,7 +109,7 @@ my back straighter and relax my eyes.
 Working with a laptop alone is nice for few hours in a coffee shop or on a couch,
 but terrible for your eyes, arms, hands and back, **forget the lap of laptop**.
 
-The spatial separation is fairly simple, work remains at my desk, I keep the
+The spatial separation is fairly simple: work remains at my desk, I keep the
 living room for eating, drinks, films, chatting with my flatmate. If you have an
 office space to separate it from your bedroom, even better. This is also why I
 cannot blame Parisians leaving the capital for family houses, the lifestyle is
@@ -119,7 +119,7 @@ not adapted to actually living in your $15m^2$ flat.
 
 There was a discussion on the remote thesis during the epidemic on the
 [Grand Labo](https://www.grandlabo.com/sos-telethese-continuer-sa-these-en-plein-confinement-coronavirus/) (in French).
-Among different subjects, I chose to speak of something which may appears very
+Among different subjects, I chose to speak of something which may appear very
 privileged (and is to some extent), which is the impact of cancelled academic
 events (conferences, workshops, seminars), especially on young academics, in
 which I include everyone being evaluated on their work now for a future position
@@ -138,7 +138,7 @@ I do not have a perfect solution for this, and I'm not sure there is.
 Again this section is to take relatively to what you can afford. If you are not
 financially comfortable (and this is a post for PhDs so it might very well be the
 case, feel free to pick the pieces you want). One thing that will happen with
-everything shut down is businesses and service workers that depend on a local
+everything shut down is that businesses and service workers that depend on a local
 activity will suffer. For tech workers, here is a great thread, although
 US-centric so some of the consequences will be hopefully nuanced in your country:
 
@@ -170,7 +170,7 @@ does not make the situation remotely "fine" for many of us, but we got this.
 If you want more and better tips on working from home for tech workers in the epidemic time,
 [this post](https://blog.alicegoldfuss.com/work-in-the-time-of-corona/), from the
 same author as the restaurant recommendations above, is worth it.
-If you read French, feel free to check this thread:
+If you read French, feel free to also check this thread:
 
 {{< tweet 1239347768562499586 >}}
 
