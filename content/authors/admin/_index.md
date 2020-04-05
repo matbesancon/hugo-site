@@ -34,6 +34,7 @@ bio: My research interests include bilevel optimization, demand response and pri
 interests:
 - Bilevel Optimization
 - Convex Optimization
+- Integer Optimization
 - Energy Systems
 - Game Theory
 - Mathematical Optimization
@@ -96,15 +97,20 @@ at the [GERAD lab](https://www.gerad.ca/en/) and
 Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
 & the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,
 in mathematical optimization for smart grids.
-I especially focus on bilevel optimization problems and
-pricing for demand response. Other fields of interest include
+I am currently on an academic visit at the School of Mathematics at the University of Edinburgh.
+My research interests are bilevel optimization problems and
+pricing for demand response. Other topics I look at include
 non-linear optimization & applications in engineering,
-integer optimization & decompositions, game theory and statistical learning.
-Before that I worked in various industries, from an IoT startup to steel
+integer optimization & decompositions, game theory and applications in statistics & learning.
+I am involved in several open-source projects around optimization and
+scientific computing, mostly in the [Julia](https://julialang.org) programming language.
+Before starting the PhD, I worked in various industries, from an IoT startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) with a semester at
 the [TUBS](https://www.tu-braunschweig.de/?lang=en).
-On a personal note, I read non-fictions, generally on economic policy, strategy
-and entrepreneurship, and enjoy games in various formats (tabletop, video, board, card).
+On a personal note, I read both fiction (mostly detective, thrillers and fantasy)
+and non-fiction books, generally on economic policy, strategy
+and entrepreneurship (a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
+I also games in various formats (tabletop, video, board, card).  
 
 My academic CV is available upon request.
