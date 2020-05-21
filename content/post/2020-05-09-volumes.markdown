@@ -20,7 +20,7 @@ Fluid mechanics was one of my favourite topics in the Process Engineering progra
 (some people will quit reading at this point and never talk to me again) so without surprise,
 I could not resist diving into this new [blog post](https://sinews.siam.org/Details-Page/lagrange-multiplier-as-depth-or-pressure-2)
 on SIAM News.
-This is the second time a post from Mark Levi caught my attention, the last was
+This is the second time a post from Mark Levi caught my attention, the last
 was on [heat exchangers](https://sinews.siam.org/Details-Page/a-near-perfect-heat-exchange),
 on which I also wrote a [post](https://matbesancon.github.io/post/2018-12-27-heat-exchanger/), toying with parallel and counter-current heat exchangers.  
 
@@ -60,56 +60,58 @@ respect of the laws of physics. These laws state two things:
 - No negative volume: the different vessels exchange water, their volume increasing or decreasing with time, but at no point can a vessel reach a negative volume.
 
 Each vessel $k$ will be described by a profile, an area as function of the height $f_k(x)$.
-We assume these functions $f_k$ are all continuous.
+We assume that these functions $f_k$ are all continuous.
 The state at any point in time is the height in each vessel $x_k$.
 The total volume of water in the vessel is given by:
-$$V_k(x_k) = \int_0^{x_k} f_k(x) dx.$$
+$$V_k(x_k) = \int_0^{x_k} f_k(h) dh.$$
 
 The conservation of volume can be expressed as:
 
-$$V_{0} = \sum\_{k=1}^N V_k(x_k) = \sum\_{k=1}^N \int_0^{x_k} f_k(x) dx$$
+$$V_{0} = \sum\_{k=1}^N V_k(x_k) = \sum\_{k=1}^N \int_0^{x_k} f_k(h) dh$$
 
 where $V_{0}$ is the initial total volume water.
 The nonnegativity of water volume in each vessel can be expressed as:
-$$\int_0^{x_k} f_k(x) dx \geq 0\,\,\, \forall k$$
+$$\int_0^{x_k} f_k(h) dh \geq 0\,\,\, \forall k \in \\{1..N\\} $$
 
 The area at any height $f_k(x)$ is positive or null, so this constraint
 can be simplified as:
-$$x_k \geq 0 \,\,\, \forall k$$
+$$x_k \geq 0 \,\,\, \forall k \in \\{1..N\\} $$
 
 The potential function, the objective minimized by the problem, is the last thing we miss.
 It consists of the total potential function of the water in the vessels, caused by gravity only.
-Each infinitesimal slice of water $dx$ exercises its weight, which is proportional to its volume
+Each infinitesimal slice of water from $x$ to $x + dx$ exercises its weight, which is proportional to its volume
 $f_k(x) dx$ times height $x$. By integrating over a whole vessel $k$, this gives a potential of:
-$$ \int_0^{x_k} x f_k(x) M dx$$
+$$ \int_0^{x_k} h f_k(h) M dh$$
 with M a constant of appropriate dimension. Since we are minimizing the sum of these functions,
-we will get rid of the constant (again, sorry for shocking physicists), yielding an objective:
+we will get rid of the constant (sorry for shocking physicists), yielding an objective:
 
-$$ F(x) = \sum\_{k=1}^N \int_0^{x_k} x f_k(x)dx.$$
+$$ F(x) = \sum\_{k=1}^N \int_0^{x_k} h f_k(h)dh.$$
 
 To sum it all, the optimization problem finding an equilibrium is:
 
 $$
 \\begin{align}
-\min_{x} & \sum\_{k=1}^N \int_0^{x_k} x f_k(x)dx \\\\\\\\  
+\min_{x} & \sum\_{k=1}^N \int_0^{x_k} h f_k(h)dh \\\\\\\\  
 & \text{subject to:} \\\\\\
-& G(x) = \sum\_{k=1}^N \int_0^{x_k} f_k(x) dx - V_0 = 0\\\\\\\\
-& x_k \geq 0 \,\,\, \forall k
+& G(x) = \sum\_{k=1}^N \int_0^{x_k} f_k(h) dh - V_0 = 0\\\\\\\\
+& x_k \geq 0 \,\,\, \forall k \in \\{1..N\\}
 \\end{align}
 $$
 
 If you read the blog post, you saw the best way to solve this problem is by
-relaxing the positive constraint, write the first-order Karush-Kuhn-Tucker (KKT) conditions:
+relaxing the positivity constraints and write the first-order Karush-Kuhn-Tucker (KKT) conditions:
 
 $$
 \\begin{align}
 & \\nabla F(x) = \\lambda \\nabla G(x) & \Leftrightarrow\\\\\\
-& x_k f_k(x) = \lambda f_k(x_k) & \Leftrightarrow \\\\\\
-& x_k = \lambda \,\,\,\forall k
+& x_k f_k(x_k) = \lambda f_k(x_k) \,\,\,\forall k \in \\{1..N\\} & \Leftrightarrow \\\\\\
+& x_k = \lambda \,\,\,\forall k \in \\{1..N\\}
 \\end{align}
 $$
 
 So the multiplier $\lambda$ ends up being the height of water across all vessels, the equations come back to the intuitive result.
+Between the second and third line, we implicitly eliminate the case $f_k(x_k) = 0$,
+which would be a section of the vessel of area 0.
 Let us implement $F$, $G$ and their gradients in Julia to reproduce this result numerically.
 We will use four vessels of various shapes:
  
@@ -145,35 +147,34 @@ compute than the functions themselves, since they remove the integrals:
 ∇g(x) = [funcs[k](x[k]) for k in 1:N]
 ```
 
-Let us pick a random starting point, such that all four vessels have the same height:
+If we pick a starting point, such that all four vessels have the same height:
 
-```
+```julia
 x0_height = rand()
 x0_uniform = [x0_height for _ in 1:N]
+```
 
+we can verify the first-order KKT conditions as expressed in Mark Levi's post:
+
+```julia
 ∇f(x0_uniform) - x0_height * ∇g(x0_uniform)
 ```
 
-and we obtain a vector of zeros as planned.
-With the vessel shape functions defined above, this looks
-roughly like this:
-
-![start](/img/posts/volumes/initial_plot.png)
-
-(source code available in the bonus section).  
+and we obtain a vector of zeros as planned.  
+  
 The rest of this post will be about trying to find the optimal height
 that is reached by this system, implementing an iterative algorithm solving the
 problem in a generic form.
-This will require several steps:
+This will require several parts:
 
 1. From a given iterate, find a direction to follow;
 2. Ensure each iterate respects the constraints defined above (no thugs in physicstown);
-3. Converging to the feasible solution (which we know from Mark Levi's post, but no cheating);
-4. Defining stopping criteria.
+3. Converge to the feasible solution (which we know from Mark Levi's post, but no cheating);
+4. Define stopping criteria.
 
 An interesting point on the structure of the problem,
 this is not a generic equality-constrained non-linear problem,
-the domain defined by $G(x) = 0$ is a manifold defined, a smooth subspace
+the domain defined by $G(x) = 0$ is a manifold, which is a smooth subspace
 of $\mathbb{R}^N$. Other than throwing fancy words, having this structure
 lets us use specific optimization methods which have been developed for manifolds.
 A [whole ecosystem](https://github.com/JuliaManifolds) has been developed in Julia
@@ -186,7 +187,7 @@ preferred for unknown reasons, like your sourdough starter in lockdown.
 From a given solution, we need to be able to find a direction in which we can progress.
 Fair warning, this is the most "optimization-heavy" section.  
 
-Let us start from a random point. To be sure you can reproduce all results,
+Let us start from a random point. Use the same seed if you want to reproduce the results:
 
 ```julia
 Random.seed!(42)
@@ -196,21 +197,29 @@ x0 = 2 * rand(4)
 V0 = g(x0)
 # 1.9273890036845946
 ```
+
+With the vessel shape functions defined above, this looks roughly like this:
+
+![start](/img/posts/volumes/initial_plot.png)
+
+(source code available in the bonus section).  
+
 In unconstrained optimization, the gradient provides us with information on the steepest
 ascent direction, by following the opposite direction, the function will decrease, at least locally.
+
 
 ```julia
 xnew = x_i - γ * ∇f(xinit)
 ```
 
 See this good [blog post](http://www.juyang.co/numerical-optimization-in-machine-learning-iii-constrained-optimization/)
-by Ju Yang several really good illustrations to grasp an intuition.
+by Ju Yang several with really good illustrations to grasp an intuition.
 If we naively follow the descent direction minimizing $F$, we likely leave the
 manifold, the region where $G(x) = 0$.
 
 Think of the curve as the feasible region where we are supposed remain.
 $x_i$ is our current iterate and the direction points to the steepest descent of $F(x)$,
-i.e. $\nabla F(x)$.
+i.e. $-\nabla F(x)$.
 
 ![Naive descent](/img/posts/volumes/manifold1.png)
 
@@ -225,7 +234,7 @@ More importantly, we will have ensured that the point has not been moved for not
 be the case if we simply get away from the manifold.
 We are looking for a search direction $d$:
 
-- which improves the objective function as much as possible: $\langle ∇F(x_i), d\rangle$ as low as possible, or equivalently $\langle -∇F(x_i), d\rangle$ maximized;
+- which improves the objective function as much as possible: $\langle ∇F(x_{i}), d\rangle$ as low as possible, or equivalently $\langle -∇F(x_i), d\rangle$ maximized;
 - tangent to the manifold.
 
 For the last requirement,
@@ -316,7 +325,7 @@ the water in each vessel has a weight, thus exercising a pressure downwards.
 There is still one thing we forgot once the direction is found.
 Remember the positivity constraint $x_k \geq 0$?
 It ensures the solution found makes sense, and that fluid mechanics
-specialist won't laugh at the solutions computed.
+specialists won't laugh at the solutions computed.
 If one of the coordinates of the found point is negative,
 what we can do is maintain the direction, but reduce the step.
 Notice that one of our containers has an area of $2\\sqrt{x}$,
@@ -357,7 +366,7 @@ $$
 \\begin{align}
 \\min_{x}\,\, & dist(x, x_i + \gamma d) \\\\\\
 & \text{subject to:} \\\\\\
-& \nabla G(x) = 0
+& G(x) = 0
 \\end{align}
 $$
 
@@ -382,7 +391,7 @@ h(corrected_step(x0, d, 1.5))(0.5)
 ```
 
 The problem then becomes a root-finding problem on $h(x)(\alpha)$.
-Typical methods for solving a root-finding problems
+Typical methods for solving a root-finding problem
 are Newton-type methods, bisections. We will use the
 [Roots.jl](https://github.com/JuliaMath/Roots.jl) package, this post is already too
 long to implement one from scratch.
@@ -402,13 +411,13 @@ g(corrected_step(x0, d, 1.5) .+ root) - V0
 
 We now have all the ingredients to make this algorithm work:
 
-Compute a gradient, correct it for negative points, project it on the manifold with the SOCP,
+Compute a gradient, correct it for negative points, project it on the manifold (with the simple vector rejection or the SOCP),
 re-project the resulting point with root-finding on alpha.
 We will stop the algorithm either:
 
-- if a number of iterations is reached (which is considered a failure since we did not converge)
-- the norm of the projected gradient is almost zero and we would not move in a new iterate
-- the distance between two successive iterates it low enough
+- If a number of iterations is reached (which is considered a failure since we did not converge);
+- The norm of the projected gradient is almost zero and we would not move to a new iterate;
+- The distance between two successive iterates is low enough.
 
 ```julia
 function find_equilibrium(funcs, x0; mingradnorm=10e-5, maxiter = 1000, γ = 0.05, mindiff=10e-4)
@@ -460,10 +469,11 @@ plot(xs_pivot)
 ![Plot 1](/img/posts/volumes/plot_naive1.png)
 
 Fair enough, still, 1400 iterates should not be necessary for a 4-dimensional problem.
-Since convergence seems find around the equilibrium point (the solution does not bounce around it),
+Since convergence seems reached around the equilibrium point (the solution does not bounce around it),
 we can increase the step size, which was taken rather conservatively: 
 
-Let us zoom is:
+Let us zoom in:
+
 ```julia
 xs = find_equilibrium(funcs, x0, γ = 0.05, maxiter = 5000, mindiff=10e-6)
 plot(map(k -> getindex.(xs, k), 1:4))
@@ -477,11 +487,12 @@ We reduce the number of iterations to 192, while not hindering convergence.
 
 I wanted to add a section on the corresponding dynamical system, namely a
 differential algebraic equation (DAE) system, but this is clearly long enough,
-and I couldn't get anything to work.
-*TL;DR*: we modelled the equilibrium and developed a technique to find it, relying
-on local optimization tools. The problem structure allowed us to express the gradient
-and estimate projection steps using cheap enough methods, namely SOCP and root finding
-on a univariate function.  
+and I couldn't get anything to work.  
+
+*TL;DR*: the techniques to find the equilibrium rely on local optimization tools.
+The problem structure allowed us to express the gradient
+and estimate projection steps using cheap enough methods, namely vector rejection
+and root finding on a univariate function.  
 
 Interesting thing to do on top of this:
 
@@ -510,7 +521,9 @@ this also made me spot an other error, and Ronny Bergmann for encouraging words 
 detailed feedback and discussion on different parts of the talk, from links with JuliaManifolds
 to incorrect terminology and improvement perspective.
 Thanks also to [Chris](https://twitter.com/ChrisRackauckas) for the conversation on
-DAEs, for another post maybe.
+DAEs, for another post maybe, Odelin for the suggestion on the variable notations.
+And as often, thanks Pierre-Yves for the infaillible proof-reading as usual.
+
 
 # Bonus
 
@@ -589,4 +602,3 @@ quantum physics (if I recall?).
 
 [^1]: [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/d/dc/Communicating_vessels.png)
 [^2]: [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/2/20/ANIMvasicomunicanti.gif) 
-
