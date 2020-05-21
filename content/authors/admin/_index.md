@@ -28,13 +28,14 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include bilevel optimization, demand response and pricing.
+bio: My research interests include bilevel optimization, convex and mixed-integer convex problems, demand response and pricing.
 
 # List (academic) interests or hobbies
 interests:
 - Bilevel Optimization
 - Convex Optimization
 - Integer Optimization
+- MI(N)LP
 - Energy Systems
 - Game Theory
 - Mathematical Optimization
@@ -42,6 +43,7 @@ interests:
 
 education:
   courses:
+  - course: Joint PhD, Applied Mathematics (Polytechnique Montreal) & Computer Science (Centrale Lille)
   - course: Joint Bachelor & Master of Science in Process Engineering
     institution: University of Technology of Compiègne (UTC), France
     year: 2011-2016
@@ -91,26 +93,32 @@ social:
 
 ---
 
-I'm a PhD candidate in a double program (*cotutelle*) between
+I am a PhD candidate in a double program (*cotutelle*) between
 [École Polytechnique of Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and
 Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
 & the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,
-in mathematical optimization for smart grids.
-I am currently on an academic visit at the School of Mathematics at the University of Edinburgh.
-My research interests are bilevel optimization problems and
-pricing for demand response. Other topics I look at include
+in mathematical optimization for pricing applications in smart grids.
+I am currently on an academic visit at the School of Mathematics at the University of Edinburgh.  
+
+My thesis focuses on bilevel optimization, robust extensions
+and pricing for demand response. Other topics I look at include
 non-linear optimization & applications in engineering,
-integer optimization & decompositions, game theory and applications in statistics & learning.
+integer optimization & decompositions, game theory and optimization applications in statistics & learning.  
+
 I am involved in several open-source projects around optimization and
 scientific computing, mostly in the [Julia](https://julialang.org) programming language.
 Before starting the PhD, I worked in various industries, from an IoT startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) with a semester at
-the [TUBS](https://www.tu-braunschweig.de/?lang=en).
+the [TUBS](https://www.tu-braunschweig.de/?lang=en).  
+
 On a personal note, I read both fiction (mostly detective, thrillers and fantasy)
 and non-fiction books, generally on economic policy, strategy
 and entrepreneurship (a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
 I also games in various formats (tabletop, video, board, card).  
 
+**I will be looking for a position to start in 2021.**
+Although I am primarily looking at positions in academic environments and research institutes,
+I am open to research-intensive environments with projects on the topics mentioned above.
 My academic CV is available upon request.
