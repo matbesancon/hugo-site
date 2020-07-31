@@ -193,7 +193,6 @@ For this problem, the tests could be on both the solution and objective value, a
 
 An equivalent JuMP version would look look this:
 ```julia
-@testset""
 matrix = [
     0 1 1 0
     1 0 1 0
