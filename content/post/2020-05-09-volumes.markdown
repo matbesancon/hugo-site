@@ -14,7 +14,7 @@ image = "/posts/volumes/Communicating_vessels.png"
 
 Image source [^1].
 
-{{% toc %}}
+{{< toc >}}
 
 Fluid mechanics was one of my favourite topics in the Process Engineering program I followed
 (some people will quit reading at this point and never talk to me again) so without surprise,
@@ -40,7 +40,7 @@ Otherwise, consider the weight of water creates pressure within it.
 The lower a point in the water, the higher the pressure, since there is more water above which exercises its weight.
 A difference in **pressure** between two points will create a motion of the water, until the pressure equalizes.
 Put differently, some fluid moves from the full part of the vessel (with more pressure) to empty parts (with less pressure)
-until the pressure equalizes. 
+until the pressure equalizes.
 
 ![Communicating vessels](/img/posts/volumes/motion.gif)[^2]
 
@@ -48,7 +48,7 @@ Since the pressure at a point depends on the height of the fluid above this poin
 two points have equal pressure when the height of water above them is equal.
 This is a phenomenon we often experience, with a watering can for instance.
 
-# Vessel equilibrium as an optimization problem 
+# Vessel equilibrium as an optimization problem
 
 A system reaches an equilibrium at the minimum of its potential energy.
 Feel free to skip this part if you read the blog post by Mark Levi, we basically go over the problem formulation once again.
@@ -114,7 +114,7 @@ Between the second and third line, we implicitly eliminate the case $f_k(x_k) = 
 which would be a section of the vessel of area 0.
 Let us implement $F$, $G$ and their gradients in Julia to reproduce this result numerically.
 We will use four vessels of various shapes:
- 
+
 ```julia
 import QuadGK
 
@@ -161,7 +161,7 @@ we can verify the first-order KKT conditions as expressed in Mark Levi's post:
 ```
 
 and we obtain a vector of zeros as planned.  
-  
+
 The rest of this post will be about trying to find the optimal height
 that is reached by this system, implementing an iterative algorithm solving the
 problem in a generic form.
@@ -193,7 +193,7 @@ Let us start from a random point. Use the same seed if you want to reproduce the
 Random.seed!(42)
 
 # 4 uniform random points between [0,2]
-x0 = 2 * rand(4) 
+x0 = 2 * rand(4)
 V0 = g(x0)
 # 1.9273890036845946
 ```
@@ -364,7 +364,7 @@ we need to project this iterate on the manifold, i.e. find the solution to:
 
 $$
 \\begin{align}
-\\min_{x}\,\, & dist(x, x_i + \gamma d) \\\\\\
+\\min_{x}\\,\\, & dist(x, x_i + \gamma d) \\\\\\
 & \text{subject to:} \\\\\\
 & G(x) = 0
 \\end{align}
@@ -403,7 +403,7 @@ long to implement one from scratch.
 root = Roots.find_zero(h(corrected_step(x0, d, 1.5)), 0.0)
 # -0.07526921814981354
 
-g(corrected_step(x0, d, 1.5) .+ root) - V0 
+g(corrected_step(x0, d, 1.5) .+ root) - V0
 # 0.0
 ```
 
@@ -470,7 +470,7 @@ plot(xs_pivot)
 
 Fair enough, still, 1400 iterates should not be necessary for a 4-dimensional problem.
 Since convergence seems reached around the equilibrium point (the solution does not bounce around it),
-we can increase the step size, which was taken rather conservatively: 
+we can increase the step size, which was taken rather conservatively:
 
 Let us zoom in:
 
@@ -601,4 +601,4 @@ at the Julia Paris meetup, where he presented some applications of optimization 
 quantum physics (if I recall?).
 
 [^1]: [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/d/dc/Communicating_vessels.png)
-[^2]: [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/2/20/ANIMvasicomunicanti.gif) 
+[^2]: [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/2/20/ANIMvasicomunicanti.gif)
