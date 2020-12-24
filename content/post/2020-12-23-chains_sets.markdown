@@ -63,8 +63,9 @@ The deceivingly simple feature ended up opening one of the
 [longest discussions](https://github.com/jump-dev/MathOptInterface.jl/pull/1023)
 in the MOI repository.
 
-> Fairly straightforward[...]
-> Optimistic me, beginning of the PR, February 2020
+> Fairly straightforward[...]  
+
+*Optimistic me, beginning of the PR, February 2020*
 
 A more meaningful query for solvers is, given a value $v$, what is the
 **distance** from $v$ to the set $\mathcal{S}$:
@@ -89,7 +90,8 @@ distance_to_set(v::V, s::S) -> Real
 *Aside:*
 this is an example where multiple dispatch brings great value to the design:
 the implementation of `distance_to_set` depends on both the value type `V`
-and the type of set `S`. See why it's useful [in the Bonus](# Bonus)
+and the type of set `S`. See why it's useful in the
+[Bonus section]({{< relref "# Bonus" >}} "").
 
 If $\mathcal{S}$ was a generic set, computing this distance would be as hard as
 solving an optimization problem with constraints $v \in \mathcal{S}$ but
