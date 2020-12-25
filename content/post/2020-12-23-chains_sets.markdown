@@ -73,8 +73,7 @@ A more meaningful query for solvers is, given a value $v$, what is the
 $$
 \\begin{align}
 (\text{δ(v, s)})\\,\\,\min_{v_p}\\,\\, & \text{dist}(v_p, v) \\\\\\\\
-\text{s.t.}\\,\\, & v_p \in \mathcal{S} \\\\\\\\
-& v \in \mathcal{V}.
+\text{s.t.}\\,\\, & v_p \in \mathcal{S}.
 \\end{align}
 $$
 
@@ -137,7 +136,7 @@ respecting a constraint. But for many algorithms, the quantity of interest is
 the projection itself:
 
 $$
-\Pi_{\mathcal{S}}(v) \equiv \text{arg}\min_v \delta(v, \mathcal{S}).
+\Pi_{\mathcal{S}}(v) \equiv \text{arg} \min_{v_p \in \mathcal{S}}  \text{dist}(v, v_p).
 $$
 
 Like the optimal distance, the best projection onto a set can often be defined
