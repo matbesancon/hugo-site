@@ -34,16 +34,17 @@ bio: My research interests include various flavours of mathematical optimization
 interests:
 - Bilevel Optimization
 - Convex Optimization
-- Integer Optimization
 - MI(N)LP
 - Energy Systems
-- Game Theory
 - Mathematical Optimization
 - Statistical Learning
+- Optimization and Engineering
 
 education:
   courses:
-  - course: Joint PhD, Applied Mathematics (Polytechnique Montreal) & Computer Science (Centrale Lille)
+  - course: Joint PhD, Applied Mathematics & Computer Science
+    institution: Polytechnique Montreal, INRIA, Centrale Lille, GERAD
+    year: 2017-2020
   - course: Joint Bachelor & Master of Science in Process Engineering
     institution: University of Technology of Compiègne (UTC), France
     year: 2011-2016
@@ -100,7 +101,7 @@ Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
 & the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,
 in mathematical optimization.
 
-My thesis focuses on bilevel optimization, robust extensions
+My thesis defended in December 2020 focuses on bilevel optimization, robust extensions
 and pricing for demand response in smart grids. Other topics I look at include
 non-linear optimization & applications in engineering,
 (non)-linear mixed-integer optimization, and optimization applications in statistics & learning.  
