@@ -10,25 +10,17 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD candidate in mathematical optimization
+role: Postdoctoral researcher, mathematical optimization
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
 # Organizations/Affiliations
 organizations:
-- name: Polytechnique Montréal
-  url: "https://polymtl.ca"
-- name: INRIA
-  url: "https://inria.fr"
-- name: GERAD
-  url: "https://gerad.ca"
-- name: Cristal
-  url: "https://www.cristal.univ-lille.fr/?lang=en"
-- name: Centrale Lille
-  url: ""
+- name: Zuse Institute Berlin
+  url: "https://www.zib.de/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include various flavours of mathematical optimization and scientific programming.
+bio: Mathematical optimization, scientific programming and related.
 
 # List (academic) interests or hobbies
 interests:
@@ -39,6 +31,7 @@ interests:
 - Mathematical Optimization
 - Statistical Learning
 - Optimization and Engineering
+- Optimization Software
 
 education:
   courses:
@@ -68,13 +61,10 @@ social:
   link: https://twitter.com/matbesancon
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=-xStCAIAAAAJ
+  link: https://scholar.google.com/citations?user=-xStCAIAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/matbesancon
-- icon: quora
-  icon_pack: fab
-  link: https://quora.com/profile/Mathieu-Besançon
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-6284-3033
@@ -94,17 +84,21 @@ social:
 
 ---
 
-I am a PhD candidate in a double program (*cotutelle*) between
+
+I am a postdoctoral researcher at the [Zuse Institute Berlin](https://www.zib.de/),
+in the [Mathematical Optimization Methods](https://www.zib.de/aisst/mathematical-optimization-methods)
+group and associated to the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) project.
+
+I graduated with a double PhD (*cotutelle*) between
 [École Polytechnique of Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and
 Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
 & the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,
 in mathematical optimization.
 
-My thesis defended in December 2020 focuses on bilevel optimization, robust extensions
-and pricing for demand response in smart grids. Other topics I look at include
-non-linear optimization & applications in engineering,
-(non)-linear mixed-integer optimization, and optimization applications in statistics & learning.  
+My thesis, defended in December 2020, focuses on bilevel optimization, an extension
+coined *near-optimality robustness*, and pricing for demand response in smart grids.
+It was co-supervised by Luce Brotcorne (INRIA) & Miguel F. Anjos (University of Edinburgh).
 
 I am involved in several open-source projects around optimization and scientific computing
 in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev) but
@@ -115,6 +109,6 @@ the [UTC](https://www.utc.fr) with a semester at
 the [TUBS](https://www.tu-braunschweig.de/?lang=en) and Polytechnique Montreal.  
 
 On a personal note, I read both fiction (mostly detective, thrillers and fantasy)
-and non-fiction books, generally on economic policy, strategy
+and non-fiction books, on economic policy, strategy,
 and entrepreneurship (a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
-I also enjoy games in various formats (tabletop, video, board, card) and cooking.  
+I also enjoy games in various formats (tabletop, video, board, card) and cooking.
