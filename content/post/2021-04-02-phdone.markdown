@@ -1,0 +1,165 @@
++++
+date = 2021-04-02
+draft = false
+tags = ["academia", "phd"]
+title = "Bringing a PhD to the finish line"
+summary = """
+Random thoughts I've been willing to write since the defence.
+"""
+math = false
+diagram = false
+[header]
+image = "/posts/paperballs.jpg"
++++
+
+{{< toc >}}
+
+Last December, I defended my doctoral dissertation and finished the last steps towards the completion of my double PhD.
+I am only writing about it now because the experience left me drained but also extremely busy
+with things I had been putting off for a while.
+Now that a quarter of 2021 has vanished before me, we get to the point where putting it off for longer means forgetting about it.
+{{< tweet 1377863380095107072 >}}
+
+The major reasons for not doing this earlier are banality and messiness. Banality because many have written great pieces about 
+different stages of the PhD process, even better when written by people from awarding institutions
+who see cohorts succeed and fail every year.
+Still, I believe there are few angles that I would have liked to see stressed more and earlier, for me or others.
+Messiness because several thoughts had been in the back of my mind, discussed with others, and were still looming around without much structure.
+
+The end of a PhD is notoriously hard and you are mostly fighting against yourself, the excitement from the beginning
+is gone and any trick could be taken to smoothen this. Here are some things that worked not only well,
+but more than I would have expected.
+
+# Plan, organize, prioritize ruthlessly
+
+This is a general line of advice for the whole doctoral journey, even more important for the end.
+The finishing process by the French institutions jointly awarding my degree was ridiculously complex with many steps
+involving back-and-forth with multiple documents and actors.
+I would have loved to illustrate this with the diagram for the procedure at my institution
+but that might be needlessly targeting them.
+
+With such a mess, it is easy to lose focus of the scientific part and waste your time on paperwork.
+Remember this needs to be done but is low-priority. Do it when you are low on energy and focus, when you are
+tired or finish a work sprint, do not waste the valuable hours of your day on papers. Check the hard deadlines,
+is it in quite some time? Put it in a calendar and forget about it until you have time or no choice.
+
+My point here is: **no PhD** is awarded for being good at filling the paperwork and it should not be on the top of your mind.
+
+We were notoriously joking in the French research team about the time it took me to get properly enrolled in the first year.
+It could have been faster if I had spent more time and attention on it, in that case, go several
+times to the graduate administration offices. In retrospect, considering it low-priority and
+focusing on research before working the admin into my schedule was perfectly fine and let me focus
+on research much faster.
+
+Towards the end, prioritizing means constantly asking "Can I put this off until after my defence / my dissertation hand-out?".
+If not, can you squeeze it in a time frame where it is not penalizing your research? If yes, put it in a
+calendar and forget about it. Don't hesitate to consider this approach even for personal stuff you consider or know represents
+efforts. Seeing family, looking for a place for your next position, etc.
+
+The last sprint is fairly stressful, being ruthless on your priorities helps not being too hard on yourself.
+Setting reasonable short-term objectives is a great way to make progress. One of the most productive decisions
+I took was accepting to go on vacation in southern France for a week with friends. I had writing hours set
+every day (rarely more than two) and activities the rest of the time. I probably got at least as much done as
+I would have had stuck in my apartment.
+
+# Mind the change blindness on your research
+
+I will refer throughout this post to the introduction, context, literature review and conclusion of the dissertation
+as the **outer parts** and the core contribution chapters as the **inner parts** of the thesis.  
+
+While writing the outer parts of your dissertation, mind the change blindness, this perception "bug"
+that lets us unaware of things that changed throughout a period.
+In this case, you have become an expert on your research topic, despite what the imposter syndrome might be saying.
+This also implies that you always have a mental picture of facts and ideas related to your research that have
+become part of your everyday work.
+The reader does not have the same years of work on the research topic, even if they are in your domain.
+Highlight the contributions, more than you would have in an informal chat. Do not hesitate to write something
+down in the outer parts even if it seems obvious. For readers who have not looked at the problem, show why it
+is interesting. In some cultures, boasting about your results or achievements is quickly frowned upon;
+in the dissertation though, resist the urge to minimize them. It is not unscientific to highlight that your work is
+new, important, or opening new lines of research.  
+
+The feeling I often had when writing the outer parts of the dissertation is that my point was redundant with
+what was already in other places of the thesis, specifically in the inner parts.
+But when reading the introduction, I will expect to get some understanding of the domain, its challenges and
+open questions, how others have addressed questions similar to those of the thesis.
+It is normal to have some redundancy with the explanation of a core contribution two or three chapters down the line.
+In the conclusion, I do not want (just) the rehashed summary of each chapter of the inner parts
+but would love to see a more critical view of the angle that has been taken on the research question, openings
+on connected areas, how it could have been from a different perspective.  
+
+To give a rough idea of how I spent my last months, I handed out the manuscript at the end of September.
+Starting in May and for most of the summer, I focused on the outer parts, thinking about how to structure and articulate
+the introduction and literature review. The core concern that made me rework things several times was to make
+these outer parts accessible and interesting for readers outside my immediate domain, or even outside research but
+still with the appropriate technical background.
+
+A personal opinion & side-note: scientific outreach and communication is great, but a thesis is not the best place
+for it, it just brings conflicting objectives and additional efforts, not every piece should be targeting any untrained reader.
+
+# Thesis ownership
+
+The last line of advice I will give is on owning your results and doctoral work.
+I already had some thoughts on this [after one year into the PhD](https://matbesancon.github.io/post/2018-09-27-year-in-phd/).
+Ownership of one's PhD topic may be the single most important factor for enjoying your doctoral research
+and essential to turn into a great researcher in the long run.
+Reading this post from some places, this thought may seem oddly obvious.
+However, while exchanging with many doctoral candidates and reading the tone of some advisors,
+I saw there is a strong conception, especially in France, that:
+
+1. the PhD candidate is working **for** the advisor and that the PhD will follow;
+2. the advisor is responsible for the scientific choices taken.
+
+The second point goes for the better and worse aspects, and would come with reactions as "what was the advisor thinking"
+whenever some researchers see something they don't agree with in some work done by a PhD candidate, as if the person
+could not also be held responsible for their actions.
+But because it implies it is the responsibility of the advisor to define and adjust the research direction,
+such a line of thought is preventing PhD candidates to take ownership of their topic and research.
+
+This issue is tricky because it brings the connected subject of how PhDs are funded.
+Although I love discussing it, I thought for a while about whether to write about it.
+Because of the way PhDs are funded in some domains, the doctoral candidate is sometimes
+considered as the person recruited to fill a particular role in the lab.
+This does not help gain autonomy and a sense of ownership.
+And because the funding process is determined by the institution or nationally, there isn't much
+advisors or candidates can do. What both can though is shifting the perspective on work ownership.
+Regardless of how autonomous you felt during the PhD, the last sprint is the time to step it up.
+It will be your name on the dissertation, associated with everything from abstract to appendix and on the defence slides;
+it is your work and research profile being evaluated.
+This means you should be absolutely comfortable with everything in there and be able to take credit and
+blame for it, considering your advisors out of the equations during the defence.
+If they still need to help you by then, something went wrong along the way.
+Ownership of the decision is especially important and tricky for PhDs
+carried out with(in) industrial research partners (CIFRE in France or similar programs).
+Not all decisions on the investigation may be yours but you will need to justify them scientifically
+in front of examiners if they are in your doctoral work.
+
+I will finish with a last random fact on ownership.
+
+A 1st-year PhD student recently told a group of other PhDs about an email from their advisor,
+where they harshly explained that it is up to the student to reach out when they struggle,
+have questions or need a meeting, also suggesting that if the advisors asked
+the student for a meeting, that would be a "we need to talk" situation.
+The tone of the email was fairly brutal, arguing the student had no clue on
+how research works, who had which responsibility.
+
+A few opinions:
+
+- The tone of the email was plain wrong. I cannot use direct quotes to protect the PhD student, but being overly harsh on your subordinates to convey ideas just shows poor self-control (and this was in written form).
+- The 1st year PhD student not knowing about the way academia works should be obvious, even more for someone
+who has advising experience. The advisor should have realized when writing this email that this shows at best their failure
+at onboarding the student in academia and explain its **very** unspoken rules.
+- This last point is where I diverged from the opinion of others who heard the student's story: despite poor form and failed mentoring,
+the advisor is right in essence and the message they gave is best given early and explicitly as they did than figured out (or not)
+by the student much later in the process. This is even more the case in Corona times where 1st-year students have never
+been exposed to the research environment as it used to exist.
+
+As I wrote before, the advisor is not a boss as you would think of in a company,
+a closer metaphor would be an investor in time, lab resources, funding and reputation.
+This model is not perfect but better aligned with productive research relationships
+than the subordinate model I've often seen in some circles.
+
+--------------------
+
+Header photo credit:  
+Richard Dykes on Unsplash

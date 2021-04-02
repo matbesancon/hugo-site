@@ -42,7 +42,7 @@ education:
     institution: University of Technology of Compiègne (UTC), France
     year: 2011-2016
   - course: Exchange program, applied mathematics, computer science & industrial engineering
-    institution: École Polytechnique de Montréal, Canada
+    institution: Polytechnique Montréal, Canada
     year: 2015
   - course: Exchange semester, Process & Energy Engineering (Bachelor)
     institution: Technische Universität Braunschweig, Germany
@@ -89,8 +89,13 @@ I am a postdoctoral researcher at the [Zuse Institute Berlin](https://www.zib.de
 in the [Mathematical Optimization Methods](https://www.zib.de/aisst/mathematical-optimization-methods)
 group and associated to the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) project.
 
+I'm interested in the theory, methods and applications of mathematical optimization,
+trying to find the provably best solution to a given problem.
+More specifically, I have been interested at constrained optimization in various settings
+(see below for a list of topics).
+
 I graduated with a double PhD (*cotutelle*) between
-[École Polytechnique of Montréal](https://www.polymtl.ca),
+[Polytechnique Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and
 Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
 & the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,

@@ -13,5 +13,4 @@ header:
   image: ""
 ---
 
-These are a few posts I wrote. Other can be found on my
-[Medium page](https://medium.com/@matbesancon).
+These are a few thoughts I put in a text file, probably on paper before.
