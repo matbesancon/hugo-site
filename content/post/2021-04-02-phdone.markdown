@@ -2,7 +2,7 @@
 date = 2021-04-02
 draft = false
 tags = ["academia", "phd"]
-title = "Bringing a PhD to the finish line"
+title = "Bringing a PhD to the finishing line"
 summary = """
 Random thoughts I've been willing to write since the defence.
 """
