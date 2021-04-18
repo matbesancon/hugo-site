@@ -146,8 +146,8 @@ I will finish on *Instituts Universitaires de Technologie*.
 These institutions train technicians and used to offer two-year programs for that purpose.
 The programs have been reformed as *Bachelor Universitaire de Technologie* (BUT) starting
 in 2021 in three years after high school. Instead of focusing on theoretical foundations like CPGE,
-they deliver a degree in a practical domain like bioinformatics mechanical engineering or automation
-and electrical engineering. The degree prepares people for actual work, some join companies directly
+they deliver a degree in a practical domain like mechanical engineering, automation and electrical engineering or food science & technologies.
+The degree prepares people for actual work, some join companies directly
 after the program, some join engineering schools.
 The workload is high but reasonable, students are followed throughout the year to a larger extent than in a university.
 The profiles are typically more specialized towards an engineering discipline, following in the school
