@@ -14,12 +14,23 @@ weight = 50
 date_format = "January 2006"
 
 [[experience]]
+  title = "Postdoctoral researcher"
+  company = "Zuse Institute Berlin"
+  company_url = ""
+  location = "Berlin, Germany"
+  date_start = "2021-01-01"
+  date_end = ""
+  description = """
+  Research in optimization methods and computation.
+  """
+
+[[experience]]
   title = "Doctoral researcher"
   company = "Polytechnique Montréal, INRIA Lille"
   company_url = ""
   location = "Montréal, Canada & Lille, France"
   date_start = "2017-09-01"
-  date_end = ""
+  date_end = "2020-12-11"
   description = """
   Double PhD program in mathematical optimization for pricing of Demand Response programs in a smart grid context.
   """

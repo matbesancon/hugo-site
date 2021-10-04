@@ -86,13 +86,16 @@ social:
 
 
 I am a postdoctoral researcher at the [Zuse Institute Berlin](https://www.zib.de/),
-in the [Mathematical Optimization Methods](https://www.zib.de/aisst/mathematical-optimization-methods)
-group and associated to the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) project.
+in the [AI in Society, Science, and Technology](https://www.zib.de/aisst) department,
+working with the [Mathematical Optimization Methods](https://www.zib.de/aisst/mathematical-optimization-methods) and [Interactive Optimization and Learning](https://iol.zib.de/)
+groups. I am associated to the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) project.
 
-I'm interested in the theory, methods and applications of mathematical optimization,
+I am interested in the theory, methods, and computation in mathematical optimization,
 trying to find the provably best solution to a given problem.
-More specifically, I have been interested at constrained optimization in various settings
+Slightly more specifically, I have been interested in structured constrained optimization in various settings
 (see below for a list of topics).
+Those include solution methods and software in MI(N)LP and convex optimization and in particular
+the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
 
 I graduated with a double PhD (*cotutelle*) between
 [Polytechnique Montréal](https://www.polymtl.ca),
@@ -107,13 +110,13 @@ It was co-supervised by Luce Brotcorne (INRIA) & Miguel F. Anjos (University of 
 
 I am involved in several open-source projects around optimization and scientific computing
 in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev) but
-like looking around on new development in scientific programming.
-Before starting the PhD, I worked in various industries, from an IoT startup to steel
+like looking around on new development.
+Before starting the PhD, I worked in various industries, from a hardware startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
-the [UTC](https://www.utc.fr) with a semester at
-the [TUBS](https://www.tu-braunschweig.de/?lang=en) and Polytechnique Montreal.  
+the [UTC](https://www.utc.fr) in France with a semester at
+the [TUBS](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal in Canada.  
 
 On a personal note, I read both fiction (mostly detective, thrillers and fantasy)
-and non-fiction books, on economic policy, strategy,
+and non-fiction books, on economic policy, education,
 and entrepreneurship (a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
 I also enjoy games in various formats (tabletop, video, board, card) and cooking.
