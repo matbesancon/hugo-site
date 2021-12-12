@@ -13,7 +13,7 @@ selected = false
 math = false
 
 url_pdf = ""
-url_slides = "https://matbesancon.github.io/graph_interfaces_juliacon18/#/"
+url_slides = "https://matbesancon.xyz/graph_interfaces_juliacon18/#/"
 url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).

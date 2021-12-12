@@ -16,7 +16,7 @@ image = "posts/graph_interface/example.svg"
 
 This is an adapted post on the talk we gave with [James](https://twitter.com/fairbanksjp)
 at JuliaCon 2018 in London. You can see the
-[original slides](https://matbesancon.github.io/graph_interfaces_juliacon18),
+[original slides](https://matbesancon.xyz/graph_interfaces_juliacon18),
 the video still requires a bit of post-processing.
 
 Last week [JuliaCon](http://juliacon.org) in London was a great and very condensed experience.
@@ -24,7 +24,7 @@ The two talks on [LightGraphs.jl](https://github.com/JuliaGraphs/LightGraphs.jl)
 received a lot of positive feedback and more than that, we saw
 how people are using the library for a variety of use cases which is a great
 signal for the work on the JuliaGraphs ecosystem
-(see the [lightning talk](https://matbesancon.github.io/graph_interfaces_juliacon18/ecosystem.html#/)).
+(see the [lightning talk](https://matbesancon.xyz/graph_interfaces_juliacon18/ecosystem.html#/)).
 
 I wanted to re-build the same graph for people who prefer a post version to
 my clumsy live explanations on a laptop not handling dual-screen well
@@ -206,7 +206,7 @@ but the type ends up being a bit heavier in memory, your type, your trade-off.
 We've implemented a graph type suited to our need in a couple lines of Julia,
 guided by the `LightGraphs` interface specifying **how** to think about our
 graph instead of getting in the way of **what** to store. A lighter version
-of this post can be read as [slides](https://matbesancon.github.io/graph_interfaces_juliacon18/).
+of this post can be read as [slides](https://matbesancon.xyz/graph_interfaces_juliacon18/).
 
 As usual, ping me on [Twitter](https://twitter.com/matbesancon) for any
 question or comment.

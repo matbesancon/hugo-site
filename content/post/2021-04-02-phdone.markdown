@@ -100,7 +100,7 @@ for it, it just brings conflicting objectives and additional efforts, not every 
 # Thesis ownership
 
 The last line of advice I will give is on owning your results and doctoral work.
-I already had some thoughts on this [after one year into the PhD](https://matbesancon.github.io/post/2018-09-27-year-in-phd/).
+I already had some thoughts on this [after one year into the PhD](https://matbesancon.xyz/post/2018-09-27-year-in-phd/).
 Ownership of one's PhD topic may be the single most important factor for enjoying your doctoral research
 and essential to turn into a great researcher in the long run.
 Reading this post from some places, this thought may seem oddly obvious.

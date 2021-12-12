@@ -278,7 +278,7 @@ end
 To understand how this derivative computation can work with just few
 function calls (proportional to the size of the input), one must dig
 a bit deeper in [Dual Numbers](https://en.wikipedia.org/wiki/Dual_number).
-I will shamelessly refer to [my slides](https://matbesancon.github.io/slides/ad4dev#/12)
+I will shamelessly refer to [my slides](https://matbesancon.xyz/slides/ad4dev#/12)
 at the Lambda Lille meetup for an example implementation in Haskell.
 
 # Why not reverse-mode?

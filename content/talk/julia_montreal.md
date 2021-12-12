@@ -13,7 +13,7 @@ selected = false
 math = false
 
 url_pdf = ""
-url_slides = "https://matbesancon.github.io/julia_packages"
+url_slides = "https://matbesancon.xyz/julia_packages"
 url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).

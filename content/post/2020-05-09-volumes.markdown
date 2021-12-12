@@ -22,7 +22,7 @@ I could not resist diving into this new [blog post](https://sinews.siam.org/Deta
 on SIAM News.
 This is the second time a post from Mark Levi caught my attention, the last
 was on [heat exchangers](https://sinews.siam.org/Details-Page/a-near-perfect-heat-exchange),
-on which I also wrote a [post](https://matbesancon.github.io/post/2018-12-27-heat-exchanger/), toying with parallel and counter-current heat exchangers.  
+on which I also wrote a [post](https://matbesancon.xyz/post/2018-12-27-heat-exchanger/), toying with parallel and counter-current heat exchangers.  
 
 This new post from Mark Levi illustrates a key concept in constrained optimization: *Lagrange multipliers*
 and a nice interpretation in a problem of communicating vessels.

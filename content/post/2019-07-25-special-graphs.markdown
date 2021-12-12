@@ -46,7 +46,7 @@ that were not stated. This has led to the development of
 soon to some work on LightGraphs.jl itself.
 
 Another way to push the abstraction came out of the
-[JuliaNantes workshop](http://matbesancon.github.io/slides/JuliaNantes/Graphs):
+[JuliaNantes workshop](https://matbesancon.xyz/slides/JuliaNantes/Graphs):
 leveraging some special structure of graphs to optimize some specific operations.
 A good parallel can be established be with the `LinearAlgebra` package from
 Julia Base, which defines special matrices such as `Diagonal` and `Symmetric`
