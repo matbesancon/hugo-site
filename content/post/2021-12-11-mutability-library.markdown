@@ -95,7 +95,7 @@ work. In the latter case, allocating a few vectors might be fine because
 linear algebra will dominate runtime, but not in FW where each
 individual operation is relatively cheap compared to allocations.
 
-## Passing containers
+# Passing containers
 
 This would be the typical signature of C functions, receiving almost all
 heap-allocated containers as arguments.
@@ -132,7 +132,7 @@ because the ``main'' one is supposed to then contain the actual gradient
 value at `x`.
 Alternatively, all additional storage elements could be put as keyword arguments, but it also quickly makes for obscure signatures.
 
-## Dedicated workspace
+# Dedicated workspace
 
 This is the approach taken in [Nonconvex.jl](https://github.com/JuliaNonconvex/Nonconvex.jl), all temporary containers required by an algorithm are defined
 as a type specific to that algorithm:
@@ -160,7 +160,7 @@ of different types without requiring changes to the other algorithms.
 This is exactly the path experimented for the step size computation
 in [FrankWolfe.jl#259](https://github.com/ZIB-IOL/FrankWolfe.jl/pull/259).  
 
-## Functors
+# Functors
 
 Sadly, the workspace pattern not a silver bullet, even if it covers a lot of cases.
 When one needs not only some internal workspace, but also returning a large object?
