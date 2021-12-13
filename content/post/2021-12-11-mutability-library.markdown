@@ -128,7 +128,7 @@ grad!(storage1, storage2, storage3, x)
 means users would need to implement one with a very large number of arguments
 all the time which they wouldn't use.
 Remember we cannot just bundle all the storage containers into one
-because the ``main'' one is supposed to then contain the actual gradient
+because the "main" one is supposed to then contain the actual gradient
 value at `x`.
 Alternatively, all additional storage elements could be put as keyword arguments, but it also quickly makes for obscure signatures.
 
@@ -162,7 +162,7 @@ in [FrankWolfe.jl#259](https://github.com/ZIB-IOL/FrankWolfe.jl/pull/259).
 
 # Functors
 
-Sadly, the workspace pattern not a silver bullet, even if it covers a lot of cases.
+Sadly, the workspace pattern is not a silver bullet, even if it covers a lot of cases.
 When one needs not only some internal workspace, but also returning a large object?
 
 The Frank-Wolfe is also composed of different building blocks, gradient computation,
@@ -250,3 +250,5 @@ grad! = GradientWithMatrix(ones(3,3))
 
 This allows us, in a non-intrusive way for the algorithm code, to add an iteration tracking feature
 to Frank-Wolfe.
+
+Thanks [Wikunia](https://github.com/Wikunia/) for proofreading and feedback!
