@@ -42,7 +42,7 @@ Finally, AD library developers can leverage ChainRules.jl to obtain derivatives
 from functions when available, and otherwise use AD mechanisms to obtain them from
 more elementary functions.
 
-The logic and motivation is explained in more details in [Lyndon's talk](https://www.youtube.com/watch?v=B4NfkkkJ7rs)
+The logic and motivation is explained in more details in [Frame's talk](https://www.youtube.com/watch?v=B4NfkkkJ7rs)
 at JuliaCon 2020 and the package [documentation](https://www.juliadiff.org/ChainRulesCore.jl/stable/)
 which is very instructive on AD in general.
 
