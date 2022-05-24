@@ -55,7 +55,7 @@ time_format = "15:04"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "mathieu (dot) besancon (at) gmail (dot) com"
+email = "mathieu (dot) besancon+contact (at) gmail (dot) com"
 phone = ""
 address = ""
 
@@ -71,10 +71,9 @@ contact_links = [
   {icon = "twitter", icon_pack = "fab", name = "Tweet or DM me", link = "https://twitter.com/matbesancon"},
   {icon = "github", icon_pack = "fab", name = "Github", link = "https://github.com/matbesancon"},
   {icon = "google-scholar", icon_pack = "ai", name = "Google Scholar", link = "https://scholar.google.ca/citations?user=-xStCAIAAAAJ"},
-  {icon = "quora", icon_pack = "fab", name = "Ask things on Quora", link = "https://quora.com/profile/Mathieu-Besançon"},
   {icon = "orcid", icon_pack = "ai", name = "ORCID", link = "https://orcid.org/0000-0002-6284-3033"},
-  {icon = "youtube", icon_pack = "fab", name = "Youtube channel", link = "https://www.youtube.com/channel/UCVSd42nW_MqkbSXijgOvKwg"},
-  {icon = "linkedin", icon_pack = "fab", name = "Linkedin", link = "https://linkedin.com/in/mbesancon"}
+  # {icon = "youtube", icon_pack = "fab", name = "Youtube channel", link = "https://www.youtube.com/channel/UCVSd42nW_MqkbSXijgOvKwg"},
+  # {icon = "linkedin", icon_pack = "fab", name = "Linkedin", link = "https://linkedin.com/in/mbesancon"}
   ]
 
 # Display a map.

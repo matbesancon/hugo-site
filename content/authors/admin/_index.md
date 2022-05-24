@@ -85,10 +85,10 @@ social:
 ---
 
 
-I am a postdoctoral researcher at the [Zuse Institute Berlin](https://www.zib.de/),
+I am a researcher at the [Zuse Institute Berlin](https://www.zib.de/),
 in the [AI in Society, Science, and Technology](https://www.zib.de/aisst) department,
 working with the [Mathematical Optimization Methods](https://www.zib.de/aisst/mathematical-optimization-methods) and [Interactive Optimization and Learning](https://iol.zib.de/)
-groups. I am associated to the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) project
+groups. I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) project
 and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.
 
 I am interested in the theory, methods, and computation in mathematical optimization,
