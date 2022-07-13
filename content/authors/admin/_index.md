@@ -95,8 +95,8 @@ I am interested in the theory, methods, and computation in mathematical optimiza
 trying to find the provably best solution to a given problem.
 Slightly more specifically, I have been interested in structured constrained optimization in various settings
 (see below for a list of topics).
-Those include solution methods and software in MI(N)LP and convex optimization and in particular
-the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
+Those include solution methods, computational models, and software in MI(N)LP and convex optimization and in particular
+around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
 
 I graduated with a double PhD (*cotutelle*) between
 [Polytechnique Montréal](https://www.polymtl.ca),
@@ -115,9 +115,9 @@ like looking around on new development.
 Before starting the PhD, I worked in various industries, from a hardware startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) in France with a semester at
-the [TUBS](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal in Canada.  
+the [TUBS](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal.
 
-On a personal note, I read both fiction (mostly detective, thrillers and fantasy)
+On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
 and non-fiction books, on economic policy, education,
 and entrepreneurship (a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
 I also enjoy games in various formats (tabletop, video, board, card) and cooking.
