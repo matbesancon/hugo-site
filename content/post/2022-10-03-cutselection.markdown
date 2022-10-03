@@ -187,7 +187,7 @@ o = SCIP.Optimizer()
 SCIP.include_cutsel(o, cutselector)
 ```
 
-## Some C-Julia magic
+# Some C-Julia magic
 
 The simplicity of the interface is enabled by some nice-to-have features.
 
