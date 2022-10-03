@@ -1,7 +1,7 @@
 +++
 date = 2020-01-23
 draft = false
-tags = ["julia", "automatic-differentiation", "optimization", "integer", "jump"]
+tags = ["julia", "automatic-differentiation", "optimization", "integer-optimization", "jump"]
 title = "Differentiating the discrete: Automatic Differentiation meets Integer Optimization"
 summary = """
 What can automated gradient computations bring to mathematical optimizers, what does it take to compute?

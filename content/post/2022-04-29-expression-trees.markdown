@@ -10,7 +10,7 @@ diagram = false
 [header]
 +++
 
-Today was the release of [SCIP.jl](LINK) v0.11, the first release switching to SCIP 8.
+Today was the release of [SCIP.jl](https://github.com/scipopt/SCIP.jl) v0.11, the first release switching to SCIP 8.
 The major change in this (massive) release was the rewrite of the nonlinear optimization part, using a so-called expression framework.
 The rewrite of the wrapper had some fairly tedious parts, debugging C shared libraries is quickly a mess with cryptic error messages.
 But the nonlinear rewrite gave me the opportunity to tweak the way Julia expressions are passed to SCIP in a minor way.
