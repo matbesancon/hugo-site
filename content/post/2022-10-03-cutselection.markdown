@@ -10,8 +10,8 @@ diagram = false
 [header]
 +++
 
-This is a short post on the cut selection mechanism in SCIP
-and things I used for its implementation in the [SCIP.jl](https://github.com/scipopt/SCIP.jl) Julia wrapper.
+This is a short post on the cut selection mechanism in the mixed-integer optimization solver
+SCIP and things I used for its implementation in the [SCIP.jl](https://github.com/scipopt/SCIP.jl) Julia wrapper.
 You can check out the corresponding [pull request](https://github.com/scipopt/SCIP.jl/pull/245) for completeness.
 
 {{< toc >}}
@@ -19,13 +19,14 @@ You can check out the corresponding [pull request](https://github.com/scipopt/SC
 # Callbacks?
 
 The space of mixed-integer optimization solvers is mostly divided between
-commercial closed-source and academic solvers open in source code.
+commercial, closed-source solvers and academic solvers open in source code.
 In the second cluster, [SCIP](https://scipopt.org) stands out for the tunability of the solving
 process, like all solvers through some parameters but more importantly through *callbacks*.
 
 Callbacks are functions that are passed to a solver (or another function more generally) by the user
 with an expected behavior.
-Conceptually, they are the most elementary building block for *Inversion of Control*.
+Conceptually, they are the most elementary building block for *Inversion of Control*, letting the user
+define part of the behaviour of the solver through their own code and not only through fixed parameters.
 
 A basic callback system implemented in many solvers is a printing or logging callback,
 the user function is called at every iteration of a solving process with some iteration-specific information to print or log,
@@ -72,10 +73,10 @@ void my_solver(double* x, Gradient gradient_function, Callback callback) {
 # SCIP plugins
 
 SCIP plugins are generic interfaces for certain components of the solver such as cutting plane generators
-(also called separators), heuristics, constraints.
-Think of interfaces as a bundle of functions that have a grouped logic, they are another step in Inversion of Control
-often referred to as *Dependency Injection*.
-Since C does not have a native mechanism for this (think C++ abstract classes, Haskell data classes, Rust traits),
+(also called separators), heuristics, lazy constraints.
+Think of plugins as a bundle of functions that have a grouped logic. Compared to callbacks,
+they are another level in Inversion of Control often referred to as *Dependency Injection*.
+Since C does not have a native mechanism for such a concept (think C++ abstract classes, Haskell data classes, Rust traits, Java interfaces, Scala traits),
 the SCIP developers just cooked up their own with macros for the sugar of an interface.
 
 SCIP plugins are listed on the page for [how to add them](https://www.scipopt.org/doc/html/HOWTOADD.php).
