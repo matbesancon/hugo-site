@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Postdoctoral researcher, mathematical optimization
+role: Researcher in mathematical optimization
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -26,12 +26,12 @@ bio: Mathematical optimization, scientific programming and related.
 interests:
 - Bilevel Optimization
 - Convex Optimization
-- MI(N)LP
-- Energy Systems
+- Mixed-Integer (Non-)Linear Optimization
+- Power Systems
 - Mathematical Optimization
-- Statistical Learning
 - Optimization and Engineering
 - Optimization Software
+- Algorithm Design
 
 education:
   courses:
@@ -85,14 +85,12 @@ social:
 ---
 
 
-I am a researcher at the [Zuse Institute Berlin](https://www.zib.de/),
-in the [AI in Society, Science, and Technology](https://www.zib.de/aisst) department,
-working with the [Mathematical Optimization Methods](https://www.zib.de/aisst/mathematical-optimization-methods) and [Interactive Optimization and Learning](https://iol.zib.de/)
-groups. I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) project
+I am a researcher in computational optimization at the [Zuse Institute Berlin](https://www.zib.de/),
+in the [AI in Society, Science, and Technology](https://www.zib.de/aisst) department.
+I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) DFG project
 and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.
 
-I am interested in the theory, methods, and computation in mathematical optimization,
-trying to find the provably best solution to a given problem.
+My research interests span the theory, methods, and algorithms in mathematical optimization, either on various generic or specific classes of problems.
 Slightly more specifically, I have been interested in structured constrained optimization in various settings
 (see below for a list of topics).
 Those include solution methods, computational models, and software in MI(N)LP and convex optimization and in particular
