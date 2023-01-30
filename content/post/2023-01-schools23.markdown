@@ -1,6 +1,6 @@
 +++
 date = 2023-01-30
-draft = true
+draft = false
 tags = ["optimization", "phd", "academia"]
 title = "Graduate Winter/Summer Schools in Optimization - 2023"
 summary = """
