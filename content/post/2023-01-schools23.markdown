@@ -14,18 +14,19 @@ This post collects a partial list of winter and summer schools for 2023/2024, di
 [the ones compiled by Thiago Serra](https://thiagoserra.com/2020/01/19/summer-2020-schools-on-algorithms-data-science-machine-learning-networks-optimization-transportation-and-other-relevant-topics-in-operations-research/).
 
 {{< toc >}}
-**Winter 2023**
+
+# Winter 2023
 
 - Winter School of [AMSI](https://ss.amsi.org.au/), 9th January, Melbourne, Australia
 
-**Summer 2023**:
+# Summer 2023
 
 - Summer School of [IPCO](https://optimization.discovery.wisc.edu/ipco-2023-madison/), 19th June, Madison, Wisconsin, US
 - Summer School of the [Bilevel Optimization](https://www.bilevelconference2023.org/summer-school) conference, 8th August, Southampton, UK
 - Summer School of [NUMERICAL COMPUTATIONS: THEORY AND ALGORITHMS](https://www.numta.org/), 14th June, Calabria, Italy
 - Summer School of [PhD Summer School on Sustainable Supply Chains](https://www.fernuni-hagen.de/produktion-logistik/forschung/veranstaltungen/PhD_Summer_School.shtml), 29th June, Hagen, Germany
 
-**Autumn 2023**:
+# Autumn 2023
 
 - Autumn School on Constrained Optimization in Machine Learning, ALOP, University of Trier
 
