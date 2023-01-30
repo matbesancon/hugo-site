@@ -1,0 +1,27 @@
++++
+date = 2023-01-30
+draft = true
+tags = ["optimization", "phd", "academia"]
+title = "Graduate Winter/Summer Schools in Optimization - 2023"
+summary = """
+"""
+math = false
+diagram = false
+[header]
++++
+
+This post collects a partial list of winter and summer schools for 2023/2024, directly inspired by
+[the ones compiled by Thiago Serra](https://thiagoserra.com/2020/01/19/summer-2020-schools-on-algorithms-data-science-machine-learning-networks-optimization-transportation-and-other-relevant-topics-in-operations-research/).
+
+{{< toc >}}
+
+**Summer 2023**:
+
+- Summer School of [IPCO](https://optimization.discovery.wisc.edu/ipco-2023-madison/), 19th June, Madison, Wisconsin, US
+- Summer School of the [Bilevel Optimization](https://www.bilevelconference2023.org/summer-school) conference, 8th August, Southampton, UK
+
+**Autumn 2023**:
+
+- Autumn School on Constrained Optimization in Machine Learning, ALOP, University of Trier
+
+If I missed your favourite school for 2023 and first quarter 2024, open a pull request.
