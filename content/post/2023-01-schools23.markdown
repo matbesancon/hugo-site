@@ -4,6 +4,7 @@ draft = false
 tags = ["optimization", "phd", "academia"]
 title = "Graduate Winter/Summer Schools in Optimization - 2023"
 summary = """
+A partial list of graduate winter and summer schools in optimization.
 """
 math = false
 diagram = false
