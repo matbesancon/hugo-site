@@ -102,8 +102,7 @@ at the [GERAD lab](https://www.gerad.ca/en/) and
 Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
 & the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,
 in mathematical optimization.
-
-My thesis, defended in December 2020, focuses on bilevel optimization, an extension
+My thesis focused on bilevel optimization, an extension
 coined *near-optimality robustness*, and pricing for demand response in smart grids.
 It was co-supervised by Luce Brotcorne (INRIA) & Miguel F. Anjos (University of Edinburgh).
 

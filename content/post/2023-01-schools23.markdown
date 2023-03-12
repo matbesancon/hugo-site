@@ -22,10 +22,11 @@ This post collects a partial list of winter and summer schools for 2023/2024, di
 
 # Summer 2023
 
-- Summer School of [IPCO](https://optimization.discovery.wisc.edu/ipco-2023-madison/), 19th June, Madison, Wisconsin, US
-- Summer School of the [Bilevel Optimization](https://www.bilevelconference2023.org/summer-school) conference, 8th August, Southampton, UK
 - Summer School of [NUMERICAL COMPUTATIONS: THEORY AND ALGORITHMS](https://www.numta.org/), 14th June, Calabria, Italy
+- Summer School of [IPCO](https://optimization.discovery.wisc.edu/ipco-2023-madison/), 19th June, Madison, Wisconsin, US
 - Summer School of [PhD Summer School on Sustainable Supply Chains](https://www.fernuni-hagen.de/produktion-logistik/forschung/veranstaltungen/PhD_Summer_School.shtml), 29th June, Hagen, Germany
+- Gene Golub SIAM Summer School on [Quantum Computing and Optimization](https://wordpress.lehigh.edu/siamquantum) , 30th July, Lehigh, PA, US.
+- Summer School of the [Bilevel Optimization](https://www.bilevelconference2023.org/summer-school) conference, 8th August, Southampton, UK
 
 # Autumn 2023
 
