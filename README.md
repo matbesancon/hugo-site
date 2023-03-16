@@ -1,2 +1,3 @@
-# hugo-site
-Personal website built with Hugo
+# Personal website
+
+Access on https://matbesancon.xyz
