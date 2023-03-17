@@ -22,6 +22,7 @@ This post collects a partial list of winter and summer schools for 2023/2024, di
 
 # Summer 2023
 
+- Spring School on [Complexity](https://epit2023.sciencesconf.org/), 12th June, Oléron, France
 - Summer School on [Automatic Algorithm Design 2023](https://ssaad2023.sciencesconf.org/), 12th June, Villeneuve d'Ascq, France
 - Summer School of [NUMERICAL COMPUTATIONS: THEORY AND ALGORITHMS](https://www.numta.org/), 14th June, Calabria, Italy
 - Summer School of [IPCO](https://optimization.discovery.wisc.edu/ipco-2023-madison/), 19th June, Madison, Wisconsin, US
