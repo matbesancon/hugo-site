@@ -32,7 +32,7 @@ image:
 projects: []
 publishDate: '2023-03-18T13:12:25.931952Z'
 publication_types:
-- '2'
+- '1'
 abstract: ''
 publication: '*Advances in Neural Information Processing Systems*'
 ---

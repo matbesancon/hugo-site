@@ -37,7 +37,7 @@ image:
 projects: []
 publishDate: '2023-03-18T13:13:27.973910Z'
 publication_types:
-- '0'
+- '3'
 abstract: ''
 publication: '*arXiv*'
 doi: 10.48550/ARXIV.2302.04721

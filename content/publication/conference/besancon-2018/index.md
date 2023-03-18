@@ -32,7 +32,7 @@ image:
 projects: []
 publishDate: '2023-03-18T13:12:25.662935Z'
 publication_types:
-- '0'
+- '1'
 abstract: ''
 publication: ''
 ---

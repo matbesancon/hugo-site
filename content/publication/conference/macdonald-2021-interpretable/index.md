@@ -32,7 +32,7 @@ image:
 projects: []
 publishDate: '2023-03-18T13:12:26.951801Z'
 publication_types:
-- '2'
+- '1'
 abstract: ''
 publication: '*ICML*'
 ---

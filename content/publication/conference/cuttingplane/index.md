@@ -32,7 +32,7 @@ image:
 projects: []
 publishDate: '2023-03-18T13:12:28.846118Z'
 publication_types:
-- '2'
+- '1'
 abstract: ''
 publication: '*CPAIOR 2023*'
 ---
