@@ -1,20 +1,22 @@
 ---
 # Display name
-name: Mathieu Besançon
+title: Mathieu Besançon
 
-# Username (this should match the folder name)
-authors:
-- admin
+# Full name (for SEO)
+first_name: Mathieu
+last_name: Besançon
+
+# Status emoji
+status:
+  icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
 
-# Role/position
+# Role/position/tagline
 role: Researcher in mathematical optimization
 
-# Organizations/Affiliations
-#   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-# Organizations/Affiliations
+# Organizations/Affiliations to show in About widget
 organizations:
 - name: Zuse Institute Berlin
   url: "https://www.zib.de/"
@@ -24,15 +26,16 @@ bio: Mathematical optimization, scientific programming and related.
 
 # List (academic) interests or hobbies
 interests:
-- Bilevel Optimization
-- Convex Optimization
-- Mixed-Integer (Non-)Linear Optimization
-- Power Systems
-- Mathematical Optimization
-- Optimization and Engineering
-- Optimization Software
-- Algorithm Design
+  - Bilevel Optimization
+  - Convex Optimization
+  - Mixed-Integer (Non-)Linear Optimization
+  - Power Systems
+  - Mathematical Optimization
+  - Optimization and Engineering
+  - Optimization Software
+  - Algorithm Design
 
+# Education to show in About widget
 education:
   courses:
   - course: Joint PhD, Applied Mathematics & Computer Science
@@ -49,9 +52,9 @@ education:
     year: 2013
 
 # Social/Academic Networking
-# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
+# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
 - icon: envelope
   icon_pack: fas
@@ -74,27 +77,32 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://linkedin.com/in/mbesancon
+  # Link to a PDF of your resume/CV.
+  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
+  # and uncomment the lines below.
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/resume.pdf
 
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[social]]
-#   icon = "cv"
-#   icon_pack = "ai"
-#   link = "files/cv.pdf"
+# Enter email to display Gravatar (if Gravatar enabled in Config)
+email:
 
+# Highlight the author in author lists? (true/false)
+highlight_name: true
 ---
-
 
 I am a researcher in computational optimization at the [Zuse Institute Berlin](https://www.zib.de/),
 in the [AI in Society, Science, and Technology](https://www.zib.de/aisst) department.
 I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) DFG project
 and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.
+{style="text-align: justify;"}
 
 My research interests span the theory, methods, and algorithms in mathematical optimization, either on various generic or specific classes of problems.
 Slightly more specifically, I have been interested in structured constrained optimization in various settings
 (see below for a list of topics).
 Those include solution methods, computational models, and software in MI(N)LP and convex optimization and in particular
 around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
+{style="text-align: justify;"}
 
 I graduated with a double PhD (*cotutelle*) between
 [Polytechnique Montréal](https://www.polymtl.ca),
@@ -105,6 +113,7 @@ in mathematical optimization.
 My thesis focused on bilevel optimization, an extension
 coined *near-optimality robustness*, and pricing for demand response in smart grids.
 It was co-supervised by Luce Brotcorne (INRIA) & Miguel F. Anjos (University of Edinburgh).
+{style="text-align: justify;"}
 
 I am involved in several open-source projects around optimization and scientific computing
 in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev) but
@@ -113,8 +122,10 @@ Before starting the PhD, I worked in various industries, from a hardware startup
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) in France with a semester at
 the [TUBS](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal.
+{style="text-align: justify;"}
 
 On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
 and non-fiction books, on economic policy, education,
-and entrepreneurship (a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
+and entrepreneurship, a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
 I also enjoy games in various formats (tabletop, video, board, card) and cooking.
+{style="text-align: justify;"}
