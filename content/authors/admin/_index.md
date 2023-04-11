@@ -94,16 +94,16 @@ highlight_name: true
 
 {{% alignjust %}}
 I am a researcher in computational optimization at the [Zuse Institute Berlin](https://www.zib.de/),
-in the [AI in Society, Science, and Technology](https://www.zib.de/aisst) department.
+in the [IOL](https://iol.zib.de/) department.
 I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) DFG project
 and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.
 {{% /alignjust %}}
 
-My research interests span the theory, methods, and algorithms in mathematical optimization, either on various generic or specific classes of problems.
-Slightly more specifically, I have been interested in structured constrained optimization in various settings
-(see below for a list of topics).
+My research interests span the theory, methods, and algorithms for several flavours of mathematical optimization.
+Slightly more specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit,
+typically for convex and mixed-integer optimization (see below for a list of topics).
 Those include solution methods, computational models, and software in MI(N)LP and convex optimization and in particular
-around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
+around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.  
 
 I graduated with a double PhD (*cotutelle*) between
 [Polytechnique Montréal](https://www.polymtl.ca),
