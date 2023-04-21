@@ -100,11 +100,12 @@ and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Ce
 {{% /alignjust %}}
 
 My research interests span the theory, methods, and algorithms for several flavours of mathematical optimization.
-Slightly more specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit,
-typically for convex and mixed-integer optimization (see below for a list of topics).
-Those include solution methods, computational models, and software in MI(N)LP and convex optimization and in particular
-around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.  
-
+More specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit.
+Those include solution methods, computational models, and software in mixed-integer (non-)linear and convex optimization and in particular
+around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
+Recently, I have been exploring applications for these classes of problems in quantum information, systems biology,
+networks and infrastructure, and data science.  
+    
 I graduated with a double PhD (*cotutelle*) between
 [Polytechnique Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and
