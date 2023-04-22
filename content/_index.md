@@ -5,9 +5,10 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: about.avatar
+  - block: about.biography
     id: about
     content:
+      title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       # Override your bio text from `authors/admin/_index.md`?
@@ -49,6 +50,23 @@ sections:
           date_start: '2016-07-01'
           date_end: '2017-08-04'
           description:  Research and development for a startup building connected devices and associated products for horse-riders.
+        - title: Master's Thesis
+          company: Siemens AG, Digital Industries
+          company_url: ''
+          company_logo:
+          location: Karslruhe, Germany
+          date_start: '2016-02-01'
+          date_end: '2016-07-31'
+          description: Stochastic models for event monitoring in automated systems.
+        - title: Junior Engineer Placement
+          company: ArcelorMittal Hamburg GmbH
+          company_url: ''
+          company_logo:
+          location: Hamburg, Germany
+          date_start: '2014-08-01'
+          date_end: '2015-01-30'
+          description: Quantification and analysis of material losses in a steel rolling mill.
+
   - block: collection
     id: publications
     content:
