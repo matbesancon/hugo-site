@@ -50,7 +50,7 @@ decomposition I had played with in a [previous post]({{< ref "/post/2018-05-25-c
 
 Now that we have a general idea of the problem at hand, let's see the specifics.
 Consider a problem such as:
-$$ \min\_{x,y} f(y) + c^T x $$
+$$ \min\_{x,y} f(y) + c^\top x $$
 s.t. $$ G(y) \in \mathcal{S}$$
      $$ A x + D y \geq b $$
      $$ x \in \mathbb{R}^{n_1}\_{+}, y \in \mathcal{Y} $$
@@ -69,7 +69,7 @@ s.t. $$ G(y) \in \mathcal{S}$$
      $$ y \in \mathcal{Y} $$
 
 Where:
-$$ \phi(y) = \min_{x} \\{c^T x, Ax \geq b - Dy, x \geq 0 \\} $$
+$$ \phi(y) = \min_{x} \\{c^\top x, Ax \geq b - Dy, x \geq 0 \\} $$
 
 $\phi(y)$ is a non-smooth function, with $\, dom\ \phi \,$ the feasible domain
 of the problem. If you are familiar with bilevel optimization, this could
@@ -77,7 +77,7 @@ remind you of the *optimal value function* used to describe lower-level problems
 We will call $SP$ the sub-problem defined in the function $\phi$.
 
 The essence of Benders is to start from an outer-approximation (overly optimistic)
-by replacing $\phi$ with a variable $\eta$ which might be higher than the min value,
+by replacing $\phi$ with a variable $\eta$ which might be lower than the true min value,
 and then add cuts which progressively constrain the problem.
 The initial outer-approximation is:
 
@@ -88,8 +88,8 @@ s.t. $$ G(y) \in \mathcal{S}$$
 Of course since $\eta$ is unconstrained, the problem will start unbounded.
 What are valid cuts for this? Let us define the dual of the sub-problem $SP$,
 which we will name $DSP$:
-$$ \max\_{\alpha} (b - Dy)^T \alpha  $$
-s.t. $$ A^T \alpha \leq c $$
+$$ \max\_{\alpha} (b - Dy)^\top \alpha  $$
+s.t. $$ A^\top \alpha \leq c $$
      $$ \alpha \geq 0 $$
 
 Given that $\eta \geq min SP$, by duality, $\eta \geq max DSP$.
@@ -189,7 +189,11 @@ The main part of the resolution holds here in three steps.
 - If no, add the corresponding cut to the master problem, return to 2.
 
 {{< highlight julia>}}
-function benders_optimize!(m::Model, y::Vector{VariableRef}, sd::SubProblemData, sp_optimizer, f::Union{Function,Type}; eta_bound::Real = -1000.0)
+function benders_optimize!(
+        m::Model, y::Vector{VariableRef},
+        sd::SubProblemData, sp_optimizer, f::Union{Function,Type};
+        eta_bound::Real = -1000.0,
+    )
     subproblem = Model(with_optimizer(sp_optimizer))
     dsp = DualSubProblem(sd, subproblem)
     @variable(m, η >= eta_bound)
@@ -253,7 +257,9 @@ f(v) = 2v[1]
 m = Model(with_optimizer(SCIP.Optimizer))
 @variable(m, y[j=1:1] >= 0)
 # solve and voilà
-(m, y, cuts, nopt_cons, nfeas_cons) = SimpleBenders.benders_optimize!(m, y, data, () -> Clp.Optimizer(LogLevel = 0), f)
+(m, y, cuts, nopt_cons, nfeas_cons) = SimpleBenders.benders_optimize!(
+    m, y, data, () -> Clp.Optimizer(LogLevel = 0), f,
+)
 {{< /highlight >}}
 
 The full code is available on
