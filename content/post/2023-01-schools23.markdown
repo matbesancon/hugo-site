@@ -38,3 +38,7 @@ This post collects a partial list of winter and summer schools for 2023/2024, di
 
 If I missed your favourite school for 2023 and first quarter 2024, open a pull request and modify [this file](https://github.com/matbesancon/hugo-site/blob/master/content/post/2023-01-schools23.markdown).
 Thanks to Mark Turner and Joao Dionisio for pointing out some of these!
+
+# Winter 2024
+
+- Winter School on [Network Optimization](https://netopt2024.campus.ciencias.ulisboa.pt/), Estoril, Portugal
