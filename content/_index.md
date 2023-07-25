@@ -26,13 +26,21 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Associate Researcher
+          company: Inria Grenoble
+          company_url: 'https://www.inria.fr/en/inria-centre-university-grenoble-alpes'
+          company_logo:
+          location: Grenoble, France
+          date_start: '2024-01-01'
+          date_end: ''
+          description: Research in optimization.
         - title: Postdoctoral Researcher
           company: Zuse Institute Berlin
-          company_url: ''
+          company_url: 'https://www.zib.de/'
           company_logo:
           location: Berlin, Germany
           date_start: '2021-01-01'
-          date_end: ''
+          date_end: '2023-12-31'
           description: Research in optimization methods and computation.
         - title: Doctoral Researcher
           company: Polytechnique Montréal, Inria Lille
