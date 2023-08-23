@@ -91,14 +91,13 @@ email:
 highlight_name: true
 ---
 
-
-{{% alignjust %}}
-I am a researcher in computational optimization at the [Zuse Institute Berlin](https://www.zib.de/),
-in the [IOL](https://iol.zib.de/) department.
+I am a researcher in mathematical optimization with interests in nonlinear and discrete structures, and an emphasis on formulation and computational aspects.
+I am currently at the [Zuse Institute Berlin](https://www.zib.de/), in the [IOL](https://iol.zib.de/) group.
 I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) DFG project
-and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.
-{{% /alignjust %}}
-
+and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.  
+I am joining [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes)
+in January 2024 as a tenured Associate Researcher (Chargé de Recherche) and will be working with the [POLARIS](https://team.inria.fr/polaris/) group within the [LIG](https://www.liglab.fr/en).
+  
 My research interests span the theory, methods, and algorithms for several flavours of mathematical optimization.
 More specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit.
 Those include solution methods, computational models, and software in mixed-integer (non-)linear and convex optimization and in particular
@@ -117,14 +116,13 @@ coined *near-optimality robustness*, and pricing for demand response in smart gr
 It was co-supervised by Luce Brotcorne (INRIA) & Miguel F. Anjos (University of Edinburgh).
 
 I am involved in several open-source projects around optimization and scientific computing
-in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev) but
-like looking around on new development.
-Before starting the PhD, I worked in various industries, from a hardware startup to steel
+in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev).
+I worked with and in various industries, from a hardware startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) in France with a semester at
 the [TUBS](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal.
 
 On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
-and non-fiction books, on economic policy, education,
-and entrepreneurship, a more detailed list can be found on [goodread](https://www.goodreads.com/review/list/110133896).
+and non-fiction books (on economic policy, education, transportation systems, the energy transition);
+a more detailed readling list can be found on my [goodread](https://www.goodreads.com/review/list/110133896).
 I also enjoy games in various formats (tabletop, video, board, card) and cooking.
