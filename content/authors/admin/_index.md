@@ -34,6 +34,7 @@ interests:
   - Optimization and Engineering
   - Optimization Software
   - Algorithm Design
+  - Optimization in Statistics & Learning
 
 # Education to show in About widget
 education:
