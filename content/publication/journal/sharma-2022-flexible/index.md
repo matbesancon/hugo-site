@@ -1,23 +1,18 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Improved local models and new Bell inequalities via Frank-Wolfe algorithms
+title: Flexible Differentiable Optimization via Model Transformations
 subtitle: ''
 summary: ''
 authors:
-- Sébastien Designolle
-- Gabriele Iommazzo
+- Akshay Sharma
 - Mathieu Besançon
-- Sebastian Knebel
-- Patrick Gelß
-- Sebastian Pokutta
-tags:
-- Quantum Physics (quant-ph)
-- 'FOS: Physical sciences'
-- 'FOS: Physical sciences'
+- Joaquim Dias Garcia
+- Benoı̂t Legat
+tags: []
 categories: []
 date: '2023-01-01'
-lastmod: 2023-03-18T14:13:29+01:00
+lastmod: 2023-10-19T14:55:55+02:00
 featured: false
 draft: false
 
@@ -35,13 +30,9 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-03-18T13:13:27.973910Z'
+publishDate: '2023-10-19T12:55:54.975054Z'
 publication_types:
-- '3'
+- '2'
 abstract: ''
-publication: '*arXiv*'
-doi: 10.48550/ARXIV.2302.04721
-links:
-- name: URL
-  url: https://arxiv.org/abs/2302.04721
+publication: '*INFORMS Journal on Computing*'
 ---

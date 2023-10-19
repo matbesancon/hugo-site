@@ -1,18 +1,21 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: A Bilevel Framework for Optimal Price-Setting of Time-and-Level-of-Use Tariffs
+title: 'Scylla: a matrix-free fix-propagate-and-project heuristic for mixed-integer
+  optimization'
 subtitle: ''
 summary: ''
 authors:
+- Gioni Mexi
 - Mathieu Besançon
-- Miguel F. Anjos
-- Luce Brotcorne
-- Juan A. Gomez-Herrera
+- Suresh Bolusani
+- Antonia Chmiela
+- Ambros Gleixner
+- Alexander Hoen
 tags: []
 categories: []
-date: '2019-01-01'
-lastmod: 2023-10-19T14:55:55+02:00
+date: '2023-01-01'
+lastmod: 2023-10-19T14:55:56+02:00
 featured: false
 draft: false
 
@@ -30,9 +33,12 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-10-19T12:55:55.331262Z'
+publishDate: '2023-10-19T12:55:56.558990Z'
 publication_types:
-- '1'
+- '3'
 abstract: ''
 publication: ''
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2307.03466
 ---

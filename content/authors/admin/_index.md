@@ -20,6 +20,8 @@ role: Researcher in mathematical optimization
 organizations:
 - name: Zuse Institute Berlin
   url: "https://www.zib.de/"
+- name: Inria Grenoble (incoming)
+  url: "https://www.inria.fr/en/inria-centre-university-grenoble-alpes"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Mathematical optimization, scientific programming and related.

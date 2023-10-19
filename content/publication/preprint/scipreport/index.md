@@ -19,7 +19,7 @@ authors:
 tags: []
 categories: []
 date: '2021-01-01'
-lastmod: 2023-03-18T14:13:31+01:00
+lastmod: 2023-10-19T14:55:56+02:00
 featured: false
 draft: false
 
@@ -37,9 +37,12 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-03-18T13:13:30.016002Z'
+publishDate: '2023-10-19T12:55:56.311148Z'
 publication_types:
-- '4'
+- '3'
 abstract: ''
 publication: '*arXiv preprint arXiv:2112.08872*'
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2112.08872
 ---
