@@ -8,7 +8,7 @@ An opinionated guide for outsiders.
 """
 math = false
 diagram = false
-[header]
+[banner]
 image = ""
 +++
 

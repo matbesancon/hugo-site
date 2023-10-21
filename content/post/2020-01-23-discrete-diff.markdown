@@ -8,9 +8,9 @@ What can automated gradient computations bring to mathematical optimizers, what 
 """
 math = true
 diagram = false
-[header]
-image = "/posts/diff_discrete/graph1.svg"
 +++
+
+![](/img/posts/diff_discrete/graph1.svg)
 
 {{% toc %}}
 

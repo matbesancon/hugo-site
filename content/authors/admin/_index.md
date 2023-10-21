@@ -42,7 +42,7 @@ interests:
 education:
   courses:
   - course: Joint PhD, Applied Mathematics & Computer Science
-    institution: Polytechnique Montreal, INRIA, Centrale Lille, GERAD
+    institution: Polytechnique Montreal, Inria, Centrale Lille, GERAD
     year: 2017-2020
   - course: Joint Bachelor & Master of Science in Process Engineering
     institution: University of Technology of Compiègne (UTC), France
@@ -94,26 +94,24 @@ email:
 highlight_name: true
 ---
 
-I am a researcher in mathematical optimization with interests in nonlinear and discrete structures, and an emphasis on formulation and computational aspects.
+I am a researcher in mathematical optimization with interests in nonlinear and discrete problems, and an emphasis on formulation and computational aspects.
 I am currently at the [Zuse Institute Berlin](https://www.zib.de/), in the [IOL](https://iol.zib.de/) group.
 I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) DFG project
 and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.  
 I am joining [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes)
-in January 2024 as an Associate Researcher (Chargé de Recherche) and will be working with the [POLARIS](https://team.inria.fr/polaris/) group within the [LIG](https://www.liglab.fr/en).
+in January 2024 as an Associate Researcher (*Chargé de Recherche*) and will be working with the [Polaris](https://team.inria.fr/polaris/) group within the [Grenoble Computer Science Lab](https://www.liglab.fr/en).
   
 My research interests span the theory, methods, and algorithms for several flavours of mathematical optimization.
 More specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit.
 Those include solution methods, computational models, and software in mixed-integer (non-)linear and convex optimization and in particular
 around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
-Recently, I have been exploring applications for these classes of problems in quantum information, systems biology,
-networks and infrastructure, and data science.  
+I have been exploring applications of these classes of problems in quantum information, systems biology, networks and infrastructure, and data science.  
     
 I graduated with a double PhD (*cotutelle*) between
 [Polytechnique Montréal](https://www.polymtl.ca),
 at the [GERAD lab](https://www.gerad.ca/en/) and
 Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
-& the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab,
-in mathematical optimization.
+& the [Cristal](https://www.cristal.univ-lille.fr/?lang=en) lab, in mathematical optimization.
 My thesis focused on bilevel optimization, an extension
 coined *near-optimality robustness*, and pricing for demand response in smart grids.
 It was co-supervised by Luce Brotcorne (INRIA) & Miguel F. Anjos (University of Edinburgh).

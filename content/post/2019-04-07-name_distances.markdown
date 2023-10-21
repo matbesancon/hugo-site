@@ -8,7 +8,7 @@ Making social events easier as a graph problem.
 """
 math = true
 
-[header]
+[banner]
 image = ""
 +++
 

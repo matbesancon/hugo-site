@@ -9,7 +9,7 @@ Leveraging one of Julia central features for clearer formulation of an optimizat
 """
 math = true
 
-[header]
+[banner]
 image = ""
 +++
 

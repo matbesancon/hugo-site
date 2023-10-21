@@ -8,8 +8,8 @@ Gathering some thoughts on what worked and what did not.
 """
 math = true
 
-[header]
-image = "posts/peer_review/jsavants.jpg"
+[banner]
+image = "/img/posts/peer_review/jsavants.jpg"
 +++
 
 --------

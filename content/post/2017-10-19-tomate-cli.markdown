@@ -9,8 +9,8 @@ only a variation in tasks, but also in success criteria and work flow
 """
 math = false
 
-[header]
-image = "posts/tomate/tomates.jpg"
+[banner]
+image = "/img/posts/tomate/tomates.jpg"
 +++
 
 The start of my journey as a PhD student last September was a big step, but

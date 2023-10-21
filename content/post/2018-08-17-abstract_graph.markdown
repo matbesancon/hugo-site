@@ -8,8 +8,8 @@ Who needs libraries when from scratch looks so good
 """
 math = true
 
-[header]
-image = "posts/graph_interface/example.svg"
+[banner]
+image = "/img/posts/graph_interface/example.svg"
 +++
 
 --------

@@ -8,7 +8,7 @@ Some digging in representations for optimization modelling
 """
 math = true
 
-[header]
+[banner]
 image = ""
 +++
 

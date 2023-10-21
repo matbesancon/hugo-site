@@ -8,7 +8,7 @@ Calling it a guide would imply I figured it out, this is merely documenting what
 """
 math = true
 diagram = false
-[header]
+[banner]
 image = ""
 +++
 

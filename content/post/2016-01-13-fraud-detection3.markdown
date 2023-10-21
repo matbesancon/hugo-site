@@ -8,8 +8,8 @@ Learning by doing: predicting the outcome.
 """
 math = true
 
-[header]
-image = "posts/BankNotes/images/plot_classifier_comparison_001.png"
+[banner]
+image = "/img/posts/BankNotes/images/plot_classifier_comparison_001.png"
 +++
 
 [1]

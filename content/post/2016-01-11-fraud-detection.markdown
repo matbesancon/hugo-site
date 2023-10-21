@@ -8,8 +8,8 @@ Learning by doing: detecting fraud on bank notes using Python in 3 steps.
 """
 math = true
 
-[header]
-image = "posts/BankNotes/images/italy-10000.png"
+[banner]
+image = "/img/posts/BankNotes/images/italy-10000.png"
 +++
 
 ## A complete predictive modeling project in Python

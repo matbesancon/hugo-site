@@ -8,8 +8,8 @@ Learning by doing: the feature engineering step.
 """
 math = true
 
-[header]
-image = "posts/BankNotes/images/svmexample.png"
+[banner]
+image = "/img/posts/BankNotes/images/svmexample.png"
 +++
 [1]
 

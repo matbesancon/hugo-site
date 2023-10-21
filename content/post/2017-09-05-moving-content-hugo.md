@@ -8,8 +8,8 @@ New steps, new platform.
 """
 math = false
 
-[header]
-image = "posts/hiking.jpg"
+[banner]
+image = "/img/posts/hiking.jpg"
 +++
 
 Last weeks have been pretty intense. I officially left Equisense and  started

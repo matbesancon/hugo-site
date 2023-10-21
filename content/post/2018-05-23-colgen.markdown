@@ -8,8 +8,8 @@ Solving a cutting stock problem step by step using Julia and JuMP
 """
 math = true
 
-[header]
-image = "posts/cutting_stock/sushi_cuts.jpg"
+[banner]
+image = "/img/posts/cutting_stock/sushi_cuts.jpg"
 +++
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3329389.svg)](https://doi.org/10.5281/zenodo.3329389)

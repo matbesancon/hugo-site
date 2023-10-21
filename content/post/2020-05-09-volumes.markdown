@@ -8,9 +8,10 @@ Constrained optimization on a fundamental engineering problem
 """
 math = true
 diagram = false
-[header]
-image = "/posts/volumes/Communicating_vessels.png"
 +++
+
+![](/img/posts/volumes/Communicating_vessels.png)
+
 
 Image source [^1].
 

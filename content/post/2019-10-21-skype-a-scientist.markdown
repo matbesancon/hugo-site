@@ -9,7 +9,7 @@ summary = """
 math = true
 diagram = false
 
-[header]
+[banner]
 image = ""
 +++
 

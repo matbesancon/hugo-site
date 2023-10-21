@@ -1,7 +1,7 @@
 +++
 date = 2016-08-11
 draft = false
-tags = ["startup"]
+tags = ["startup", "career"]
 title = "Back to startup life: thoughts after the first days"
 summary = """
 100 days after a come-back.

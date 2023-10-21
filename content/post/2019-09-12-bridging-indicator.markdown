@@ -9,8 +9,8 @@ Compiling mathematical optimization problems in a multiple-dispatch context.
 math = true
 diagram = true
 
-[header]
-image = "posts/bridges/bridge2.jpg"
+[banner]
+image = "/img/posts/bridges/bridge2.jpg"
 caption = "Photo by [<u>Torsten Muller</u>](https://unsplash.com/@neptunian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [<u>Unsplash</u>](https://unsplash.com/s/photos/bridge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 +++
 

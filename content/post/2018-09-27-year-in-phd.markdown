@@ -8,7 +8,7 @@ summary = """
 """
 math = true
 
-[header]
+[banner]
 image = ""
 +++
 

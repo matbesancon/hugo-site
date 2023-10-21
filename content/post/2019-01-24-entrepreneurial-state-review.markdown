@@ -8,7 +8,7 @@ Some thoughts and notes on an industrial policy book.
 """
 math = false
 
-[header]
+[banner]
 image = ""
 +++
 

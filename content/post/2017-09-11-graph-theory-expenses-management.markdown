@@ -8,8 +8,8 @@ Graph theory and Julia to solve the boring aspect of having friends
 """
 math = true
 
-[header]
-image = "posts/expense/graphviz.png"
+[banner]
+image = "/img/posts/expense/graphviz.png"
 +++
 
 With the end-of-year celebrations, we all had some expenses to manage,

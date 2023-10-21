@@ -9,7 +9,7 @@ When going native is the only option, at least do it once and well.
 math = false
 diagram = false
 
-[header]
+[banner]
 image = ""
 +++
 

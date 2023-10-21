@@ -8,8 +8,8 @@ Pushing the type system for more compile-time information
 """
 math = false
 
-[header]
-image = "posts/staticlist/chain.jpg"
+[banner]
+image = "/img/posts/staticlist/chain.jpg"
 +++
 
 --------

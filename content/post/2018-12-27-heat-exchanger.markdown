@@ -8,8 +8,8 @@ summary = """
 """
 math = true
 
-[header]
-image = "/posts/heatex/frozen_land.jpg"
+[banner]
+image = "/img/posts/heatex/frozen_land.jpg"
 +++
 
 Enjoying the calm of the frozen eastern French countryside for the last week of 2018,

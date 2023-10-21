@@ -8,8 +8,8 @@ Now that we've built a model, let's use it to make the best decision
 """
 math = true
 
-[header]
-image = "posts/DiffEq/Lorenz.svg"
+[banner]
+image = "/img/posts/DiffEq/Lorenz.svg"
 +++
 
 In the [last article](/post/2017-12-14-diffeq-julia), we explored different modeling options for a

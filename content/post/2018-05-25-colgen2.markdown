@@ -8,8 +8,8 @@ A column generation algorithm for the cutting width problem using Julia and JuMP
 """
 math = true
 
-[header]
-image = "posts/cutting_stock/sushi_cuts.jpg"
+[banner]
+image = "/img/posts/cutting_stock/sushi_cuts.jpg"
 +++
 
 --------

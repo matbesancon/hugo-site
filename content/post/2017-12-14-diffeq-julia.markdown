@@ -8,8 +8,8 @@ Playing around with the differential equation solver turned simulation engine
 """
 math = true
 
-[header]
-image = "posts/DiffEq/Lorenz.svg"
+[banner]
+image = "/img/posts/DiffEq/Lorenz.svg"
 +++
 
 [DifferentialEquations.jl](https://github.com/JuliaDiffEq/DifferentialEquations.jl)

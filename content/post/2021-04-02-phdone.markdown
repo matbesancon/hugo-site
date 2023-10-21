@@ -8,8 +8,8 @@ Random thoughts I've been willing to write since the defence.
 """
 math = false
 diagram = false
-[header]
-image = "/posts/paperballs.jpg"
+[banner]
+image = "/img/posts/paperballs.jpg"
 +++
 
 {{< toc >}}

@@ -8,7 +8,7 @@ Cracking Benders decomposition, one cut at a time.
 """
 math = true
 
-[header]
+[banner]
 image = ""
 +++
 
