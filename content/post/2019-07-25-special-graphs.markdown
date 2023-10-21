@@ -1,5 +1,5 @@
 +++
-title = "Leveraging special graph shapes in LightGraphs"
+title = "Leveraging special graph shapes in Graphs"
 subtitle = "Let the compiler do the work"
 
 # Add a summary to display on homepage (optional).
@@ -39,11 +39,11 @@ projects = []
 +++
 
 In a [previous post]({{< ref path="2019-05-30-vertex-safe-removal" >}}), we
-pushed the boundaries of the LightGraphs.jl abstraction to see how conforming the
+pushed the boundaries of the Graphs.jl abstraction to see how conforming the
 algorithms are to the declared interface, noticing some implied assumptions
 that were not stated. This has led to the development of
 [VertexSafeGraphs.jl](https://github.com/matbesancon/VertexSafeGraphs.jl) and
-soon to some work on LightGraphs.jl itself.
+soon to some work on Graphs.jl itself.
 
 Another way to push the abstraction came out of the
 [JuliaNantes workshop](https://matbesancon.xyz/slides/JuliaNantes/Graphs):
@@ -57,10 +57,10 @@ all the entries.
 
 Suppose you have a path graph or chain, this means any vertex is connected to
 its predecessor and successor only, except the first and last vertices.
-Such graph can be represented by a `LightGraphs.SimpleGraph`:
+Such graph can be represented by a `Graphs.SimpleGraph`:
 {{< highlight julia>}}
-import LightGraphs
-const LG = LightGraphs
+import Graphs
+const LG = Graphs
 
 g = LG.path_graph(10)
 
@@ -75,7 +75,7 @@ we are aware of from the beginning. If you are used to thinking in such way,
 of types and made zero-cost abstractions. The real only runtime information of
 a path graph (which is not available before receiving the actual graph) is its
 size $n$. The only thing to do is implement the handful of methods from the
-LightGraphs interface.
+Graphs interface.
 
 {{< highlight julia>}}
 struct PathGraph{T <: Integer} <: LG.AbstractGraph{T}
@@ -104,9 +104,9 @@ function LG.outneighbors(g::PathGraph, v)
     return [v-1, v+1]
 end
 
-LightGraphs.inneighbors(g::PathGraph, v) = outneighbors(g, v)
+LG.inneighbors(g::PathGraph, v) = outneighbors(g, v)
 
-function LightGraphs.has_edge(g::PathGraph, v1, v2)
+function LG.has_edge(g::PathGraph, v1, v2)
     if !has_vertex(g, v1) || !has_vertex(g, v2)
         return false
     end
@@ -133,7 +133,7 @@ special graphs as a starting point for an algorithm mutating them.
 ## Performance
 
 As of now, simple benchmarks will show that the construction of special graphs
-is cheaper than the creation of the adjacency lists for `LightGraphs.SimpleGraph`.
+is cheaper than the creation of the adjacency lists for `Graphs.SimpleGraph`.
 Actually using them for "global" algorithms is another story:
 
 {{< highlight julia>}}
@@ -150,11 +150,11 @@ the corresponding SimpleGraph structure, the `CompleteGraph` implementation is
 about the same order of allocations and runtime as its list-y counterpart.
 
 The suspect for the lack of speedup is the `edges` operation, optimized with a custom edge
-iterator in LightGraphs and returning a heap-allocated `Array` in SpecialGraphs
+iterator in Graphs and returning a heap-allocated `Array` in SpecialGraphs
 for now. Taking performance seriously will requiring tackling this before
 anything else. Other opportunities for optimization may include returning
 [StaticArrays](https://github.com/JuliaArrays/StaticArrays.jl/) and
-re-implementing optional methods such as `LightGraphs.adjacency_matrix`
+re-implementing optional methods such as `Graphs.adjacency_matrix`
 using specialized matrix types.
 
 ## Conclusion and further reading

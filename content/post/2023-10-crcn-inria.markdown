@@ -1,6 +1,6 @@
 +++
 date = 2023-10-21
-draft = true
+draft = false
 tags = ["career", "academia"]
 title = "I am joining Inria Grenoble in 2024 as a researcher"
 summary = """
