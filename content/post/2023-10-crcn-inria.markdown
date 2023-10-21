@@ -13,7 +13,7 @@ image = "/img/posts/grenoble/grenoble.JPG"
 
 In January 2024, I will be joining [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes)[^1]
 as an Associate Researcher (my home-brewed translation of *Chargé de Recherche*) in the [POLARIS](https://team.inria.fr/polaris/) team
-and wanted to make a quick note about it after exchanging about several points and clearing out confusions from several people.
+and wanted to make a quick note about it after exchanging about several points and clearing out confusions from several people.[^2]
 
 # What is Inria, and that position?
 
@@ -91,3 +91,4 @@ Rethinking of the alternatives, I do think that the *position-then-scaling* appr
 -----
 
 [^1]: The actual full name is Inria Center at the Université Grenoble Alpes. And the second geographical affiliation is the [Grenoble Informatics Laboratory](https://www.liglab.fr/en).
+[^2]: Banner source: Wikipedia. 2023. "Grenoble." Wikimedia Foundation. Last modified July 1, 2023.
