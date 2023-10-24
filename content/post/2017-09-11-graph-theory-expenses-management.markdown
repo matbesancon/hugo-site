@@ -34,7 +34,7 @@ We will use the awesome GraphCoin as a currency in this post, noted GPHC to
 be sure no one feels hurt.
 {{% /alert %}}
 
-{{% toc %}}
+{{< toc >}}
 
 ## The expenses model
 

@@ -23,7 +23,7 @@ knowledge of the subject and play a bit with a simple implementation.
 
 {{< tweet 1124327078625722368 >}}
 
-{{% toc %}}
+{{< toc >}}
 
 ## High-level idea
 

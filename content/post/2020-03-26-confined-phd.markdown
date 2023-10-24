@@ -35,7 +35,7 @@ then crossing the border with continental Europe, but also because I was settled
 in comfortably enough to spend the rough months of the epidemic here.
 However, this meant adjusting in different ways.
 
-{{% toc %}}
+{{< toc >}}
 
 
 # Overall routine

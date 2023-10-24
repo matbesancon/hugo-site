@@ -26,7 +26,7 @@ optimization. The first part will introduce the problem context and requires
 some notion in mathematical optimization, if this stuff is scary, feel free to
 skip to the rest directly.
 
-{{% toc %}}
+{{< toc >}}
 
 # Refresher on if-then-else constraints
 

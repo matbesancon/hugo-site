@@ -12,7 +12,7 @@ diagram = false
 
 ![](/img/posts/diff_discrete/graph1.svg)
 
-{{% toc %}}
+{{< toc >}}
 
 In continuous convex optimization, duality is often the theoretical foundation for
 computing the sensibility of the optimal value of a problem to

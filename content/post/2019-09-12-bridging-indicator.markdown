@@ -48,7 +48,7 @@ reformulated yet. In compiler terms, MOI appears after the parsing phase:
 the user code has been recognized and transformed into corresponding internal
 structures.
 
-{{% toc %}}
+{{< toc >}}
 
 # Re-formulating problems using multiple dispatch
 

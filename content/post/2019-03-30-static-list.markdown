@@ -27,7 +27,7 @@ Some other references:
 - The list operations are inspired by the implementation in [*DataStructures.jl*](https://github.com/JuliaCollections/DataStructures.jl)
 - [*StaticArrays.jl*](https://github.com/JuliaArrays/StaticArrays.jl) is a good inspiration for static data structures in Julia
 
-{{% toc %}}
+{{< toc >}}
 
 # First thoughts: value type parameter
 

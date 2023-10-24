@@ -25,7 +25,7 @@ answers as I remember them.
 I grouped the questions in four arbitrary categories. The list also does not
 reflect the order in which the questions were asked.
 
-{{% toc %}}
+{{< toc >}}
 
 # 👨‍🔬 So... you're a scientist?
 

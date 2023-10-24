@@ -17,7 +17,7 @@ This week, I came across Richard Oberdieck's [post](https://github.com/RichardOb
 It would indeed be practical to have for the reasons listed by the author, but
 some barriers stand to have it as it is expressed in the snippets presented.  
 
-{{% toc %}}
+{{< toc >}}
 
 # Initial problem statement
 
