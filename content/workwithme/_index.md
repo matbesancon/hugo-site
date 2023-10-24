@@ -68,6 +68,11 @@ Depending on the type of project, we will probably team up with other people wor
 
 **NB**: working on SCIP will mean being relatively confident programming in C and using the surrounding tooling (CMake, gcc).
 
+### An efficient parallel network simplex solver
+
+The network simplex is the engine power many applications from [combinatorial optimization](https://www.gurobi.com/whats-new-gurobi-10-0/) to [Optimal Transport](https://pythonot.github.io/).
+The goal of the project will be to implement an efficient network simplex solver inspired by [LEMON](https://lemon.cs.elte.hu/trac/lemon) in a modern language (Julia or Rust) that would allow for easier parallelism and portability.
+
 # Profiles
 
 I love working with curious and eager learners. Saying that you don't know XYZ is okay, as long as you are willing to learn.
