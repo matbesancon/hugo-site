@@ -126,6 +126,14 @@ sections:
   #   design:
   #     columns: '2'
   #     view: compact
+  - block: markdown
+    id: workwithme
+    content:
+      title: Work with me
+      subtitle: If you want to join my group and work with me, please read the information [here](./workwithme/).
+      text:
+    design:
+      columns: '1'
   - block: contact
     id: contact
     content:

@@ -18,7 +18,7 @@ and wanted to make a quick note about it after exchanging about several points a
 # What is Inria, and that position?
 
 Inria is a fairly large institution in size and scope.
-Broadly speaking, research topics vary across domains in computer science and (mostly applied)mathematics.
+Broadly speaking, research topics vary across domains in computer science and (mostly applied) mathematics.
 The institution also places an emphasis on technology transfer and impact beyond one's research domain.
 Some projects you may have heard of that started at Inria include the [OCaml](https://ocaml.org/) programming language and
 the [scikit-learn](https://scikit-learn.org) library.
@@ -62,6 +62,8 @@ This question could fill a whole series of blog posts and I will not delve into 
 As an interesting fact to understand, the hiring process is a national competition regulated by a standardized open call with a fixed number of places per Inria center. Most applicants provide a research proposal with a heavy emphasis on its integration within one of the team-projects.
 I'll refer to the [Guide for Inria Applicants](https://www.inria.fr/sites/default/files/2021-01/CE_guide-applicant-CRCN.pdf) again for a more complete overview.
 
+A last point on the matter, I would consider that "just applying" to these positions when they open is nearly impossible: contact the teams **beforehand**,
+several months before the call for applications. I am highly indebted to the people from different groups who went out of their way to give me thorough reviews and critics on the application, the audition presentation and my research statements.
 
 # Coming steps in the near future: settling and building
 
@@ -81,7 +83,7 @@ and first-order methods for constrained optimization.
 
 On the prospective side, I am looking forward to starting discussions and then collaborations within the vibrant Grenoble ecosystem.
 From combinatorics to quantum information and proximal methods, topics adjacent and connected to mine are not lacking, both on methodological interfaces and application areas.
-Working on the research proposal for the application had the benefit of making me explore in depth the activities of the people in my project-team, the LIG laboratory, Inria Grenoble and other Grenoble institutions, and build connections with my mid-term research interests.
+Working on the research proposal for the application had the benefit of making me explore in depth the activities of the people in my project-team, the LIG laboratory, Inria and other Grenoble institutions, and build connections with my mid-term research interests.
 
 Rethinking about this whole year (we are in October, I started preparing applications in December last year), I'm pretty hyped about what is to come, also blended with a much more latent relaxed mindset. Getting a permanent position that would let me prioritize on the activities I like and find important had been one of the major things "running in the background" for a while, and it lifted the curtain on the possible paths to choose from.
 Rethinking of the alternatives, I do think that the *position-then-scaling* approach of that system is more sustainable than the scaling-then-position
