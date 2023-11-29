@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Cutting Plane Selection with Analytic Centers and Multiregression
+title: Cutting plane selection with analytic centers and multiregression
 subtitle: ''
 summary: ''
 authors:
@@ -12,7 +12,7 @@ authors:
 tags: []
 categories: []
 date: '2023-01-01'
-lastmod: 2023-10-19T14:55:55+02:00
+lastmod: 2023-11-29T21:19:29+01:00
 featured: false
 draft: false
 
@@ -30,9 +30,10 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-10-19T12:55:55.766725Z'
+publishDate: '2023-11-29T20:19:29.329304Z'
 publication_types:
 - '1'
 abstract: ''
-publication: '*CPAIOR 2023 (accepted)*'
+publication: '*International Conference on Integration of Constraint Programming,
+  Artificial Intelligence, and Operations Research*'
 ---

@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: 'FrankWolfe.jl: A High-Performance and Flexible Toolbox for Frank--Wolfe Algorithms
+title: 'FrankWolfe.jl: A High-Performance and Flexible Toolbox for Frank-Wolfe Algorithms
   and Conditional Gradients'
 subtitle: ''
 summary: ''
@@ -12,7 +12,7 @@ authors:
 tags: []
 categories: []
 date: '2022-01-01'
-lastmod: 2023-10-19T14:55:54+02:00
+lastmod: 2023-11-29T21:19:27+01:00
 featured: false
 draft: false
 
@@ -30,7 +30,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-10-19T12:55:54.206553Z'
+publishDate: '2023-11-29T20:19:27.597378Z'
 publication_types:
 - '2'
 abstract: ''
