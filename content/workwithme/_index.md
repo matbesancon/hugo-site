@@ -26,7 +26,7 @@ If solving hard problems, implementing efficient algorithms for convex or mixed-
 
 ## Doctoral projects
 
-I do not have projects for a Ph.D. at the moment. If you are interested in starting one in **September 2024**, reach out soon enough (in Spring 2024) so that we can exchange on your interests and formalize and prepare a topic.
+I do not have projects for a Ph.D. at the moment, but if you are interested in starting one in **September 2024**, reach out soon enough (in Spring 2024) so that we can exchange on your interests and formalize and prepare a topic.
 
 ## Master's internships and Master's theses
 
@@ -44,8 +44,8 @@ See the description [here](https://team.inria.fr/polaris/files/2023/10/internshi
 
 I am working on the [FrankWolfe.jl](https://github.com/ZIB-IOL/FrankWolfe.jl) solver. I have a lot of open threads that can become cool internships or projects:
 
-- a Python wrapper for FrankWolfe.jl
-- designing and implementing new Frank-Wolfe variants within the package like the [Nearest Extreme Point](https://proceedings.mlr.press/v134/garber21a.html) oracle or a stabilized version of the [Blended Conditional Gradients](https://arxiv.org/abs/1805.07311).
+- A Python wrapper for FrankWolfe.jl
+- Designing and implementing new Frank-Wolfe variants within the package like the [Nearest Extreme Point](https://proceedings.mlr.press/v134/garber21a.html) oracle or a stabilized version of the [Blended Conditional Gradients](https://arxiv.org/abs/1805.07311).
 
 ### Mixed-Integer Convex Optimization
 
@@ -70,7 +70,7 @@ Depending on the type of project, we will probably team up with other people wor
 
 ### An efficient parallel network simplex solver
 
-The network simplex is the engine power many applications from [combinatorial optimization](https://www.gurobi.com/whats-new-gurobi-10-0/) to [Optimal Transport](https://pythonot.github.io/).
+The network simplex is the engine powering many applications from [combinatorial optimization](https://www.gurobi.com/whats-new-gurobi-10-0/) to [optimal transport](https://pythonot.github.io/).
 The goal of the project will be to implement an efficient network simplex solver inspired by [LEMON](https://lemon.cs.elte.hu/trac/lemon) in a modern language (Julia or Rust) that would allow for easier parallelism and portability.
 
 # Profiles
@@ -87,8 +87,11 @@ In general, if you have doubts, reach out and let's discuss, there might be a pr
 # Location(s)
 
 I am working in the [LIG](https://www.liglab.fr/en) laboratory in Grenoble and will look for students here.  
+Send me a CV, description of your profile and interests, and if you already have it, transcript of records.
 
-If you are in Berlin, I *can* take students in co-supervision with someone else in the [IOL](https://iol.zib.de) lab.
+See my [contact](/#contact) information to reach out.
+
+If you are in Berlin, I *can* take students in co-supervision with someone else in the [IOL](https://iol.zib.de) lab of the Zuse Institute Berlin.
 See the [instructions](https://iol.zib.de/openings/) to apply.  
 **I will be able to supervise a project only if there is a suitable co-supervisor available in Berlin.**
 A project in Berlin can in particular be suitable if you want to work on [SCIP](https://scipopt.org).

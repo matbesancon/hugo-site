@@ -20,7 +20,7 @@ role: Researcher in mathematical optimization
 organizations:
 - name: Zuse Institute Berlin
   url: "https://www.zib.de/"
-- name: Inria Grenoble (incoming)
+- name: Inria Grenoble (incoming 2024)
   url: "https://www.inria.fr/en/inria-centre-university-grenoble-alpes"
 
 # Short bio (displayed in user profile at end of posts)
@@ -120,8 +120,8 @@ I am involved in several open-source projects around optimization and scientific
 in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev).
 I worked with and in various industries, from a hardware startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
-the [UTC](https://www.utc.fr) in France with a semester at
-the [TUBS](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal.
+the [UT Compiègne](https://www.utc.fr) with a semester at
+the [TU Braunschweig](https://www.tu-braunschweig.de/?lang=en) and Polytechnique Montreal.
 
 On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
 and non-fiction books (on economic policy, education, transportation systems, the energy transition);
