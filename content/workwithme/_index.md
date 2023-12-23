@@ -18,15 +18,16 @@ math: true
 
 
 My research revolves around **computational optimization**, see a non-exhaustive list on the [homepage](/#about).
-If solving hard problems, implementing efficient algorithms for convex or mixed-integer optimization, or applying these techniques to concrete applications hypes you, reach out!
+If solving hard problems, designing and implementing efficient algorithms for convex or mixed-integer optimization, or applying these techniques to concrete applications hypes you, reach out!
 
 {{< toc >}}
 
 # Current Topics
 
-## Doctoral projects
+## Ph.D.
 
-I do not have projects for a Ph.D. at the moment. If you are interested in starting one in **September 2024**, reach out soon enough (in Spring 2024) so that we can exchange on your interests and formalize and prepare a topic.
+Doctoral projects are open-ended by nature, the precise topic has to be discussed and adapted to the candidate, so I won' t have a precise list of current subjects (for now).
+If you are interested in starting a Ph.D. in **Autumn 2024**, reach out soon enough (Spring 2024 at the latest) so that we can exchange on your interests and formalize and prepare a topic.
 
 ## Master's internships and Master's theses
 

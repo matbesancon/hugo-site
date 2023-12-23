@@ -1,18 +1,19 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: A Bilevel Framework for Optimal Price-Setting of Time-and-Level-of-Use Tariffs
+title: Probabilistic Lookahead Strong Branching via a Stochastic Abstract Branching
+  Model
 subtitle: ''
 summary: ''
 authors:
+- Gioni Mexi
+- Somayeh Shamsi
 - Mathieu Besançon
-- Miguel F. Anjos
-- Luce Brotcorne
-- Juan A. Gomez-Herrera
+- Pierre Le Bodic
 tags: []
 categories: []
-date: '2019-01-01'
-lastmod: 2023-12-22T17:16:31+01:00
+date: '2023-01-01'
+lastmod: 2023-12-22T17:16:32+01:00
 featured: false
 draft: false
 
@@ -30,9 +31,12 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-12-22T16:16:30.909008Z'
+publishDate: '2023-12-22T16:16:32.339404Z'
 publication_types:
-- '1'
+- '3'
 abstract: ''
 publication: ''
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2312.07041
 ---

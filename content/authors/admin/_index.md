@@ -99,7 +99,7 @@ I am currently at the [Zuse Institute Berlin](https://www.zib.de/), in the [IOL]
 I am associated with the [MODAL-SynLab](https://www.zib.de/projects/modal-synlab) DFG project
 and a member of the [MATH+](https://mathplus.de/) Berlin Mathematics Research Center.  
 I am joining [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes)
-in January 2024 as an Associate Researcher (*Chargé de Recherche*) and will be working with the [Polaris](https://team.inria.fr/polaris/) group within the [Grenoble Computer Science Lab](https://www.liglab.fr/en).
+in January 2024 as a Tenured Associate Researcher (*Chargé de Recherche*) and will be working with the [Polaris](https://team.inria.fr/polaris/) group within the [Grenoble Computer Science Lab](https://www.liglab.fr/en).
   
 My research interests span the theory, methods, and algorithms for several flavours of mathematical optimization.
 More specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit.
