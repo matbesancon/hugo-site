@@ -27,11 +27,11 @@ Because of this gap between theoretical and observed performance, it can be hard
 
 Some papers proposed simplified models of branch-and-bound algorithms to enable researchers to establish and compare theoretical properties, and study the influence on these simplified models of certain algorithmic decisions. Sounds vague? We will see concrete examples.
 
-- *An abstract model for branching and its application to mixed integer programming*, P. Le Bodic, G. Nemhauser (2017): defines the problem of building a branch-and-bound tree from variables defined from fixed dual gains. The model is then used to define a scoring criterion from dual gains.
+- *[An abstract model for branching and its application to mixed integer programming](https://link.springer.com/article/10.1007/s10107-016-1101-8)*, P. Le Bodic, G. Nemhauser (2017): defines the problem of building a branch-and-bound tree from variables defined from fixed dual gains. The model is then used to define a scoring criterion from dual gains.
 
-- *An abstract model for branch and cut*, P. le Bodic & A. Kazachkov (2023), extends this paper to branch-and-cut, modelling the relaxation with a set of cuts as the unique child of the previous relaxation.
+- *[An abstract model for branch and cut](https://link.springer.com/article/10.1007/s10107-023-01991-z)*, P. le Bodic & A. Kazachkov (2023), extends this paper to branch-and-cut, modelling the relaxation with a set of cuts as the unique child of the previous relaxation.
 
-**Branch-and-Bound versus Lift-and-Project relaxations in combinatorial optimization**, G. Cornuéjols, Y. Dubey (2023) compares the relaxation obtained from Branch-and-Bound against the one obtained from a lift-and-project hierarchy (lift-and-project cuts applied recursively).
+- *[Branch-and-Bound versus Lift-and-Project relaxations in combinatorial optimization](https://arxiv.org/abs/2311.00185)*, G. Cornuéjols, Y. Dubey (2023) compares the relaxation obtained from Branch-and-Bound against the one obtained from a lift-and-project hierarchy (lift-and-project cuts applied recursively).
 
 In many cases, the goal of the article is to establish properties of the constructed simplified model, for instance to show some trends and compare them to the behaviour of real instances / solvers.
 In few cases, these models are used to extract key take-aways that can be exploited for actually solving hard problems.
