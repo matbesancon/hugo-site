@@ -18,10 +18,12 @@ role: Researcher in mathematical optimization
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Zuse Institute Berlin
-  url: "https://www.zib.de/"
-- name: Inria Grenoble (incoming)
+- name: Inria Grenoble
   url: "https://www.inria.fr/en/inria-centre-university-grenoble-alpes"
+- name: LIG - Grenoble Computer Science Laboratory
+  url: "https://www.liglab.fr/en"
+- name: Université Grenoble Alpes
+  url: "https://www.univ-grenoble-alpes.fr/english/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Mathematical optimization, scientific programming and related.
@@ -98,9 +100,9 @@ I am a researcher in mathematical optimization with interests in nonlinear and d
 
 **TL;DR**: I write mathematical models that represent decision-making processes or equilibria within systems, and build abstract algorithms and concrete computer programs that provide guaranteed solutions of these models.  
 
-I joined the [Inria](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) Institute in Grenoble in January 2024 as a Tenured Associate Researcher (*Chargé de Recherche*) working with the [Polaris](https://team.inria.fr/polaris/) group at the [Grenoble Computer Science Lab](https://www.liglab.fr/en). Broadly speaking, we work on decision and learning in uncertain, unknown, dynamic contexts, potentially with multiple agents. If what the group and/or what I do sounds like fun, feel free to [contact me](#contact) or check some [example topics](workwithme).
-I am also a guest researcher at the [Zuse Institute Berlin](https://www.zib.de/) in the [IOL](https://iol.zib.de/) group, where I worked up to 2023.  
+I joined the [Inria](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) Institute in Grenoble in January 2024 as a Tenured Associate Researcher (*Chargé de Recherche*) working with the [Polaris](https://team.inria.fr/polaris/) group at the [Grenoble Computer Science Lab](https://www.liglab.fr/en). Broadly speaking, we work on decision and learning in uncertain, unknown, dynamic contexts, potentially with multiple agents. If what the group and/or what I do sounds like fun, feel free to [contact me](#contact) or check some [example topics](workwithme).  
   
+
 My research interests span the theory, methods, and algorithms for several flavours of mathematical optimization.
 More specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit.
 Those include solution methods, computational models, and software in mixed-integer (non-)linear and convex optimization and in particular
@@ -115,6 +117,7 @@ Centrale Lille, at [INRIA](https://team.inria.fr/inocs)
 My thesis focused on bilevel optimization, an extension
 coined *near-optimality robustness*, and pricing for demand response in smart grids.
 It was co-supervised by Luce Brotcorne (Inria) & Miguel F. Anjos (University of Edinburgh).
+I spent some time in Berlin as a researcher at the [Zuse Institute](https://www.zib.de/).
   
 I am involved in several open-source projects around optimization and scientific computing
 in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev).
@@ -122,7 +125,7 @@ I worked with and in various industries, from a hardware startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
 the [UTC](https://www.utc.fr) in France with a semester at
 the [TUBS](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal.
-
+  
 On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
 and non-fiction books (on economic policy, education, transportation systems, the energy transition);
 a more detailed readling list can be found on my [goodread](https://www.goodreads.com/review/list/110133896).
