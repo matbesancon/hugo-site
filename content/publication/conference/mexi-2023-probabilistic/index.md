@@ -1,6 +1,6 @@
 ---
-title: 'Scylla: a matrix-free fix-propagate-and-project heuristic for mixed-integer
-  optimization'
+title: Probabilistic Lookahead Strong Branching via a Stochastic Abstract Branching
+  Model
 
 # Authors
 # A YAML list of author names
@@ -8,20 +8,18 @@ title: 'Scylla: a matrix-free fix-propagate-and-project heuristic for mixed-inte
 # write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Gioni Mexi
+- Somayeh Shamsi
 - Mathieu Besançon
-- Suresh Bolusani
-- Antonia Chmiela
-- Ambros Gleixner
-- Alexander Hoen
+- Pierre Le Bodic
 
 # Author notes (such as 'Equal Contribution')
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2023-01-01'
+date: '2024-01-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2024-05-17T11:15:49.168871Z'
+publishDate: '2024-05-17T11:16:06.951310Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -29,7 +27,8 @@ publication_types:
 - manuscript
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*International Conference on Integration of Constraint Programming,
+  Artificial Intelligence, and Operations Research*'
 publication_short: ''
 
 doi: ''
@@ -74,7 +73,7 @@ image:
 projects: []
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2307.03466
+  url: https://arxiv.org/abs/2312.07041
 ---
 
 Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
