@@ -19,8 +19,8 @@ for (folder, bibfile, pubtype) in folders
     if ispath(pubfolder)
         rm(pubfolder, recursive=true)
     end
-    @info `academic import --compact --bibtex $(joinpath(data_folder, bibfile * ".bib")) --publication-dir $pubfolder`
-    run(`academic import --compact --bibtex $(joinpath(data_folder, bibfile * ".bib")) --publication-dir $pubfolder`)
+    @info `/home/matbesancon/Documents/crptests/avenv/bin/academic import --compact --bibtex $(joinpath(data_folder, bibfile * ".bib")) --publication-dir $pubfolder`
+    run(`/home/matbesancon/Documents/crptests/avenv/bin/academic import --compact --bibtex $(joinpath(data_folder, bibfile * ".bib")) --publication-dir $pubfolder`)
     for subdir in readdir(pubfolder, join=true)
         @info "$subdir"
         if !isdir(subdir)

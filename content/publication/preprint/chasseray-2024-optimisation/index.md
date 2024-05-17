@@ -3,9 +3,8 @@ title: Optimisation models for the design of multiple self-consumption loops in 
   areas
 
 # Authors
-# A YAML list of author names
-# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
-# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# and it will be replaced with their full name and linked to their profile.
 authors:
 - Yohann Chasseray
 - Mathieu Besançon
@@ -13,24 +12,24 @@ authors:
 - Xavier Lorca
 
 # Author notes (such as 'Equal Contribution')
-# A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
 date: '2024-01-01'
+doi: ''
 
-# Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2024-05-17T11:15:49.182097Z'
+# Schedule page publish date (NOT publication's date).
+publishDate: '2024-05-17T12:26:44.486442Z'
 
 # Publication type.
-# A single CSL publication type but formatted as a YAML list (for Hugo requirements).
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
 publication_types:
-- article-journal
+- '3'
 
 # Publication name and optional abbreviated publication name.
 publication: '*arXiv e-prints*'
 publication_short: ''
-
-doi: ''
 
 abstract: ''
 
@@ -70,6 +69,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2404.04428
 ---
 
 Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.

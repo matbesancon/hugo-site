@@ -3,33 +3,32 @@ title: 'Simple steps are all you need: Frank-Wolfe and generalized self-concorda
   functions'
 
 # Authors
-# A YAML list of author names
-# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
-# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# and it will be replaced with their full name and linked to their profile.
 authors:
 - Alejandro Carderera
 - Mathieu Besançon
 - Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
-# A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
 date: '2021-01-01'
+doi: ''
 
-# Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2024-05-17T11:16:06.920580Z'
+# Schedule page publish date (NOT publication's date).
+publishDate: '2024-05-17T12:26:44.268864Z'
 
 # Publication type.
-# A single CSL publication type but formatted as a YAML list (for Hugo requirements).
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
 publication_types:
-- article-journal
+- '1'
 
 # Publication name and optional abbreviated publication name.
 publication: '*Advances in Neural Information Processing Systems*'
 publication_short: ''
-
-doi: ''
 
 abstract: ''
 
