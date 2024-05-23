@@ -33,10 +33,6 @@ If you are interested in starting a Ph.D. in **Autumn 2024**, reach out soon eno
 
 The following topics would be suitable for Master's students, some would be good 1-2 month projects, some could constitute a Master's thesis / graduation project (6 months).
 
-### Method-agnostic reoptimization in convex optimization
-
-See the description [here](https://team.inria.fr/polaris/files/2023/10/internship_fw_reoptimization.pdf).
-
 ### First-Order Methods for Constrained Optimization
 
 <!-- ![](final_fw_sch.gif) -->
@@ -45,8 +41,8 @@ See the description [here](https://team.inria.fr/polaris/files/2023/10/internshi
 
 I am working on the [FrankWolfe.jl](https://github.com/ZIB-IOL/FrankWolfe.jl) solver. I have a lot of open threads that can become cool internships or projects:
 
-- a Python wrapper for FrankWolfe.jl
-- designing and implementing new Frank-Wolfe variants within the package like the [Nearest Extreme Point](https://proceedings.mlr.press/v134/garber21a.html) oracle or a stabilized version of the [Blended Conditional Gradients](https://arxiv.org/abs/1805.07311).
+- designing and implementing new Frank-Wolfe variants within the package like the [Nearest Extreme Point](https://proceedings.mlr.press/v134/garber21a.html) oracle or a stabilized version of the [Blended Conditional Gradients](https://arxiv.org/abs/1805.07311)
+- implementing specialized methods based on Frank-Wolfe for some problems in data science and machine learning (such as tensor completion, sparse regression), and in operations research (such as traffic equilibrium).
 
 ### Mixed-Integer Convex Optimization
 
@@ -68,11 +64,6 @@ Projects within SCIP will include cutting planes, heuristics, performance evalua
 Depending on the type of project, we will probably team up with other people working on the solver.
 
 **NB**: working on SCIP will mean being relatively confident programming in C and using the surrounding tooling (CMake, gcc).
-
-### An efficient parallel network simplex solver
-
-The network simplex is the engine power many applications from [combinatorial optimization](https://www.gurobi.com/whats-new-gurobi-10-0/) to [Optimal Transport](https://pythonot.github.io/).
-The goal of the project will be to implement an efficient network simplex solver inspired by [LEMON](https://lemon.cs.elte.hu/trac/lemon) in a modern language (Julia or Rust) that would allow for easier parallelism and portability.
 
 # Profiles
 
