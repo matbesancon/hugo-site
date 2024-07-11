@@ -76,9 +76,9 @@ social:
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-6284-3033
-- icon: youtube
-  icon_pack: fab
-  link: https://www.youtube.com/channel/UCVSd42nW_MqkbSXijgOvKwg
+#- icon: youtube
+#  icon_pack: fab
+#  link: https://www.youtube.com/channel/UCVSd42nW_MqkbSXijgOvKwg
 - icon: linkedin
   icon_pack: fab
   link: https://linkedin.com/in/mbesancon

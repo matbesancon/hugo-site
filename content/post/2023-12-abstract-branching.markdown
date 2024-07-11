@@ -11,7 +11,8 @@ diagram = false
 [header]
 +++
 
-This is an informal post summarizing our recent paper [*Probabilistic Lookahead Strong Branching via a Stochastic Abstract Branching Model*](https://arxiv.org/abs/2312.07041) together with Gioni Mexi from the Zuse Institute Berlin and Somayeh Shamsi and Pierre Le Bodic from Monash University.
+This is an informal post summarizing our recent paper [*Probabilistic Lookahead Strong Branching via a Stochastic Abstract Branching Model*](https://arxiv.org/abs/2312.07041) together with Gioni Mexi from the Zuse Institute Berlin and Somayeh Shamsi and Pierre Le Bodic from Monash University.  
+**EDIT**: the paper got the best student paper award at [CPAIOR24](https://sites.google.com/view/cpaior2024), congratulations to Somayeh and Gioni!
 
 I'll try to remain approachable but will assume that the reader is slightly familiar with Branch-and-Bound, and in general with Computational Mixed-Integer Optimization.
 
