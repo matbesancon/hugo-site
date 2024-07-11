@@ -27,7 +27,7 @@ If solving hard problems, designing and implementing efficient algorithms for co
 ## Ph.D.
 
 Doctoral projects are open-ended by nature, the precise topic has to be discussed and adapted to the candidate, so I won' t have a precise list of current subjects (for now).
-If you are interested in starting a Ph.D. in **Autumn 2024**, reach out soon enough (Spring 2024 at the latest) so that we can exchange on your interests and formalize and prepare a topic.
+I am currently not actively looking for more Ph.D. students. If you think my research topics are a perfect match for you, still feel free to get in touch to exchange on your interests and goals, I will probably redirect you to amazing people who could be a great fit.
 
 ## Master's internships and Master's theses
 
@@ -55,6 +55,8 @@ Topics for projects will include:
 - Applications in [sparse statistics](https://optimization-online.org/wp-content/uploads/2022/10/manuscript-1.pdf), [optimal control](https://arxiv.org/abs/2005.14346)
 - Development of specialized [primal heuristics](https://link.springer.com/article/10.1007/s10898-017-0600-3) within the Boscia.jl solver.
 
+On the more ``dual'' side, I am looking for students interested in designing approaches based on Benders' decomposition for various problems, in particular for [network design](https://arxiv.org/abs/2402.00166) and learning applications.
+
 ### Mixed-Integer (Nonlinear) Optimization
 
 {{< figure src="convhull.png" width=50% >}}
@@ -78,7 +80,8 @@ In general, if you have doubts, reach out and let's discuss, there might be a pr
 
 # Location(s)
 
-I am working in the [LIG](https://www.liglab.fr/en) laboratory in Grenoble and will look for students here.  
+I am working in the [LIG](https://www.liglab.fr/en) laboratory in Grenoble and will look for students here.
+If you are looking for a great research environment with friendly and brillant researchers from different domains and want to work while admiring the Alps, look no further.  
 
 If you are in Berlin, I *can* take students in co-supervision with someone else in the [IOL](https://iol.zib.de) lab.
 See the [instructions](https://iol.zib.de/openings/) to apply.  
