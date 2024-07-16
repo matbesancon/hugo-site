@@ -17,7 +17,7 @@ date: '2019-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-16T11:31:15.998945Z'
+publishDate: '2024-07-16T11:45:51.324060Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -68,6 +68,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/1809.00512
 ---
 
-Extended abstract, 13th EUROGEN conference on Evolutionary and Deterministic Computing for Industrial Applications, r̆lhttps://arxiv.org/abs/1809.00512
+Extended abstract, 13th EUROGEN conference on Evolutionary and Deterministic Computing for Industrial Applications

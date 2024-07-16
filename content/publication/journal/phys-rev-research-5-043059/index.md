@@ -19,7 +19,7 @@ date: '2023-01-01'
 doi: 10.1103/PhysRevResearch.5.043059
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-16T11:31:15.756946Z'
+publishDate: '2024-07-16T11:45:51.076806Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
