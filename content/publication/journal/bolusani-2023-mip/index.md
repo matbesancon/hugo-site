@@ -1,33 +1,37 @@
 ---
-title: A Bilevel Framework for Optimal Price-Setting of Time-and-Level-of-Use Tariffs
+title: The MIP Workshop 2023 Computational Competition on Reoptimization
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+- Suresh Bolusani
 - Mathieu Besançon
-- Miguel F. Anjos
-- Luce Brotcorne
-- Juan A. Gomez-Herrera
+- Ambros Gleixner
+- Timo Berthold
+- Claudia D'Ambrosio
+- Gonzalo Muñoz
+- Joseph Paat
+- Dimitri Thomopulos
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2019-01-01'
+date: '2023-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-16T11:31:15.998945Z'
+publishDate: '2024-07-16T11:31:15.774026Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '1'
+- '2'
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*Mathematical Programming Computation*'
 publication_short: ''
 
 abstract: ''
@@ -68,6 +72,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2311.14834
 ---
 
-Extended abstract, 13th EUROGEN conference on Evolutionary and Deterministic Computing for Industrial Applications, r̆lhttps://arxiv.org/abs/1809.00512
+

@@ -13,10 +13,10 @@ authors:
 author_notes: []
 
 date: '2024-01-01'
-doi: ''
+doi: 10.4230/LIPIcs.SEA.2024.16
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-05-17T12:26:44.304225Z'
+publishDate: '2024-07-16T11:31:16.041928Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -26,7 +26,7 @@ publication_types:
 - '1'
 
 # Publication name and optional abbreviated publication name.
-publication: '*Symposium on Experimental Algorithms*'
+publication: '*22nd International Symposium on Experimental Algorithms (SEA 2024)*'
 publication_short: ''
 
 abstract: ''
@@ -68,8 +68,8 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: arXiv
-  url: https://arxiv.org/abs/2312.11200
+- name: URL
+  url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SEA.2024.16
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+

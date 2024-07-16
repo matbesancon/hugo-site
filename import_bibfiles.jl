@@ -31,7 +31,17 @@ for (folder, bibfile, pubtype) in folders
         raw_content = open(file) do f
             read(f, String)
         end
-        res_string = replace(raw_content, r"publication_types:\n- '[0-9]'" => "publication_types:\n- '$pubtype'")
+        notetext = open(joinpath(subdir, "cite.bib")) do f
+            bibtext = read(f, String)
+            pattern = r"\snote\s*=\s*{([^}]*)}"
+            bibmatch = match(pattern, bibtext)
+            bibmatch === nothing ? "" : only(bibmatch.captures)
+        end
+        res_string = replace(
+            raw_content,
+            r"publication_types:\n- '[0-9]'" => "publication_types:\n- '$pubtype'",
+            r"Add the \*\*full text\*\* or \*\*supplementary notes\*\* for the publication here using Markdown formatting\." => notetext,
+        )
         open(file, "w") do f
             write(f, res_string)
         end

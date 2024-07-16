@@ -15,11 +15,11 @@ authors:
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2023-10-01'
+date: '2023-01-01'
 doi: 10.1103/PhysRevResearch.5.043059
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-05-17T12:26:44.083539Z'
+publishDate: '2024-07-16T11:31:15.756946Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -75,4 +75,4 @@ links:
   url: https://link.aps.org/doi/10.1103/PhysRevResearch.5.043059
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+

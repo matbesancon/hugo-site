@@ -1,37 +1,32 @@
 ---
-title: The MIP Workshop 2023 Computational Competition on Reoptimization
+title: Scalable Frank--Wolfe on Generalized Self-Concordant Functions via Simple Steps
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Suresh Bolusani
+- Alejandro Carderera
 - Mathieu Besançon
-- Ambros Gleixner
-- Timo Berthold
-- Claudia D'Ambrosio
-- Gonzalo Muñoz
-- Joseph Paat
-- Dimitri Thomopulos
+- Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2023-01-01'
+date: '2024-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-05-17T12:26:44.478273Z'
+publishDate: '2024-07-16T11:31:15.779750Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '3'
+- '2'
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*SIAM Journal on Optimization*'
 publication_short: ''
 
 abstract: ''
@@ -72,9 +67,6 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: arXiv
-  url: https://arxiv.org/abs/2311.14834
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+To appear

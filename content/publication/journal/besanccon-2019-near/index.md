@@ -1,5 +1,5 @@
 ---
-title: Near-optimal robust bilevel optimization
+title: Robust bilevel optimization for near-optimal lower-level solutions
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -12,21 +12,21 @@ authors:
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2019-01-01'
+date: '2024-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-05-17T12:26:44.452360Z'
+publishDate: '2024-07-16T11:31:15.785250Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '3'
+- '2'
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*Journal of Global Optimization*'
 publication_short: ''
 
 abstract: ''
@@ -72,4 +72,4 @@ links:
   url: https://arxiv.org/abs/1908.04040
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+
