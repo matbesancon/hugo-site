@@ -8,7 +8,7 @@ title: Interrogating the effect of enzyme kinetics on metabolism using different
 authors:
 - St Elmo Wilken
 - Mathieu Besançon
-- Miroslav Kratochvı́l
+- Miroslav Kratochvïl
 - Chilperic Armel Foko Kuate
 - Christophe Trefois
 - Wei Gu
@@ -21,7 +21,7 @@ date: '2022-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-16T11:45:51.065311Z'
+publishDate: '2024-08-05T08:32:15.972959Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

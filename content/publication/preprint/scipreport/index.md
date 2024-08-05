@@ -24,7 +24,7 @@ date: '2021-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-16T11:45:51.502500Z'
+publishDate: '2024-08-05T08:32:16.390478Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -34,7 +34,7 @@ publication_types:
 - '3'
 
 # Publication name and optional abbreviated publication name.
-publication: '*arXiv preprint arXiv:2112.08872*'
+publication: ''
 publication_short: ''
 
 abstract: ''

@@ -1,33 +1,60 @@
 ---
-title: 'Simple steps are all you need: Frank-Wolfe and generalized self-concordant
-  functions'
+title: The SCIP Optimization Suite 9.0
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Alejandro Carderera
+- Suresh Bolusani
 - Mathieu Besançon
-- Sebastian Pokutta
+- Ksenia Bestuzheva
+- Antonia Chmiela
+- João Dionísio
+- Tim Donkiewicz
+- Jasper van Doornmalen
+- Leon Eifler
+- Mohammed Ghannam
+- Ambros Gleixner
+- Christoph Graczyk
+- Katrin Halbig
+- Ivo Hedtke
+- Alexander Hoen
+- Christopher Hojny
+- Rolf van der Hulst
+- Dominik Kamp
+- Thorsten Koch
+- Kevin Kofler
+- Jurgen Lentz
+- Julian Manns
+- Gioni Mexi
+- Erik Mühmer
+- Marc E. Pfetsch
+- Franziska Schlösser
+- Felipe Serrano
+- Yuji Shinano
+- Mark Turner
+- Stefan Vigerske
+- Dieter Weninger
+- Lixing Xu
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2021-01-01'
+date: '2024-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-05T08:32:16.223453Z'
+publishDate: '2024-08-05T08:32:16.396607Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '1'
+- '3'
 
 # Publication name and optional abbreviated publication name.
-publication: '*Advances in Neural Information Processing Systems*'
+publication: ''
 publication_short: ''
 
 abstract: ''
@@ -68,6 +95,11 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.17702
+- name: URL
+  url: https://arxiv.org/abs/2402.17702
 ---
 
 
