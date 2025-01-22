@@ -17,7 +17,7 @@ date: '2022-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-05T08:32:15.956358Z'
+publishDate: '2025-01-22T10:42:26.932625Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

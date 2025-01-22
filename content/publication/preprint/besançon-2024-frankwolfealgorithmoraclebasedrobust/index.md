@@ -1,13 +1,12 @@
 ---
-title: 'The Pivoting Framework: Frank-Wolfe Algorithms with Active Set Size Control'
+title: A Frank-Wolfe Algorithm for Oracle-based Robust Optimization
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Elias Wirth
 - Mathieu Besançon
-- Sebastian Pokutta
+- Jannis Kurtz
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
@@ -16,7 +15,7 @@ date: '2024-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-05T08:32:16.408936Z'
+publishDate: '2025-01-22T10:42:27.524275Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -69,9 +68,9 @@ image:
 projects: []
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2407.11760
+  url: https://arxiv.org/abs/2411.19848
 - name: URL
-  url: https://arxiv.org/abs/2407.11760
+  url: https://arxiv.org/abs/2411.19848
 ---
 
 

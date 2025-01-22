@@ -18,7 +18,7 @@ date: '2024-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-05T08:32:16.403204Z'
+publishDate: '2025-01-22T10:42:27.518216Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -71,6 +71,8 @@ image:
 projects: []
 links:
 - name: arXiv
+  url: https://arxiv.org/abs/2404.04428
+- name: URL
   url: https://arxiv.org/abs/2404.04428
 ---
 

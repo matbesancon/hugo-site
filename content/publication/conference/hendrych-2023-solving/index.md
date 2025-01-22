@@ -16,7 +16,7 @@ date: '2024-01-01'
 doi: 10.4230/LIPIcs.SEA.2024.16
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-05T08:32:16.257012Z'
+publishDate: '2025-01-22T10:42:27.291044Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
