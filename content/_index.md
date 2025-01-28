@@ -154,10 +154,10 @@ sections:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'
       contact_links:
-        - icon: twitter
+        - icon: bluesky
           icon_pack: fab
-          link: 'https://twitter.com/matbesancon'
-          name: 'Twitter'
+          link: 'https://matbesancon.bsky.social'
+          name: 'Bluesky'
         - icon: google-scholar
           icon_pack: ai
           link: 'https://scholar.google.com/citations?user=-xStCAIAAAAJ'

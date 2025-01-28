@@ -64,8 +64,8 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
+- icon: bluesky
+  icon_pack: fa
   link: https://twitter.com/matbesancon
 - icon: google-scholar
   icon_pack: ai

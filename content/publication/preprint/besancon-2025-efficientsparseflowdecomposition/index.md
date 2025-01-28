@@ -1,34 +1,30 @@
 ---
-title: Cutting plane selection with analytic centers and multiregression
+title: Efficient Sparse Flow Decomposition Methods for RNA Multi-Assembly
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Mark Turner
-- Timo Berthold
 - Mathieu Besançon
-- Thorsten Koch
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2023-01-01'
+date: '2025-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-01-28T09:19:50.635257Z'
+publishDate: '2025-01-28T09:19:50.887188Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '1'
+- '3'
 
 # Publication name and optional abbreviated publication name.
-publication: '*International Conference on Integration of Constraint Programming,
-  Artificial Intelligence, and Operations Research*'
+publication: ''
 publication_short: ''
 
 abstract: ''
@@ -69,6 +65,11 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2501.14662
+- name: URL
+  url: https://arxiv.org/abs/2501.14662
 ---
 
 
