@@ -1,5 +1,5 @@
 ---
-title: Scalable Frank--Wolfe on Generalized Self-Concordant Functions via Simple Steps
+title: Scalable Frank-Wolfe on Generalized Self-Concordant Functions via Simple Steps
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -13,10 +13,10 @@ authors:
 author_notes: []
 
 date: '2024-01-01'
-doi: ''
+doi: 10.1137/23M1616789
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-01-28T09:19:50.375482Z'
+publishDate: '2025-02-03T08:45:01.115474Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -67,6 +67,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2105.13913
 ---
 
 
