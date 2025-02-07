@@ -1,40 +1,33 @@
 ---
-title: Enabling research through the SCIP optimization suite 8.0
+title: Secant Line Search for Frank-Wolfe Algorithms
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Ksenia Bestuzheva
+- Deborah Hendrych
 - Mathieu Besançon
-- Wei-Kun Chen
-- Antonia Chmiela
-- Tim Donkiewicz
-- Jasper van Doornmalen
-- Leon Eifler
-- Oliver Gaul
-- Gerald Gamrath
-- Ambros Gleixner
-- ' others'
+- David Martínez-Rubio
+- Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2023-01-01'
+date: '2025-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-02-07T12:10:12.071027Z'
+publishDate: '2025-02-07T12:10:12.705968Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '2'
+- '3'
 
 # Publication name and optional abbreviated publication name.
-publication: '*ACM Transactions on Mathematical Software*'
+publication: ''
 publication_short: ''
 
 abstract: ''
@@ -75,6 +68,11 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2501.18775
+- name: URL
+  url: https://arxiv.org/abs/2501.18775
 ---
 
 
