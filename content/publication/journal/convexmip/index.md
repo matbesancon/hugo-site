@@ -1,13 +1,13 @@
 ---
-title: Secant Line Search for Frank-Wolfe Algorithms
+title: Convex mixed-integer optimization with Frank-Wolfe algorithms
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - Deborah Hendrych
+- Hannah Troppens
 - Mathieu Besançon
-- David Martínez-Rubio
 - Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
@@ -17,17 +17,17 @@ date: '2025-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-02-07T12:10:12.705968Z'
+publishDate: '2025-05-29T15:04:53.162423Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '3'
+- '2'
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*Mathematical Programming Computation*'
 publication_short: ''
 
 abstract: ''
@@ -70,9 +70,9 @@ image:
 projects: []
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2501.18775
+  url: https://arxiv.org/abs/2208.11010
 - name: URL
-  url: https://arxiv.org/abs/2501.18775
+  url: https://arxiv.org/abs/2208.11010
 ---
 
 
