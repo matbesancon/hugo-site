@@ -80,7 +80,7 @@ In general, if you have doubts, reach out and let's discuss, there might be a pr
 
 # Location(s)
 
-I am working in the [LIG](https://www.liglab.fr/en) laboratory in Grenoble and will look for students here.
+I am working in the [LIG](https://www.liglab.fr/en) laboratory on the main campus of Université Grenoble Alpes and will look for students here.
 If you are looking for a great research environment with friendly and brillant researchers from different domains and want to work while admiring the Alps, look no further.  
 
 If you are in Berlin, I *can* take students in co-supervision with someone else in the [IOL](https://iol.zib.de) lab.
