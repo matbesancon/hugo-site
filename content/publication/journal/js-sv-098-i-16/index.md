@@ -21,7 +21,7 @@ date: '2021-01-01'
 doi: 10.18637/jss.v098.i16
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-05-29T15:04:53.086791Z'
+publishDate: '2025-07-16T08:13:15.330753Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

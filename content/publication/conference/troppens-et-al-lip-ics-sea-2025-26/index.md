@@ -1,32 +1,33 @@
 ---
-title: Complexity of near-optimal robust versions of multilevel optimization problems
+title: Mixed-Integer Optimization for Loopless Flux Distributions in Metabolic Networks
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+- Hannah Troppens
 - Mathieu Besançon
-- Miguel F Anjos
-- Luce Brotcorne
+- St. Elmo Wilken
+- Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2021-01-01'
-doi: ''
+date: '2025-01-01'
+doi: 10.4230/LIPIcs.SEA.2025.26
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-16T08:13:15.357110Z'
+publishDate: '2025-07-16T08:13:15.752687Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '2'
+- '1'
 
 # Publication name and optional abbreviated publication name.
-publication: '*Optimization Letters*'
+publication: '*23rd International Symposium on Experimental Algorithms (SEA 2025)*'
 publication_short: ''
 
 abstract: ''
@@ -67,6 +68,11 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2502.00807
+- name: URL
+  url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SEA.2025.26
 ---
 
 

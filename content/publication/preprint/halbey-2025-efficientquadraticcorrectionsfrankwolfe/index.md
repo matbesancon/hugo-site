@@ -1,11 +1,15 @@
 ---
-title: Efficient Sparse Flow Decomposition Methods for RNA Multi-Assembly
+title: Efficient Quadratic Corrections for Frank-Wolfe Algorithms
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+- Jannis Halbey
+- Seta Rakotomandimby
 - Mathieu Besançon
+- Sébastien Designolle
+- Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
@@ -14,7 +18,7 @@ date: '2025-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-05-29T15:04:53.683844Z'
+publishDate: '2025-07-16T08:13:15.977496Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -67,9 +71,9 @@ image:
 projects: []
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2501.14662
+  url: https://arxiv.org/abs/2506.02635
 - name: URL
-  url: https://arxiv.org/abs/2501.14662
+  url: https://arxiv.org/abs/2506.02635
 ---
 
 
