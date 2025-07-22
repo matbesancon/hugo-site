@@ -100,7 +100,7 @@ I am a researcher in mathematical optimization with interests in nonlinear and d
 
 **TL;DR**: I write mathematical models that represent decision-making processes or equilibria within systems, and build abstract algorithms and concrete computer programs that provide solutions to these models with guarantees.  
 
-I joined the [Inria](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) Institute in Grenoble in January 2024 as a Tenured Associate Researcher (*Chargé de Recherche*) working with the [Polaris](https://team.inria.fr/polaris/) group at the [Grenoble Computer Science Lab](https://www.liglab.fr/en). Broadly speaking, we work on decision and learning in uncertain, unknown, dynamic contexts, potentially with multiple agents. If what the group and/or what I do sounds like fun, feel free to [contact me](#contact) or check some [example topics](workwithme).  
+I joined the [Inria](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) Institute in Grenoble in January 2024 as a Tenured Associate Researcher (*Chargé de Recherche*) working with the [Ghost](https://ghost-team.gitlabpages.inria.fr) (formerly [Polaris](https://team.inria.fr/polaris/)) group joint between the [Grenoble Computer Science Lab](https://www.liglab.fr/en) and Inria. Broadly speaking, we work on decision and learning in uncertain, unknown, dynamic contexts, potentially with multiple agents. If what the group and/or what I do sounds like fun, feel free to [contact me](#contact) or check some [example topics](workwithme).  
   
 
 My research interests span the theory, methods, and algorithms for several flavours of mathematical optimization.
