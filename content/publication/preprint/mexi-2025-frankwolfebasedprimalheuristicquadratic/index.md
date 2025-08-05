@@ -1,30 +1,31 @@
 ---
-title: A Bilevel Framework for Optimal Price-Setting of Time-and-Level-of-Use Tariffs
+title: A Frank-Wolfe-based primal heuristic for quadratic mixed-integer optimization
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+- Gioni Mexi
+- Deborah Hendrych
+- Sébastien Designolle
 - Mathieu Besançon
-- Miguel F. Anjos
-- Luce Brotcorne
-- Juan A. Gomez-Herrera
+- Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2019-01-01'
+date: '2025-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-08-05T08:33:43.331572Z'
+publishDate: '2025-08-05T08:33:43.632597Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '1'
+- '3'
 
 # Publication name and optional abbreviated publication name.
 publication: ''
@@ -70,7 +71,9 @@ image:
 projects: []
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/1809.00512
+  url: https://arxiv.org/abs/2508.01299
+- name: URL
+  url: https://arxiv.org/abs/2508.01299
 ---
 
-Extended abstract, 13th EUROGEN conference on Evolutionary and Deterministic Computing for Industrial Applications
+
