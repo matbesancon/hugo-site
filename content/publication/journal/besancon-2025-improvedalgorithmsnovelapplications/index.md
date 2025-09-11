@@ -19,10 +19,10 @@ authors:
 author_notes: []
 
 date: '2025-01-01'
-doi: ''
+doi: 10.1145/3765626
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-08-25T08:11:14.652320Z'
+publishDate: '2025-09-11T11:58:23.018249Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -32,7 +32,7 @@ publication_types:
 - '2'
 
 # Publication name and optional abbreviated publication name.
-publication: '*ACM Transactions on Mathematical Software (to appear)*'
+publication: '*ACM Transactions on Mathematical Software*'
 publication_short: ''
 
 abstract: ''
@@ -75,8 +75,6 @@ image:
 projects: []
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2501.14613
-- name: URL
   url: https://arxiv.org/abs/2501.14613
 ---
 
