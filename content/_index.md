@@ -49,7 +49,7 @@ sections:
           location: Montréal, Canada & Lille, France
           date_start: '2017-09-01'
           date_end: '2020-12-11'
-          description: Double PhD program in mathematical optimization for pricing of Demand Response programs in a smart grid context.
+          description: Double PhD program in mathematical optimization for pricing of demand response programs in smart grids.
         - title: Research Engineer, Data Scientist
           company: Equisense SAS
           company_url: ''

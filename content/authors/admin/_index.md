@@ -98,7 +98,7 @@ highlight_name: true
 
 I am a researcher in mathematical optimization with interests in nonlinear and discrete problems, and an emphasis on formulations and computational approaches.  
 
-**TL;DR**: I write mathematical models that represent decision-making processes or equilibria within systems, and build abstract algorithms and concrete computer programs that provide solutions to these models with guarantees.  
+**TL;DR**: I write mathematical models that represent decision-making processes or technical systems, and build abstract algorithms and concrete computer programs that provide solutions to these models with guarantees.  
 
 I joined the [Inria](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) Institute in Grenoble in January 2024 as a Tenured Associate Researcher (*Chargé de Recherche*) working with the [Ghost](https://ghost-team.gitlabpages.inria.fr) (formerly [Polaris](https://team.inria.fr/polaris/)) group joint between the [Grenoble Computer Science Lab](https://www.liglab.fr/en) and Inria. Broadly speaking, we work on decision and learning in uncertain, unknown, dynamic contexts, potentially with multiple agents. If what the group and/or what I do sounds like fun, feel free to [contact me](#contact) or check some [example topics](workwithme).  
   
@@ -107,7 +107,8 @@ My research interests span the theory, methods, and algorithms for several flavo
 More specifically, I have been interested in exact solution methods for constrained optimization with constraint structures we can exploit.
 Those include solution methods, computational models, and software in mixed-integer (non-)linear and convex optimization and in particular
 around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
-I have been exploring applications of these classes of problems in power systems, quantum information, systems biology, networks and infrastructure, and data science & machine learning.  
+I have been exploring applications of these classes of problems in power systems, transportation, quantum information, systems biology, networks and infrastructure, and data science & machine learning.
+I am involved in the [PEPR MOBIDEC ACME](https://acme-mobidec.github.io/) to build collaborative transportation systems for a lower carbon footprint.  
     
 I graduated with a double PhD (*cotutelle*) from
 [Polytechnique Montréal](https://www.polymtl.ca),
@@ -129,4 +130,4 @@ the [Technische Universität Braunschweig](https://www.tu-braunschweig.de/?lang=
 On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
 and non-fiction books (on economic policy, education, transportation systems, the energy transition);
 a more detailed readling list can be found on my [goodread](https://www.goodreads.com/review/list/110133896).
-I also enjoy games in various formats (tabletop, video, board, card) and cooking (from fermentation attempts to pasta recipes and coffee brewing). I regularly run (mostly short trails) and rock-climb (primarily bouldering).
+I also enjoy games in various formats (tabletop, video, board, card) and cooking (from fermentation attempts to pasta recipes and coffee brewing). I regularly run (mostly short trails) and climb on colorful plastic (primarily bouldering).
