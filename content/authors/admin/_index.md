@@ -124,10 +124,9 @@ I am involved in several open-source projects around optimization and scientific
 in the [Julia](https://julialang.org) programming language and around [JuMP](https://jump.dev).
 I worked with and in various industries, from a hardware startup to steel
 manufacturing. I did my joint Bachelor-Master in Process Engineering at
-the [University of Technology of Compiègne](https://www.utc.fr) in France with a semester at
-the [Technische Universität Braunschweig](https://www.tu-braunschweig.de/?lang=en) in Germany and Polytechnique Montreal.
+the [University of Technology of Compiègne](https://www.utc.fr).
   
 On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
 and non-fiction books (on economic policy, education, transportation systems, the energy transition);
 a more detailed readling list can be found on my [goodread](https://www.goodreads.com/review/list/110133896).
-I also enjoy games in various formats (tabletop, video, board, card) and cooking (from fermentation attempts to pasta recipes and coffee brewing). I regularly run (mostly short trails) and climb on colorful plastic (primarily bouldering).
+I also enjoy games in various formats (tabletop, video, board, card) and cooking (from fermentation attempts to pasta recipes and coffee brewing). I run and climb on colorful plastic.

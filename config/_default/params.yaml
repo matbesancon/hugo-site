@@ -42,7 +42,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Mathieu Besançon.'
+    notice: "© {year} Mathieu Besançon. © Profile picture B. Fourrier"
     license:
       enable: true
       allow_derivatives: true
