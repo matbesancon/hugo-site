@@ -1,32 +1,33 @@
 ---
-title: Scalable Frank-Wolfe on Generalized Self-Concordant Functions via Simple Steps
+title: 'Boscia.jl: a review and tutorial'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Alejandro Carderera
+- Wenjie Xiao
+- Deborah Hendrych
 - Mathieu Besançon
 - Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2024-01-01'
-doi: 10.1137/23M1616789
+date: '2025-01-01'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-11-04T13:50:25.564973Z'
+publishDate: '2025-11-04T13:50:26.176156Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '2'
+- '3'
 
 # Publication name and optional abbreviated publication name.
-publication: '*SIAM Journal on Optimization*'
+publication: ''
 publication_short: ''
 
 abstract: ''
@@ -69,7 +70,9 @@ image:
 projects: []
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2105.13913
+  url: https://arxiv.org/abs/2511.01479
+- name: URL
+  url: https://arxiv.org/abs/2511.01479
 ---
 
 

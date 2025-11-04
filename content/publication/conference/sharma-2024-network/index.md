@@ -17,7 +17,7 @@ date: '2024-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-09-18T19:25:36.345159Z'
+publishDate: '2025-11-04T13:50:25.879151Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -27,7 +27,7 @@ publication_types:
 - '1'
 
 # Publication name and optional abbreviated publication name.
-publication: '*Proceedings of the INFORMS Optimization Society Annual conference*'
+publication: '*Proceedings of the INFORMS Optimization Society Annual Conference*'
 publication_short: ''
 
 abstract: ''
