@@ -108,7 +108,8 @@ More specifically, I have been interested in exact solution methods for constrai
 Those include solution methods, computational models, and software in mixed-integer (non-)linear and convex optimization and in particular
 around the [SCIP](https://scipopt.org) framework and Frank-Wolfe related approaches.
 I have been exploring applications of these classes of problems in power systems, transportation, quantum information, systems biology, networks and infrastructure, and data science & machine learning.
-I am involved in the [PEPR MOBIDEC ACME](https://acme-mobidec.github.io/) to build collaborative transportation systems for a lower carbon footprint, in the [PEPR IA FOUNDRY](https://foundry-ai.github.io/) for activities in learning for optimization.  
+In optimization for machine learning, I am the co-head of the [Structured Optimization for Learning](https://miai-cluster.univ-grenoble-alpes.fr/research/chairs/sol-structured-optimization-for-learning-1670885.kjsp) research chair of the Grenoble [MIAI Cluster for AI](https://miai-cluster.univ-grenoble-alpes.fr).
+I am involved in the [PEPR MOBIDEC ACME](https://acme-mobidec.github.io/) to build collaborative transportation systems for a lower carbon footprint, and in the [PEPR IA FOUNDRY](https://foundry-ai.github.io/) for activities in learning for optimization.  
     
 I graduated with a double PhD (*cotutelle*) from
 [Polytechnique Montréal](https://www.polymtl.ca),
