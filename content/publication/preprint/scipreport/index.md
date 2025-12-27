@@ -7,15 +7,7 @@ title: The SCIP Optimization Suite 8.0
 authors:
 - Ksenia Bestuzheva
 - Mathieu Besançon
-- Wei-Kun Chen
-- Antonia Chmiela
-- Tim Donkiewicz
-- Jasper van Doornmalen
-- Leon Eifler
-- Oliver Gaul
-- Gerald Gamrath
-- Ambros Gleixner
-- ' others'
+- ' coauthors'
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
@@ -24,7 +16,7 @@ date: '2021-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-11-04T13:50:26.137053Z'
+publishDate: '2025-12-26T20:08:48.857201Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

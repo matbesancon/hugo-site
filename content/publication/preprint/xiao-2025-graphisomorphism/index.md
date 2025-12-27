@@ -1,30 +1,35 @@
 ---
-title: A Julia package for bilevel optimization problems
+title: 'Graph Isomorphism: Mixed-Integer Convex Optimization from First-Order Methods'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+- Wenjie Xiao
 - Mathieu Besançon
+- Patrick Gelß
+- Deborah Hendrych
+- Stefan Klus
+- Sebastian Pokutta
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
 
-date: '2019-01-01'
+date: '2025-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-12-26T20:08:48.119275Z'
+publishDate: '2025-12-26T20:08:48.911419Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types:
-- '2'
+- '3'
 
 # Publication name and optional abbreviated publication name.
-publication: '*Journal of Open Source Software*'
+publication: ''
 publication_short: ''
 
 abstract: ''
@@ -65,6 +70,11 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2512.17417
+- name: URL
+  url: https://arxiv.org/abs/2512.17417
 ---
 
 

@@ -8,34 +8,7 @@ authors:
 - Suresh Bolusani
 - Mathieu Besançon
 - Ksenia Bestuzheva
-- Antonia Chmiela
-- João Dionísio
-- Tim Donkiewicz
-- Jasper van Doornmalen
-- Leon Eifler
-- Mohammed Ghannam
-- Ambros Gleixner
-- Christoph Graczyk
-- Katrin Halbig
-- Ivo Hedtke
-- Alexander Hoen
-- Christopher Hojny
-- Rolf van der Hulst
-- Dominik Kamp
-- Thorsten Koch
-- Kevin Kofler
-- Jurgen Lentz
-- Julian Manns
-- Gioni Mexi
-- Erik Mühmer
-- Marc E. Pfetsch
-- Franziska Schlösser
-- Felipe Serrano
-- Yuji Shinano
-- Mark Turner
-- Stefan Vigerske
-- Dieter Weninger
-- Lixing Xu
+- ' coauthors'
 
 # Author notes (such as 'Equal Contribution')
 author_notes: []
@@ -44,7 +17,7 @@ date: '2024-01-01'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-11-04T13:50:26.145980Z'
+publishDate: '2025-12-26T20:08:48.867762Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
