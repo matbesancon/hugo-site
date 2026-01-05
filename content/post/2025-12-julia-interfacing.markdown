@@ -151,17 +151,22 @@ struct ThirdpackBackend{O}
     options::O
 end
 
-function compute_extreme_point(lmo::Spectraplex{:Thirdpack,ThirdpackBackend}, direction::AbstractMatrix)
+function FrankWolfe.compute_extreme_point(lmo::FrankWolfe.Spectraplex{:Thirdpack,ThirdpackBackend}, direction::AbstractMatrix)
     _, evec = Thirdpack.yet_another_eigs(-direction, nev=1, which=:LR; lmo.backend.options...)
     unit_vec = vec(evec)
     return unit_vec * unit_vec'
 end
 ```
 
-So that design also leaves the possibility of external packages open.
+So that design also leaves the possibility for external packages to implement their own `Spectraplex` backend open.
 It is slightly unusual because external packages dispatch on both the symbol and the backend type, but at least this offers:
 - no dependency explosion for FrankWolfe.jl
 - no code for the mutlieple options in the main module
 - no need for external packages for each new backend
 
 I haven't seen this design yet in the Julia ecosystem, I might have missed it but this seems like a good option to leverage extensions in a different way.
+
+# Edits
+
+That design does not seem to be for everyone's taste and some people prefer a dangling struct with the implementation in the extension.
+Guillaume Dalle also pointed [WeakDepHelpers.jl](https://github.com/QuantumSavory/WeakDepHelpers.jl) for tooling in that direction.

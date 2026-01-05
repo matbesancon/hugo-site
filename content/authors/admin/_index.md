@@ -30,13 +30,11 @@ bio: Mathematical optimization, scientific programming and related.
 
 # List (academic) interests or hobbies
 interests:
-  - Bilevel Optimization
   - Convex Optimization
   - Mixed-Integer (Non-)Linear Optimization
   - Power Systems
-  - Mathematical Optimization
-  - Optimization and Engineering
-  - Optimization Software
+  - Optimization in Engineering
+  - Computational Software
   - Algorithm Design
   - Optimization in Statistics & Learning
 
@@ -130,4 +128,5 @@ the [University of Technology of Compiègne](https://www.utc.fr).
 On a personal note, I read both fiction (mostly history, detective, thrillers and fantasy)
 and non-fiction books (on economic policy, education, transportation systems, the energy transition);
 a more detailed readling list can be found on my [goodread](https://www.goodreads.com/review/list/110133896).
-I also enjoy games in various formats (tabletop, video, board, card) and cooking (from fermentation attempts to pasta recipes and coffee brewing). I run and climb on colorful plastic.
+I also enjoy games in various formats (tabletop, video, board, card) and cooking (from fermentation attempts to coffee brewing).
+I also run up and down hills and climb on colorful plastic.
