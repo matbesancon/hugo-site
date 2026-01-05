@@ -5,7 +5,7 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: '#home'
     weight: 10
   - name: Experience
     url: '#experience'
@@ -16,11 +16,14 @@ main:
   - name: Posts
     url: '#posts'
     weight: 30
-  - name: Work with me
-    url: '#workwithme'
-    weight: 40
   - name: Contact
     url: '#contact'
+    weight: 40
+  - name: Work with me
+    url: 'workwithme'
+    weight: 50
+  - name: About
+    url: 'about'
     weight: 60
 
 # Link to a PDF of your resume/CV from the menu.

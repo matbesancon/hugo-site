@@ -1,6 +1,5 @@
 ---
 title: Work with me
-cms_exclude: true
 
 # View.
 #   1 = List
@@ -17,7 +16,7 @@ math: true
 ---
 
 
-My research revolves around **computational optimization**, see a non-exhaustive list on the [homepage](/#about).
+My research revolves around **computational optimization**, see a non-exhaustive list on the [homepage](/#home).
 If solving hard problems, designing and implementing efficient algorithms for convex or mixed-integer optimization, or applying these techniques to concrete applications hypes you, reach out!
 
 {{< toc >}}

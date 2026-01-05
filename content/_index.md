@@ -6,7 +6,7 @@ type: landing
 
 sections:
   - block: about.biography
-    id: about
+    id: home
     content:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
@@ -126,14 +126,6 @@ sections:
   #   design:
   #     columns: '2'
   #     view: compact
-  - block: markdown
-    id: workwithme
-    content:
-      title: Work with me
-      subtitle: If you want to join my group and work with me, please read the information [here](./workwithme/).
-      text:
-    design:
-      columns: '1'
   - block: contact
     id: contact
     content:
